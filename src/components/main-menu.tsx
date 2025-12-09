@@ -28,12 +28,18 @@ const menuItems = [
     subtitle: 'Nombres que inspiran confianza.',
     image_id: 'card-fundadores',
   },
+  {
+    href: '/direccion',
+    title: 'Dirección',
+    subtitle: 'Liderazgo que construye legado.',
+    image_id: 'card-direccion',
+  },
 ];
 
 export default function MainMenu() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
-      <div className="grid w-full max-w-screen-xl grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid w-full max-w-screen-xl grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5">
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === item.image_id);
           return (
@@ -50,7 +56,7 @@ export default function MainMenu() {
                     alt={image.description || item.title}
                     fill
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
                     data-ai-hint={image.imageHint}
                   />
                 )}

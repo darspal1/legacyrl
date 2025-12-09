@@ -9,7 +9,7 @@
     {
       "id": "card-vinos",
       "description": "A hand holding a glass of red wine against the light in an old cellar.",
-      "imageUrl": "https://images.unsplash.com/photo-1569153482031-a3cebdedf294?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1MjA3OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1630369160812-26c7604cbd8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1MjA3OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine glass"
     },
     {
@@ -21,31 +21,37 @@
     {
       "id": "card-inmuebles",
       "description": "The stone facade of a historic European mansion.",
-      "imageUrl": "https://images.unsplash.com/photo-1710435472628-5e375cd4cce6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTMwMjkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1755802501633-9b188481d62c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTMwMjkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mansion facade"
     },
     {
       "id": "card-fundadores",
       "description": "A sophisticated, old-money style corporate portrait setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUyODcwMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUyODcwMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "corporate portrait"
+    },
+    {
+      "id": "card-direccion",
+      "description": "An antique golden compass on a dark wood desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1758413148742-783c68a03085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xkZW4lMjBjb21wYXNzfGVufDB8fHx8MTc2NTMyNDIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golden compass"
     },
     {
       "id": "hero-vinos",
       "description": "Ancient wine barrels in a dark cellar, illuminated by a warm, soft light, creating a sense of history and depth.",
-      "imageUrl": "https://images.unsplash.com/photo-1634759485024-0b2368a2d813?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aW5lJTIwYmFycmVsc3xlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1643087448435-72f70bd4ce88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aW5lJTIwYmFycmVsc3xlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine barrels"
     },
     {
       "id": "vinos-curaduria",
       "description": "Close-up of a collection of old wine bottles with aged, dusty labels, resting on an oak shelf.",
-      "imageUrl": "https://images.unsplash.com/photo-1585647051721-6ede7db1c579?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvbGQlMjB3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764109807207-a55212d3a90f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbGQlMjB3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old wine bottles"
     },
     {
       "id": "vinos-inversion",
       "description": "A noble wooden wine case with a wax seal, suggesting exclusivity and high value.",
-      "imageUrl": "https://images.unsplash.com/photo-1609712928438-4756b4ae4cb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2luZSUyMGNyYXRlfGVufDB8fHx8MTc2NTMxMDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1603314947668-e8372e0075ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3aW5lJTIwY3JhdGV8ZW58MHx8fHwxNzY1MzEwMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine crate"
     },
     {
@@ -57,73 +63,73 @@
     {
       "id": "vinos-custodia",
       "description": "Modern, climate-controlled wine storage with sleek, illuminated shelves, and a digital inventory system.",
-      "imageUrl": "https://images.unsplash.com/photo-1642169791287-ca59eaf67059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764649841527-c8852b63cc53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine storage"
     },
     {
       "id": "hero-automoviles",
       "description": "Detailed shot of the wooden steering wheel and dashboard of a classic Jaguar E-Type, with polished chrome details.",
-      "imageUrl": "https://images.unsplash.com/photo-1744116663018-13ec9673f5b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGFzc2ljJTIwY2FyJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY1MzEwMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610553303411-0826587dab2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbGFzc2ljJTIwY2FyJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY1MzEwMTQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic car interior"
     },
     {
       "id": "auto-adquisicion",
       "description": "The silhouette of a classic European sports car in a dimly lit, aristocratic garage.",
-      "imageUrl": "https://images.unsplash.com/photo-1712345389568-ae973e7262c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGFzc2ljJTIwY2FyJTIwZ2FyYWdlfGVufDB8fHx8MTc2NTMxMDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654816022104-ed536258d9c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjbGFzc2ljJTIwY2FyJTIwZ2FyYWdlfGVufDB8fHx8MTc2NTMxMDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic car garage"
     },
     {
       "id": "auto-certificacion",
       "description": "Hands in white gloves carefully handling antique vehicle documents with official seals.",
-      "imageUrl": "https://images.unsplash.com/photo-1684063007804-7933d167733e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbnRpcXVlJTIwZG9jdW1lbnRzfGVufDB8fHx8MTc2NTMxMDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1763225271111-dd9363584249?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbnRpcXVlJTIwZG9jdW1lbnRzfGVufDB8fHx8MTc2NTMxMDE0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "antique documents"
     },
     {
       "id": "auto-restauracion",
       "description": "A boutique workshop with artisan tools neatly arranged, where a classic car is being meticulously restored.",
-      "imageUrl": "https://images.unsplash.com/photo-1610912344263-f1a1e39fc91a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXIlMjByZXN0b3JhdGlvbnxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591278169757-deac26e49555?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjByZXN0b3JhdGlvbnxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car restoration"
     },
     {
       "id": "auto-gestion",
       "description": "A collection of pristine classic cars perfectly aligned in a museum-like setting with dramatic lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1613234260258-5ae6efbdbdd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYXIlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NTMxMDE0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1717251219558-40dae5f9b195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXIlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NTMxMDE0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "car collection"
     },
     {
       "id": "hero-inmuebles",
       "description": "The majestic stone facade of a historic mansion with grand windows and an imposing entrance.",
-      "imageUrl": "https://images.unsplash.com/photo-1712073839057-bd13b32ea8e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTMwMjkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1755802501633-9b188481d62c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTMwMjkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mansion facade"
     },
     {
       "id": "inmuebles-adquisicion",
       "description": "A classic European palace or a stately manor house in the countryside, exuding timeless elegance.",
-      "imageUrl": "https://images.unsplash.com/photo-1594698370631-807cc4e7f92f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568486993567-d8cd75df22ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stately home"
     },
     {
       "id": "inmuebles-auditoria",
       "description": "Hands carefully reviewing old architectural blueprints and historical documents on a wooden table.",
-      "imageUrl": "https://images.unsplash.com/photo-1721244653652-268631ec049a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTI4OTE5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721244654392-9c912a6eb236?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTI4OTE5MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture blueprints"
     },
     {
       "id": "inmuebles-restauracion",
       "description": "Detailed view of perfectly restored crown molding and noble woodwork in a historic building.",
-      "imageUrl": "https://images.unsplash.com/photo-1588163308092-5196fe66a63e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1MzEwMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591343143034-03a2ef187485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1MzEwMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crown molding"
     },
     {
       "id": "inmuebles-gestion",
       "description": "Financial documents and a fountain pen resting on a noble, dark wood desk, signifying strategic asset management.",
-      "imageUrl": "https://images.unsplash.com/photo-1764231467854-db276777da58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1MzEwMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759429084833-334282cbd58d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1MzEwMTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial documents"
     },
     {
       "id": "hero-fundadores",
       "description": "A dark wood corporate office, dim light, with an old globe or a stately library.",
-      "imageUrl": "https://images.unsplash.com/photo-1528857227159-ab26314d8b1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGF0ZWx5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjUzMjAyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1614149477840-11c067c1e393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdGF0ZWx5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjUzMjAyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stately library"
     },
     {
@@ -137,6 +143,30 @@
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
       "imageUrl": "https://i.postimg.cc/KzjTLyHX/Clement-Lafayette.png",
       "imageHint": "male portrait"
+    },
+    {
+      "id": "hero-direccion",
+      "description": "An antique golden compass resting on an old, sepia-toned world map.",
+      "imageUrl": "https://images.unsplash.com/photo-1542383578-4cb83f35eac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTI0ODMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map compass"
+    },
+    {
+      "id": "direccion-sudamerica",
+      "description": "Sober executive portraits with a neutral ivory or stone-gray background, formal attire.",
+      "imageUrl": "https://images.unsplash.com/photo-1584940121730-93ffb8aa88b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUyOTE4Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "direccion-norteamerica",
+      "description": "Neoclassical style corporate offices, suggesting tradition and power.",
+      "imageUrl": "https://images.unsplash.com/photo-1735827944677-12c8666db6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuZW9jbGFzc2ljJTIwb2ZmaWNlfGVufDB8fHx8MTc2NTMyNDIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "neoclassic office"
+    },
+    {
+      "id": "direccion-europa",
+      "description": "The stately facade of a historic European building, suggesting a heritage consultancy.",
+      "imageUrl": "https://images.unsplash.com/photo-1565862916757-b7ef269c3a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxldXJvcGVhbiUyMGZhY2FkZXxlbnwwfHx8fDE3NjUzMjQyMjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "european facade"
     }
   ]
 }
