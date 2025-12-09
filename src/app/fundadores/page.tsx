@@ -51,8 +51,8 @@ export default function FundadoresPage() {
           />
         )}
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-          <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in zoom-in-95 duration-1000">
-            Las casas más duraderas se construyen sobre nombres que inspiran confianza.
+          <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in zoom-in-95 duration-1000 px-4">
+            Donde la ingeniería y la arquitectura construyen un legado.
           </h2>
         </div>
       </div>
