@@ -8,10 +8,17 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Alegreya', 'serif'],
+        headline: ['Cormorant Garamond', 'serif'],
         code: ['monospace'],
       },
       colors: {
@@ -88,10 +95,23 @@ export default {
             height: '0',
           },
         },
+        grain: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '10%': { transform: 'translate(-2%, -4%)' },
+          '20%': { transform: 'translate(2%, 4%)' },
+          '30%': { transform: 'translate(-3%, -6%)' },
+          '40%': { transform: 'translate(3%, 6%)' },
+          '50%': { transform: 'translate(-4%, -8%)' },
+          '60%': { transform: 'translate(4%, 8%)' },
+          '70%': { transform: 'translate(-1%, -2%)' },
+          '80%': { transform: 'translate(1%, 2%)' },
+          '90%': { transform: 'translate(-2%, -4%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        grain: 'grain 8s steps(10) infinite',
       },
     },
   },

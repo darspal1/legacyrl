@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "splash-office",
+      "description": "A stately, classic office with mahogany wood and dim lighting, suggesting legacy and heritage.",
+      "imageUrl": "https://images.unsplash.com/photo-1730701878011-a423ec61c328?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdGF0ZWx5JTIwb2ZmaWNlfGVufDB8fHx8MTc2NTMwMjkxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stately office"
+    },
+    {
+      "id": "card-vinos",
+      "description": "A hand holding a glass of red wine against the light in an old cellar.",
+      "imageUrl": "https://images.unsplash.com/photo-1606655762823-63f1cda5431f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1MjA3OTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wine glass"
+    },
+    {
+      "id": "card-automoviles",
+      "description": "A close-up of a classic European car's chrome emblem.",
+      "imageUrl": "https://images.unsplash.com/photo-1530642901805-fdb3c28754b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjbGFzc2ljJTIwY2FyfGVufDB8fHx8MTc2NTI4MjgxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classic car"
+    },
+    {
+      "id": "card-inmuebles",
+      "description": "The stone facade of a historic European mansion.",
+      "imageUrl": "https://images.unsplash.com/photo-1727099427825-638b3e6f2c06?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFuc2lvbiUyMGZhY2FkZXxlbnwwfHx8fDE3NjUzMDI5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mansion facade"
+    }
+  ]
 }
