@@ -7,6 +7,13 @@ import MainMenu from '@/components/main-menu';
 export default function Home() {
   const [view, setView] = useState('splash'); // 'splash', 'fading', 'menu'
 
+  useEffect(() => {
+    // Check for hash on initial load
+    if (window.location.hash === '#menu') {
+      setView('menu');
+    }
+  }, []);
+
   const handleEnter = () => {
     setView('fading');
   };
@@ -15,6 +22,7 @@ export default function Home() {
     if (view === 'fading') {
       const timer = setTimeout(() => {
         setView('menu');
+        window.history.pushState(null, '', '#menu');
       }, 700); // This duration should match the splash screen's fade-out animation
       return () => clearTimeout(timer);
     }
