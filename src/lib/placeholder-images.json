@@ -56,7 +56,7 @@
     },
     {
       "id": "vinos-custodia",
-      "description": "Modern, climate-controlled wine storage with sleek, illuminated shelves and a digital inventory system.",
+      "description": "Modern, climate-controlled wine storage with sleek, illuminated shelves, and a digital inventory system.",
       "imageUrl": "https://images.unsplash.com/photo-1642169791287-ca59eaf67059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjUzMTAxNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine storage"
     },
@@ -135,7 +135,7 @@
     {
       "id": "founder-clement",
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
-      "imageUrl": "https://i.postimg.cc/GhLCjhx6/Clement_Lafayette.jpg",
+      "imageUrl": "https://i.postimg.cc/KzjTLyHX/Clement-Lafayette.png",
       "imageHint": "male portrait"
     }
   ]
