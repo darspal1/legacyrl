@@ -17,20 +17,20 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
             src={splashImage.imageUrl}
             alt={splashImage.description}
             fill
-            className="object-cover opacity-15 sepia-[.5]"
+            className="object-cover opacity-20 sepia-[.25]"
             priority
             data-ai-hint={splashImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
         <div className="relative z-10 mx-auto max-w-4xl text-center p-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
-          <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary-foreground">
+          <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary-foreground/90 [text-shadow:_0_2px_10px_hsl(var(--background)/_0.8)]">
             Rozua Point & Legacy
           </h1>
-          <h2 className="mt-4 font-body text-2xl md:text-3xl text-muted-foreground">
+          <h2 className="mt-6 font-body text-xl md:text-2xl text-muted-foreground tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
             Donde el patrimonio encuentra su historia.
           </h2>
-          <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-primary-foreground/80">
+          <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-primary-foreground/70 [text-shadow:_0_1px_4px_hsl(var(--background))]">
             En un mundo efímero, Rozua Point & Legacy S.A. se erige como un bastión de permanencia.
             No somos simplemente una firma de inversión; somos custodios del buen vivir 
             y arquitectos de legados familiares.
