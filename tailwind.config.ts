@@ -38,7 +38,7 @@ export default {
             '--tw-prose-invert-body': theme('colors.foreground'),
             '--tw-prose-invert-headings': theme('colors.primary.DEFAULT'),
             '--tw-prose-invert-lead': theme('colors.foreground'),
-            '--tw prose-invert-links': theme('colors.primary.DEFAULT'),
+            '--tw-prose-invert-links': theme('colors.primary.DEFAULT'),
             '--tw-prose-invert-bold': theme('colors.foreground'),
             '--tw-prose-invert-counters': theme('colors.muted.foreground'),
             '--tw-prose-invert-bullets': theme('colors.primary.DEFAULT'),
