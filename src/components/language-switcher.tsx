@@ -11,9 +11,28 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function LanguageSwitcher() {
   const pathName = usePathname();
+  const [currentLocale, setCurrentLocale] = useState(i18n.defaultLocale);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
+  useEffect(() => {
+    if (pathName) {
+      const segments = pathName.split('/');
+      if (i18n.locales.includes(segments[1] as any)) {
+        setCurrentLocale(segments[1]);
+      } else {
+        setCurrentLocale(i18n.defaultLocale);
+      }
+    }
+  }, [pathName]);
+
 
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/';
@@ -22,22 +41,12 @@ export default function LanguageSwitcher() {
     return segments.join('/');
   };
 
-  const getCurrentLocale = () => {
-    if (!pathName) return i18n.defaultLocale;
-    const segments = pathName.split('/');
-    if (i18n.locales.includes(segments[1] as any)) {
-      return segments[1];
-    }
-    return i18n.defaultLocale;
-  }
-  const currentLocale = getCurrentLocale();
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="sm" className="font-mono uppercase">
            <Globe className="mr-2 h-4 w-4" />
-           {currentLocale}
+           {isClient ? currentLocale : ''}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
