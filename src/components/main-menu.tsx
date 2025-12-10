@@ -44,7 +44,7 @@ export default function MainMenu() {
   if (!dictionary) return null;
 
   const menuItems = dictionary.mainMenu.items;
-  const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-6' : 'xl:grid-cols-5';
+  const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-3' : 'xl:grid-cols-5';
   
   const getHref = (itemHref: string) => {
     if (lang === i18n.defaultLocale) {
