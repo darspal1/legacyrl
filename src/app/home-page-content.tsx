@@ -14,12 +14,12 @@ type HomePageContentProps = {
 
 export default function HomePageContent({ dictionary }: HomePageContentProps) {
   const [view, setView] = useState('splash');
-  const [isClient, setIsClient] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsClient(true);
+    // This effect runs only on the client side after hydration.
+    // It checks the URL hash and updates the view if necessary.
     if (window.location.hash === '#menu') {
       setView('menu');
     }
@@ -29,21 +29,19 @@ export default function HomePageContent({ dictionary }: HomePageContentProps) {
     setView('menu');
     router.push(`${pathname}#menu`, { scroll: false });
   };
-
-  if (!isClient) {
-    return null;
+  
+  // Always render the splash screen initially on both server and client.
+  // Then, if the hash is present, the useEffect will trigger a client-side
+  // re-render to show the menu, avoiding a hydration mismatch.
+  if (view === 'menu') {
+    return (
+      <div className="animate-in fade-in duration-1000">
+        <MainMenu />
+      </div>
+    );
   }
 
   return (
-    <>
-      {view === 'splash' && (
-        <SplashScreen onEnter={handleEnter} dictionary={dictionary} />
-      )}
-      {view === 'menu' && (
-        <div className="animate-in fade-in duration-1000">
-          <MainMenu />
-        </div>
-      )}
-    </>
+    <SplashScreen onEnter={handleEnter} dictionary={dictionary} />
   );
 }
