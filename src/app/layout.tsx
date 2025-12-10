@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { getDictionary } from '@/dictionaries';
 import { Locale, i18n } from '../../i18n-config';
 import LanguageSwitcher from '@/components/language-switcher';
+import { ShieldCheck, Lock, Handshake, Gem, Library, Scale, KeyRound, DatabaseZap } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
+
 
 export const metadata: Metadata = {
   title: 'Rozua Point & Legacy',
@@ -26,6 +29,16 @@ export default async function RootLayout({
     { href: `/${lang}/gobernanza`, label: dictionary.footer.governance },
     { href: `/${lang}/faq`, label: dictionary.footer.faq },
     { href: `/${lang}/contacto`, label: dictionary.footer.contact },
+  ];
+  const seals = [
+    { icon: ShieldCheck, text: "Chamber of Commerce Seal" },
+    { icon: Lock, text: "SSL Encrypted Website" },
+    { icon: Handshake, text: "Confidentiality & Discretion Commitment" },
+    { icon: Gem, text: "Trusted Heritage Business" },
+    { icon: Library, text: "Private Investment Standards" },
+    { icon: Scale, text: "Ethical Governance Principles" },
+    { icon: KeyRound, text: "Members-Only Access · Private Clients" },
+    { icon: DatabaseZap, text: "Data Protection Commitment" },
   ];
 
   return (
@@ -55,6 +68,15 @@ export default async function RootLayout({
                   </Link>
                 ))}
               </nav>
+            </div>
+            <Separator className="my-8 bg-accent/10" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6">
+              {seals.map((seal) => (
+                <div key={seal.text} className="flex items-center gap-3">
+                  <seal.icon className="h-5 w-5 text-primary flex-shrink-0" />
+                  <p className="text-xs text-muted-foreground">{seal.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </footer>
