@@ -31,27 +31,30 @@ import { usePathname } from 'next/navigation';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
+const formSchemaBuilder = (dictionary: Dictionary | undefined) => z.object({
+  fullName: z.string().min(2, { message: dictionary?.contactPage.form.validation.fullName }),
+  email: z.string().email({ message: dictionary?.contactPage.form.validation.email }),
+  country: z.string().min(2, { message: dictionary?.contactPage.form.validation.country }),
+  interest: z.enum(dictionary?.contactPage.form.interests as [string, ...string[]] || ['Automóviles', 'Inmuebles', 'Vinos', 'Otro']),
+  callMethod: z.enum(dictionary?.contactPage.form.callMethods as [string, ...string[]] || ['Skype', 'Zoom', 'Google Meet', 'Teams']),
+  callId: z.string().min(2, { message: dictionary?.contactPage.form.validation.callId }),
+  message: z.string().min(10, { message: dictionary?.contactPage.form.validation.message }),
+});
+
+
 export default function ContactoPage() {
   const [isMounted, setIsMounted] = useState(false);
   const { toast } = useToast();
   const pathname = usePathname();
   const [dictionary, setDictionary] = useState<Dictionary>();
-
+  
   useEffect(() => {
     setIsMounted(true);
     const lang = (pathname.split('/')[1] || 'en') as Locale;
     getDictionary(lang).then(setDictionary);
   }, [pathname]);
 
-  const formSchema = z.object({
-    fullName: z.string().min(2, { message: dictionary?.contactPage.form.validation.fullName }),
-    email: z.string().email({ message: dictionary?.contactPage.form.validation.email }),
-    country: z.string().min(2, { message: dictionary?.contactPage.form.validation.country }),
-    interest: z.enum(dictionary?.contactPage.form.interests as [string, ...string[]] || ['Automóviles', 'Inmuebles', 'Vinos', 'Otro']),
-    callMethod: z.enum(dictionary?.contactPage.form.callMethods as [string, ...string[]] || ['Skype', 'Zoom', 'Google Meet', 'Teams']),
-    callId: z.string().min(2, { message: dictionary?.contactPage.form.validation.callId }),
-    message: z.string().min(10, { message: dictionary?.contactPage.form.validation.message }),
-  });
+  const formSchema = formSchemaBuilder(dictionary);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -80,7 +83,7 @@ export default function ContactoPage() {
     }
   }, [dictionary, form]);
 
-  if (!dictionary) return null; // o un spinner de carga
+  if (!isMounted || !dictionary) return null;
 
   const t = dictionary.contactPage;
   const pageHeaderT = dictionary.pageHeader;
@@ -110,10 +113,6 @@ export default function ContactoPage() {
   }
 
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-contacto');
-  
-  if (!isMounted) {
-    return null; // o un spinner de carga
-  }
 
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">

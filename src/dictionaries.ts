@@ -1,4 +1,3 @@
-import 'server-only';
 import type { Locale } from '../i18n-config';
 
 // We enumerate all dictionaries here for better linting and typescript support
@@ -9,4 +8,7 @@ const dictionaries = {
   fr: () => import('./dictionaries/fr.json').then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Locale) => dictionaries[locale]();
+export const getDictionary = async (locale: Locale) => {
+  const dictionaryLoader = dictionaries[locale] || dictionaries.en;
+  return dictionaryLoader();
+};

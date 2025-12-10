@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -16,14 +17,19 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
   const splashImage = PlaceHolderImages.find(p => p.id === 'splash-office');
   const pathname = usePathname();
   const [dictionary, setDictionary] = useState<Dictionary>();
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     const lang = (pathname.split('/')[1] || 'en') as Locale;
     getDictionary(lang).then(setDictionary);
   }, [pathname]);
 
-  if (!dictionary) return null;
-
+  if (!isMounted || !dictionary) {
+    // Render a skeleton or null while loading to avoid flash of un-styled content
+    return null;
+  }
+  
   return (
     <div className="dark">
       <div className="relative flex h-screen w-full flex-col items-center justify-center bg-background text-foreground overflow-hidden">
