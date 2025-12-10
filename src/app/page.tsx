@@ -34,9 +34,24 @@ export default function Home() {
   }, [view]);
   
   useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash !== '#menu' && view === 'menu') {
+        setView('splash');
+      } else if (window.location.hash === '#menu' && view !== 'menu') {
+        setView('menu');
+      }
+    };
+    
+    window.addEventListener('hashchange', handleHashChange);
+
     if (window.location.hash !== '#menu' && view === 'menu') {
        setView('splash');
     }
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+
   }, [pathname, searchParams, view]);
 
   return (
