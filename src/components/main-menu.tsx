@@ -34,12 +34,20 @@ const menuItems = [
     subtitle: 'Liderazgo que construye legado.',
     image_id: 'card-direccion',
   },
+  {
+    href: '/contacto',
+    title: 'Contacto',
+    subtitle: 'Atención privada y confidencial.',
+    image_id: 'card-contacto',
+  },
 ];
 
 export default function MainMenu() {
+  const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-6' : 'xl:grid-cols-5';
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
-      <div className="grid w-full max-w-screen-xl grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-5">
+      <div className={`grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 ${gridColsClass}`}>
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === item.image_id);
           return (
@@ -47,7 +55,7 @@ export default function MainMenu() {
               href={item.href} 
               key={item.title} 
               className="group block animate-in fade-in zoom-in-95" 
-              style={{ animationDelay: `${index * 200}ms`, animationDuration: '500ms' }}
+              style={{ animationDelay: `${index * 150}ms`, animationDuration: '500ms' }}
             >
               <Card className="relative h-[60vh] max-h-[700px] min-h-[500px] overflow-hidden border border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-500 ease-in-out hover:border-accent hover:shadow-2xl hover:shadow-accent/20">
                 {image && (
