@@ -12,21 +12,12 @@ type SplashScreenProps = {
 
 export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps) {
   const splashImage = PlaceHolderImages.find(p => p.id === 'splash-office');
-  const [isMounted, setIsMounted] = useState(false);
   const [isFading, setIsFading] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   const handleEnterClick = () => {
     setIsFading(true);
     setTimeout(onEnter, 700); // Match this with fade-out duration
   };
-
-  if (!isMounted) {
-    return null;
-  }
   
   return (
     <div className={`dark transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>

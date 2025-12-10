@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import SplashScreen from '@/components/splash-screen';
 import MainMenu from '@/components/main-menu';
-import { usePathname, useSearchParams, useRouter } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { getDictionary } from '@/dictionaries';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
@@ -13,29 +13,33 @@ type HomePageContentProps = {
 };
 
 export default function HomePageContent({ dictionary }: HomePageContentProps) {
+  const [view, setView] = useState('splash');
   const [isClient, setIsClient] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     setIsClient(true);
+    if (window.location.hash === '#menu') {
+      setView('menu');
+    }
   }, []);
 
   const handleEnter = () => {
-    const current = new URL(window.location.href);
-    const newUrl = `${current.pathname}${current.search}#menu`;
-    router.push(newUrl, { scroll: false });
+    setView('menu');
+    router.push(`${pathname}#menu`, { scroll: false });
   };
 
-  const showMenu = isClient && window.location.hash === '#menu';
+  if (!isClient) {
+    return null;
+  }
 
   return (
     <>
-      {!showMenu && (
+      {view === 'splash' && (
         <SplashScreen onEnter={handleEnter} dictionary={dictionary} />
       )}
-      {showMenu && (
+      {view === 'menu' && (
         <div className="animate-in fade-in duration-1000">
           <MainMenu />
         </div>

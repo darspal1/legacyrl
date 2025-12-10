@@ -44,7 +44,6 @@ export default function MainMenu() {
   if (!dictionary) return null;
 
   const menuItems = dictionary.mainMenu.items;
-  const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-3' : 'xl:grid-cols-5';
   
   const getHref = (itemHref: string) => {
     if (lang === i18n.defaultLocale) {
@@ -55,7 +54,7 @@ export default function MainMenu() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
-      <div className={`grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 ${gridColsClass}`}>
+      <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === imageMap[item.title]);
           const href = getHref(item.href);
@@ -73,7 +72,7 @@ export default function MainMenu() {
                     alt={image.description || item.title}
                     fill
                     className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     data-ai-hint={image.imageHint}
                   />
                 )}
