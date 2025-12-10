@@ -29,14 +29,14 @@ export default async function RootLayout({
   ];
 
   return (
-    <html lang={lang} className="dark">
+    <html lang={lang} className="dark" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased film-grain">
+      <body className="font-body antialiased film-grain" suppressHydrationWarning>
         <header className="absolute top-0 right-0 p-4 z-20">
           <LanguageSwitcher />
         </header>
