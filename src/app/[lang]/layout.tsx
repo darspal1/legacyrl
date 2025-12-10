@@ -1,4 +1,3 @@
-import RootLayout from '../layout';
 import { i18n, Locale } from '../../../i18n-config';
 
 export async function generateStaticParams() {
@@ -6,11 +5,10 @@ export async function generateStaticParams() {
 }
 
 export default function LangLayout({
-  children,
-  params,
+  children
 }: {
   children: React.ReactNode;
   params: { lang: Locale };
 }) {
-  return <RootLayout params={params}>{children}</RootLayout>;
+  return <>{children}</>;
 }
