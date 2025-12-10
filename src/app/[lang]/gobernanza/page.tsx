@@ -5,6 +5,6 @@ type GobernanzaLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function GobernanzaLangPage({ params: { lang } }: GobernanzaLangPageProps) {
-    return <GobernanzaPage params={{ lang }} />;
+export default function GobernanzaLangPage({ params }: GobernanzaLangPageProps) {
+    return <GobernanzaPage params={params} />;
 }

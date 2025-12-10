@@ -5,6 +5,6 @@ type AutomovilesLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function AutomovilesLangPage({ params: { lang } }: AutomovilesLangPageProps) {
-    return <AutomovilesPage params={{ lang }} />;
+export default function AutomovilesLangPage({ params }: AutomovilesLangPageProps) {
+    return <AutomovilesPage params={params} />;
 }

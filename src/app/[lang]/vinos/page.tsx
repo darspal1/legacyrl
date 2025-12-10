@@ -5,6 +5,6 @@ type VinosLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function VinosLangPage({ params: { lang } }: VinosLangPageProps) {
-    return <VinosPage params={{ lang }} />;
+export default function VinosLangPage({ params }: VinosLangPageProps) {
+    return <VinosPage params={params} />;
 }

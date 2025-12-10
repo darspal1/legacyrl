@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { usePathname } from 'next/navigation';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../i18n-config';
+import { Locale, i18n } from '../../i18n-config';
 import { useEffect, useState } from 'react';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
@@ -32,24 +32,33 @@ const imageMap: { [key: string]: string } = {
 export default function MainMenu() {
   const pathname = usePathname();
   const [dictionary, setDictionary] = useState<Dictionary>();
+  const [lang, setLang] = useState<Locale>(i18n.defaultLocale);
 
   useEffect(() => {
-    const lang = (pathname.split('/')[1] || 'en') as Locale;
-    getDictionary(lang).then(setDictionary);
+    const langSegment = (pathname.split('/')[1] || i18n.defaultLocale) as Locale;
+    const currentLang = i18n.locales.includes(langSegment) ? langSegment : i18n.defaultLocale;
+    setLang(currentLang);
+    getDictionary(currentLang).then(setDictionary);
   }, [pathname]);
 
   if (!dictionary) return null;
 
   const menuItems = dictionary.mainMenu.items;
   const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-6' : 'xl:grid-cols-5';
-  const lang = pathname.split('/')[1] || 'en';
+  
+  const getHref = (itemHref: string) => {
+    if (lang === i18n.defaultLocale) {
+      return itemHref;
+    }
+    return `/${lang}${itemHref}`;
+  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
       <div className={`grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 ${gridColsClass}`}>
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === imageMap[item.title]);
-          const href = `/${lang}${item.href}`;
+          const href = getHref(item.href);
           return (
             <Link 
               href={href} 

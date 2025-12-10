@@ -4,10 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type FundadoresPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
 const founderImageMap: { [key: string]: string } = {
@@ -15,7 +15,8 @@ const founderImageMap: { [key: string]: string } = {
   'Clément Lafayette': 'founder-clement'
 };
 
-export default async function FundadoresPage({ params: { lang } }: FundadoresPageProps) {
+export default async function FundadoresPage({ params }: FundadoresPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.foundersPage;
   const pageHeaderT = dictionary.pageHeader;

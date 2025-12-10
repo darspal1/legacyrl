@@ -26,7 +26,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useState } from 'react';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 import { usePathname } from 'next/navigation';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
@@ -50,7 +50,8 @@ export default function ContactoPage() {
   
   useEffect(() => {
     setIsMounted(true);
-    const lang = (pathname.split('/')[1] || 'en') as Locale;
+    const langSegment = pathname.split('/')[1]
+    const lang = i18n.locales.includes(langSegment as any) ? langSegment as Locale : i18n.defaultLocale
     getDictionary(lang).then(setDictionary);
   }, [pathname]);
 

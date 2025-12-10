@@ -4,10 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type AutomovilesPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
 const serviceImageMap: { [key: string]: string } = {
@@ -26,7 +26,8 @@ const serviceImageMap: { [key: string]: string } = {
 };
 
 
-export default async function AutomovilesPage({ params: { lang } }: AutomovilesPageProps) {
+export default async function AutomovilesPage({ params }: AutomovilesPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.automobilesPage;
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-automoviles');

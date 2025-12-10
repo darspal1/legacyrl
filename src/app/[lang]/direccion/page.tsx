@@ -5,6 +5,6 @@ type DireccionLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function DireccionLangPage({ params: { lang } }: DireccionLangPageProps) {
-    return <DireccionPage params={{ lang }} />;
+export default function DireccionLangPage({ params }: DireccionLangPageProps) {
+    return <DireccionPage params={params} />;
 }

@@ -1,12 +1,13 @@
 import PageHeader from '@/components/page-header';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type PoliticaDePrivacidadPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
-export default async function PoliticaDePrivacidadPage({ params: { lang } }: PoliticaDePrivacidadPageProps) {
+export default async function PoliticaDePrivacidadPage({ params }: PoliticaDePrivacidadPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.privacyPage;
   const pageHeaderT = dictionary.pageHeader;

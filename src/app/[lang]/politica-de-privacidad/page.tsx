@@ -5,6 +5,6 @@ type PoliticaDePrivacidadLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function PoliticaDePrivacidadLangPage({ params: { lang } }: PoliticaDePrivacidadLangPageProps) {
-    return <PoliticaDePrivacidadPage params={{ lang }} />;
+export default function PoliticaDePrivacidadLangPage({ params }: PoliticaDePrivacidadLangPageProps) {
+    return <PoliticaDePrivacidadPage params={params} />;
 }

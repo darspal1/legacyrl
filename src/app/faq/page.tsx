@@ -6,13 +6,14 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type FAQPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
-export default async function FAQPage({ params: { lang } }: FAQPageProps) {
+export default async function FAQPage({ params }: FAQPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.faqPage;
   const pageHeaderT = dictionary.pageHeader;

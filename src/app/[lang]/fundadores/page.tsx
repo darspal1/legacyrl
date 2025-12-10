@@ -5,6 +5,6 @@ type FundadoresLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function FundadoresLangPage({ params: { lang } }: FundadoresLangPageProps) {
-    return <FundadoresPage params={{ lang }} />;
+export default function FundadoresLangPage({ params }: FundadoresLangPageProps) {
+    return <FundadoresPage params={params} />;
 }

@@ -4,10 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type DireccionPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
 const regionImageMap: { [key: string]: string } = {
@@ -29,7 +29,8 @@ const directorImageMap: { [key: string]: string | null } = {
   'Knight Frank S.A.': null
 };
 
-export default async function DireccionPage({ params: { lang } }: DireccionPageProps) {
+export default async function DireccionPage({ params }: DireccionPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.directionPage;
   const pageHeaderT = dictionary.pageHeader;

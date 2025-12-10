@@ -5,6 +5,6 @@ type InmueblesLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function InmueblesLangPage({ params: { lang } }: InmueblesLangPageProps) {
-    return <InmueblesPage params={{ lang }} />;
+export default function InmueblesLangPage({ params }: InmueblesLangPageProps) {
+    return <InmueblesPage params={params} />;
 }

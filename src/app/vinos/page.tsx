@@ -4,10 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type VinosPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
 const serviceImageMap: { [key: string]: string } = {
@@ -25,7 +25,8 @@ const serviceImageMap: { [key: string]: string } = {
   'Gestion et Garde de Collections': 'vinos-custodia'
 };
 
-export default async function VinosPage({ params: { lang } }: VinosPageProps) {
+export default async function VinosPage({ params }: VinosPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.winesPage;
   const pageHeaderT = dictionary.pageHeader;

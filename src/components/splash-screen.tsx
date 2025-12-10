@@ -3,29 +3,22 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { getDictionary } from '@/dictionaries';
-import { usePathname } from 'next/navigation';
-import { Locale } from '../../i18n-config';
 import { useEffect, useState } from 'react';
 
 type SplashScreenProps = {
   onEnter: () => void;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>;
 };
 
-type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
-
-export default function SplashScreen({ onEnter }: SplashScreenProps) {
+export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps) {
   const splashImage = PlaceHolderImages.find(p => p.id === 'splash-office');
-  const pathname = usePathname();
-  const [dictionary, setDictionary] = useState<Dictionary>();
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
-    const lang = (pathname.split('/')[1] || 'en') as Locale;
-    getDictionary(lang).then(setDictionary);
-  }, [pathname]);
+  }, []);
 
-  if (!isMounted || !dictionary) {
+  if (!isMounted) {
     // Render a skeleton or null while loading to avoid flash of un-styled content
     return null;
   }

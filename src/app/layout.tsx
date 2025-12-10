@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import Link from 'next/link';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../i18n-config';
+import { Locale, i18n } from '../../i18n-config';
 import LanguageSwitcher from '@/components/language-switcher';
 
 export const metadata: Metadata = {
@@ -13,11 +13,12 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { lang },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: Locale };
+  params: { lang?: Locale };
 }>) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const footerLinks = [
     { href: `/${lang}/politica-de-privacidad`, label: dictionary.footer.privacy },

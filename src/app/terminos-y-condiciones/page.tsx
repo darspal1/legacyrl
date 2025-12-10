@@ -1,12 +1,13 @@
 import PageHeader from '@/components/page-header';
 import { getDictionary } from '@/dictionaries';
-import { Locale } from '../../../i18n-config';
+import { Locale, i18n } from '../../../i18n-config';
 
 type TerminosYCondicionesPageProps = {
-  params: { lang: Locale }
+  params: { lang?: Locale }
 }
 
-export default async function TerminosYCondicionesPage({ params: { lang } }: TerminosYCondicionesPageProps) {
+export default async function TerminosYCondicionesPage({ params }: TerminosYCondicionesPageProps) {
+  const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
   const t = dictionary.termsPage;
   const pageHeaderT = dictionary.pageHeader;

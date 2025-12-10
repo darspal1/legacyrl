@@ -1,5 +1,10 @@
 import Home from '../page';
+import { Locale } from '../../../i18n-config';
 
-export default function LangHome() {
-    return <Home />;
+type LangHomeProps = {
+  params: { lang: Locale };
+}
+
+export default function LangHome({ params }: LangHomeProps) {
+    return <Home params={params} />;
 }

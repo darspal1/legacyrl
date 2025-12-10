@@ -25,8 +25,9 @@ export default function LanguageSwitcher() {
   useEffect(() => {
     if (pathName) {
       const segments = pathName.split('/');
-      if (i18n.locales.includes(segments[1] as any)) {
-        setCurrentLocale(segments[1]);
+      const langSegment = segments[1];
+      if (i18n.locales.includes(langSegment as any)) {
+        setCurrentLocale(langSegment);
       } else {
         setCurrentLocale(i18n.defaultLocale);
       }
@@ -35,9 +36,25 @@ export default function LanguageSwitcher() {
 
 
   const redirectedPathName = (locale: string) => {
-    if (!pathName) return '/';
+    if (!pathName) return `/${locale}`;
+
     const segments = pathName.split('/');
-    segments[1] = locale;
+    const isLangRoot = i18n.locales.includes(segments[1] as any);
+    
+    if (locale === i18n.defaultLocale) {
+        if(isLangRoot) {
+            segments.splice(1,1);
+            return segments.join('/') || '/';
+        }
+        return pathName;
+    }
+
+    if (isLangRoot) {
+        segments[1] = locale;
+        return segments.join('/');
+    }
+
+    segments.splice(1, 0, locale);
     return segments.join('/');
   };
 

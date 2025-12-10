@@ -5,6 +5,6 @@ type FAQLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function FAQLangPage({ params: { lang } }: FAQLangPageProps) {
-    return <FAQPage params={{ lang }} />;
+export default function FAQLangPage({ params }: FAQLangPageProps) {
+    return <FAQPage params={params} />;
 }

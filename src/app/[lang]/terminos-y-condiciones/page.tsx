@@ -5,6 +5,6 @@ type TerminosYCondicionesLangPageProps = {
   params: { lang: Locale }
 }
 
-export default function TerminosYCondicionesLangPage({ params: { lang } }: TerminosYCondicionesLangPageProps) {
-    return <TerminosYCondicionesPage params={{ lang }} />;
+export default function TerminosYCondicionesLangPage({ params }: TerminosYCondicionesLangPageProps) {
+    return <TerminosYCondicionesPage params={params} />;
 }
