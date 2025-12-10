@@ -147,7 +147,7 @@
     {
       "id": "founder-clement",
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
-      "imageUrl": "https://i.postimg.cc/g2VXwKm8/Clement_Lafayette.jpg",
+      "imageUrl": "https://i.postimg.cc/KzjTLyHX/Clement-Lafayette.png",
       "imageHint": "stately library"
     },
     {
@@ -184,6 +184,12 @@
       "id": "director-facundo-stirling",
       "description": "Portrait of Facundo Stirling Ruaulth",
       "imageUrl": "https://i.postimg.cc/NFg033Wr/Facundo_Stirling.png",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "director-victoria-spencer",
+      "description": "Portrait of Victoria Spencer",
+      "imageUrl": "https://i.postimg.cc/prFt1qd8/Victoria-Spencer.png",
       "imageHint": "executive portrait"
     }
   ]

@@ -19,6 +19,7 @@ const regions = [
   {
     title: 'Norteamérica',
     director: 'Victoria Spencer & Asociados',
+    directorImageId: 'director-victoria-spencer',
     subDirector: null,
     description: 'Con décadas de experiencia en mercados norteamericanos, Victoria Spencer & Asociados ofrecen una gestión impecable, centrada en activos exclusivos, propiedades históricas certificadas y colecciones privadas de alto valor.',
     imageId: 'direccion-norteamerica',
@@ -97,7 +98,7 @@ export default function DireccionPage() {
                     <CardTitle className="font-headline text-3xl text-primary border-b-2 border-primary/20 pb-2">{region.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 pt-0 text-left">
-                     {region.title !== 'Sudamérica' && regionImage && (
+                     {region.title !== 'Sudamérica' && !directorImage && regionImage && (
                        <div className="relative h-48 w-full mb-6 overflow-hidden rounded-sm">
                          <Image
                             src={regionImage.imageUrl}
