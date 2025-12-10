@@ -1,0 +1,322 @@
+{
+  "splash": {
+    "title": "Rozua Point & Legacy",
+    "subtitle": "Where heritage finds its history.",
+    "description1": "In an ephemeral world, Rozua Point & Legacy S.A. stands as a bastion of permanence. We are not merely an investment firm; we are custodians of fine living and architects of family legacies.",
+    "description2": "Born from the union of a select society of investors, our firm was conceived under an unbreakable premise: true luxury does not shout, it whispers.",
+    "enterButton": "[ ENTER ]"
+  },
+  "mainMenu": {
+    "items": [
+      {
+        "href": "/vinos",
+        "title": "Wines",
+        "subtitle": "Time, captured in a bottle."
+      },
+      {
+        "href": "/automoviles",
+        "title": "Automobiles",
+        "subtitle": "Engineering turned into art."
+      },
+      {
+        "href": "/inmuebles",
+        "title": "Real Estate",
+        "subtitle": "Walls that have seen history pass."
+      },
+      {
+        "href": "/fundadores",
+        "title": "Founders",
+        "subtitle": "Names that inspire trust."
+      },
+      {
+        "href": "/direccion",
+        "title": "Direction",
+        "subtitle": "Leadership that builds legacy."
+      },
+      {
+        "href": "/contacto",
+        "title": "Contact",
+        "subtitle": "Private and confidential attention."
+      }
+    ]
+  },
+  "pageHeader": {
+    "backButton": "Back to Menu"
+  },
+  "winesPage": {
+    "title": "Wines",
+    "hero": "Time, captured in a bottle.",
+    "intro1": "At Rozua Point & Legacy, we see wine as a liquid testament. Each bottle is a chapter written by the earth, the climate, and time.",
+    "intro2": "Our enological division accesses legendary vineyards, cellars closed to the public, and limited productions reserved for collectors and patrimonial funds.",
+    "servicesTitle": "Exclusive Services",
+    "services": [
+      {
+        "title": "Curation of Iconic Wines",
+        "description": "Selection of Grands Crus, limited editions, and historic vintages previously verified by experts."
+      },
+      {
+        "title": "Enological Investment Funds",
+        "description": "Financial structures that allow investment in wines that increase in value over time. Diversification, authenticity certification, and professional storage."
+      },
+      {
+        "title": "Access to Exclusive Wineries",
+        "description": "Private experiences in emblematic vineyards and meetings with world-renowned winemakers."
+      },
+      {
+        "title": "Collection Management and Custody",
+        "description": "Protection of the collection's value through specialized storage and maturation analysis."
+      }
+    ]
+  },
+  "automobilesPage": {
+    "title": "Automobiles",
+    "hero": "Engineering turned into art.",
+    "intro1": "The automobiles we select transcend their function. They are moving sculptures, symbols of mechanical heritages that will not be repeated.",
+    "intro2": "Each piece has been examined by specialized engineers and automotive history curators to ensure its impeccable condition and lineage.",
+    "servicesTitle": "Exclusive Services",
+    "services": [
+      {
+        "title": "Acquisition of Classic Vehicles",
+        "description": "Access to iconic models: Ferrari Dino, Mercedes 300SL, Porsche 356, Aston Martin DB4, and limited editions."
+      },
+      {
+        "title": "Authenticity Certification",
+        "description": "Audited history, verified origin, and complete traceability of the vehicle to guarantee its provenance and value."
+      },
+      {
+        "title": "High-Heritage Restorations",
+        "description": "Restorations faithful to the original, carried out by internationally recognized specialists and artisans."
+      },
+      {
+        "title": "Automotive Portfolio Management",
+        "description": "Models strategically selected for their future appreciation potential, exclusivity, and historical significance."
+      }
+    ]
+  },
+  "realEstatePage": {
+    "title": "Real Estate",
+    "hero": "Walls that have seen history pass.",
+    "intro1": "The true value of a property is not found in its square meters, but in its soul.",
+    "intro2": "We select properties that have stood for generations: restored palaces, penthouses with history, and centenary estates where every wall tells a legacy.",
+    "servicesTitle": "Exclusive Services",
+    "services": [
+      {
+        "title": "Acquisition of Properties with Character",
+        "description": "Selection of unique palaces, estates, and residences, not available on the traditional market."
+      },
+      {
+        "title": "Architectural and Heritage Audit",
+        "description": "Structural verification, historical authenticity, and restoration potential to ensure long-term value."
+      },
+      {
+        "title": "Restoration with Artisans",
+        "description": "Restoration and modernization projects executed by certified artisans in architectural heritage."
+      },
+      {
+        "title": "Long-Term Management and Revaluation",
+        "description": "Value preservation strategies based on exclusivity, location, and architectural rarity."
+      }
+    ]
+  },
+  "foundersPage": {
+    "title": "Founders",
+    "hero": "Where engineering and architecture build a legacy.",
+    "intro1": "Rozua Point & Legacy is born from the meeting of two complementary visions: engineering applied to heritage and architecture dedicated to excellence.",
+    "intro2": "Our founders represent two essential currents: technical precision and structural aesthetics. Together, they have shaped a firm that not only invests, but preserves legacy.",
+    "founders": [
+      {
+        "name": "Daniel Beniamino Rozúa",
+        "title": "Automotive & Electronics Engineer",
+        "country": "Italy",
+        "description": "With a solid background in automotive engineering and precision electronics, Daniel brings the technical vision that defines our mechanical acquisitions to the firm. His approach combines performance, reliability, and tradition, essential attributes in prestigious automobiles and collector's assets."
+      },
+      {
+        "name": "Clément Lafayette",
+        "title": "BIM Architecture Specialist",
+        "country": "France",
+        "description": "A specialist in BIM architecture and heritage management, Clément provides a key structural and aesthetic perspective for the selection of properties with character. His European sensibility for design and historical preservation strengthens our commitment to properties that transcend generations."
+      }
+    ]
+  },
+  "directionPage": {
+    "title": "Direction",
+    "hero": "Excellence requires leadership; legacy, vision.",
+    "intro1": "Rozua Point & Legacy is built on an international management structure, composed of professionals who represent the integrity, discretion, and long-term vision that defines our firm.",
+    "intro2": "Each region operates under the highest standards of financial governance and curation of patrimonial assets.",
+    "regions": [
+      {
+        "title": "South America",
+        "director": "Daniel Rozúa Jr.",
+        "directorLabel": "Regional Director:",
+        "subDirector": "Facundo Stirling Ruaulth",
+        "subDirectorLabel": "Sub-Director:",
+        "description": "Responsible for patrimonial expansion in high-value emerging markets, they lead the automotive, real estate, and viticultural operations in South America. Their approach combines technical precision, strategic vision, and deep knowledge of the regional heritage."
+      },
+      {
+        "title": "North America",
+        "director": "Victoria Spencer & Associates",
+        "directorLabel": "Regional Director:",
+        "description": "With decades of experience in North American markets, Victoria Spencer & Associates offer impeccable management, focused on exclusive assets, certified historic properties, and high-value private collections."
+      },
+      {
+        "title": "Europe",
+        "director": "Knight Frank S.A.",
+        "directorLabel": "Regional Director:",
+        "description": "Strategic partners on the European continent, Knight Frank S.A. leads in patrimonial consulting for historic real estate and exclusive assets. Their unblemished reputation and global presence position them as ideal custodians of the world's most demanding markets."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Private Contact",
+    "hero": "Personalized attention for those who value discretion.",
+    "intro": "At Rozua Point & Legacy, we offer a private and personalized attention service. Complete the following form and one of our directors will contact you to coordinate a video conference via Skype or another secure platform.",
+    "form": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your first and last name",
+      "email": "Corporate or personal email",
+      "emailPlaceholder": "youraddress@email.com",
+      "country": "Country of residence",
+      "countryPlaceholder": "Country you are contacting us from",
+      "interest": "Area of interest",
+      "interestPlaceholder": "Select an area",
+      "interests": ["Automobiles", "Real Estate", "Wines", "Other"],
+      "callMethod": "Preferred call method",
+      "callMethodPlaceholder": "Select a platform",
+      "callMethods": ["Skype", "Zoom", "Google Meet", "Teams"],
+      "callId": "Video call user or ID",
+      "callIdPlaceholder": "Your ID for the chosen platform",
+      "message": "Message",
+      "messagePlaceholder": "Write your query or reason for contact here.",
+      "submitButton": "Send Request",
+      "toastTitle": "Request prepared.",
+      "toastDescription": "Your email client will open to send the request.",
+      "validation": {
+        "fullName": "Full name is required.",
+        "email": "Please enter a valid email.",
+        "country": "Country is required.",
+        "callId": "Your ID/username is required.",
+        "message": "Message must be at least 10 characters."
+      }
+    },
+    "confidentialityNotice1": "All information submitted will be treated with strict confidentiality.",
+    "confidentialityNotice2": "Meetings are coordinated for professional purposes only."
+  },
+  "governancePage": {
+    "title": "Corporate Governance",
+    "intro": "The structure of Rozua Point & Legacy is based on governance principles that ensure the alignment of interests, prudent risk management, and an unwavering commitment to protecting our clients' assets. Our vision is not just to invest, but to guard and enhance legacies.",
+    "principles": [
+      {
+        "title": "Unbreakable Ethical Code",
+        "description": "Our operations are governed by a code of conduct that prioritizes integrity, honesty, and transparency. Every decision, from acquiring an asset to communicating with a client, is subject to the highest ethical standards."
+      },
+      {
+        "title": "Long-Term Legacy Vision",
+        "description": "We do not seek ephemeral returns. Our investment and management strategy is based on the preservation and growth of capital across generations, ensuring that the heritage endures over time."
+      },
+      {
+        "title": "Commitment to Excellence",
+        "description": "Excellence is the norm, not the exception. From the curation of our assets to customer service, we are committed to delivering superlative quality in every facet of our firm."
+      },
+      {
+        "title": "Confidentiality as a Pillar",
+        "description": "Our clients' privacy is sacred. We implement rigorous security measures and discretion protocols to ensure that all interactions and data are handled with the utmost confidentiality."
+      }
+    ],
+    "supervisionTitle": "Supervision Structure",
+    "supervisionText": "Although the composition of our board and investment committee is private, its structure is designed to ensure independent supervision, collegial decision-making, and constant auditing of processes. The interests of our clients are and will always be our top priority."
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "intro": "Below, we answer some of the most common questions about our firm, our principles, and our work method.",
+    "faqs": [
+      {
+        "question": "What investment areas does Rozua Point & Legacy specialize in?",
+        "answer": "Our firm focuses on three pillars of patrimonial investment: collectible wines and unique vintages; iconic and limited-production automobiles; and real estate with historical and architectural value. Each area is managed by dedicated curators and specialists."
+      },
+      {
+        "question": "How do you guarantee client confidentiality?",
+        "answer": "Discretion is the foundation of our firm. All client communication and information are treated under the strictest confidentiality protocols. We do not share data with third parties and use secure platforms for all interactions."
+      },
+      {
+        "question": "What kind of treatment can I expect as a client?",
+        "answer": "We offer a direct and personalized service. Each client is assigned to a firm director, who acts as a single point of contact to ensure fluid communication, a deep understanding of your objectives, and flawless execution."
+      },
+      {
+        "question": "How can I start a conversation with the firm?",
+        "answer": "To initiate a consultation, we invite you to use our form in the 'Private Contact' section. One of our directors will review your request and get in touch to coordinate a private video conference on the platform of your choice."
+      },
+      {
+        "question": "Do you invest in traditional financial assets?",
+        "answer": "No. Our focus is exclusively on tangible and passion assets with long-term revaluation potential. We believe in the value of legacy, history, and craftsmanship as pillars of a solid patrimonial portfolio."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "intro": "At Rozua Point & Legacy, the confidentiality and protection of your data are fundamental pillars of our relationship. This policy describes how your personal information is collected, used, and protected.",
+    "sections": [
+      {
+        "title": "Information We Collect",
+        "content": "We only collect the information necessary to establish contact and understand your investment interests, as requested in our private contact form. This may include your name, email, country, and interests. We do not automatically collect sensitive data."
+      },
+      {
+        "title": "Use of Information",
+        "content": "Your information is used exclusively for professional communication purposes. This includes responding to your inquiries, coordinating meetings, and providing relevant information about our areas of expertise. We will never sell, rent, or share your personal information with unauthorized third parties."
+      },
+      {
+        "title": "Security and Confidentiality",
+        "content": "We implement reasonable technical and organizational security measures to protect your information against unauthorized access, alteration, or disclosure. Communication is handled through secure channels and access to your data is restricted to authorized management personnel."
+      },
+      {
+        "title": "Cookies and Tracking Technologies",
+        "content": "Our website uses essential cookies to enhance your browsing experience, such as maintaining your theme preferences (light/dark). We do not use tracking cookies for advertising purposes nor do we share browsing data with third parties for such purposes."
+      },
+      {
+        "title": "Your Rights",
+        "content": "You have the right to request access, rectification, or deletion of your personal data held by us. To exercise these rights, please contact us through the established communication channels."
+      },
+      {
+        "title": "Changes to the Policy",
+        "content": "We reserve the right to modify this privacy policy at any time. Any changes will be posted on this page and will take effect immediately."
+      }
+    ]
+  },
+  "termsPage": {
+    "title": "Terms and Conditions",
+    "intro": "Access to and use of this website, owned by Rozua Point & Legacy S.A., implies acceptance of the following terms and conditions. Please read them carefully.",
+    "sections": [
+      {
+        "title": "1. Permitted Use of the Site",
+        "content": "This website is intended to provide information about our services and areas of expertise. The content is for personal, non-commercial use. Any use of the site that could damage, disable, overburden, or impair it or interfere with any other party's use and enjoyment of it is prohibited."
+      },
+      {
+        "title": "2. Intellectual Property and Copyright",
+        "content": "All content on this site, including text, graphics, logos, images, and their selection and arrangement, is the exclusive property of Rozua Point & Legacy S.A. or its licensors and is protected by international copyright laws. Reproduction, modification, distribution, or republication of any content without our prior written consent is not permitted."
+      },
+      {
+        "title": "3. Limitation of Liability",
+        "content": "The information on this website is provided 'as is' for general informational purposes. While we strive to keep the information up-to-date and correct, we make no warranties of any kind, express or implied, about the completeness, accuracy, reliability, or suitability of the content. In no event will we be liable for any loss or damage, direct or indirect, arising from the use of this website."
+      },
+      {
+        "title": "4. Prohibition of Misuse",
+        "content": "The user agrees not to use this site for any unlawful, fraudulent, or unauthorized purposes. This includes, but is not limited to, transmitting defamatory material, introducing computer viruses, or collecting information from other users without their consent."
+      },
+      {
+        "title": "5. Links to Third Parties",
+        "content": "This site may contain links to third-party websites. These links are provided for your convenience only. We have no control over the content of such sites and assume no responsibility for them."
+      },
+      {
+        "title": "6. Applicable Law and Jurisdiction",
+        "content": "Any dispute related to these terms and conditions shall be governed by the laws of the firm's main jurisdiction of operations, without regard to conflicts of legal principles."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} — All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "governance": "Governance",
+    "faq": "FAQ",
+    "contact": "Private Contact"
+  }
+}

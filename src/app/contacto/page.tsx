@@ -25,24 +25,33 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { useEffect, useState } from 'react';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../../i18n-config';
+import { usePathname } from 'next/navigation';
 
-const formSchema = z.object({
-  fullName: z.string().min(2, { message: 'El nombre es requerido.' }),
-  email: z.string().email({ message: 'Por favor ingrese un email válido.' }),
-  country: z.string().min(2, { message: 'El país es requerido.' }),
-  interest: z.enum(['Automóviles', 'Inmuebles', 'Vinos', 'Otro']),
-  callMethod: z.enum(['Skype', 'Zoom', 'Google Meet', 'Teams']),
-  callId: z.string().min(2, { message: 'Su ID/usuario es requerido.' }),
-  message: z.string().min(10, { message: 'El mensaje debe tener al menos 10 caracteres.' }),
-});
+type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
 export default function ContactoPage() {
   const [isMounted, setIsMounted] = useState(false);
   const { toast } = useToast();
+  const pathname = usePathname();
+  const [dictionary, setDictionary] = useState<Dictionary>();
 
   useEffect(() => {
     setIsMounted(true);
-  }, []);
+    const lang = (pathname.split('/')[1] || 'en') as Locale;
+    getDictionary(lang).then(setDictionary);
+  }, [pathname]);
+
+  const formSchema = z.object({
+    fullName: z.string().min(2, { message: dictionary?.contactPage.form.validation.fullName }),
+    email: z.string().email({ message: dictionary?.contactPage.form.validation.email }),
+    country: z.string().min(2, { message: dictionary?.contactPage.form.validation.country }),
+    interest: z.enum(dictionary?.contactPage.form.interests as [string, ...string[]] || ['Automóviles', 'Inmuebles', 'Vinos', 'Otro']),
+    callMethod: z.enum(dictionary?.contactPage.form.callMethods as [string, ...string[]] || ['Skype', 'Zoom', 'Google Meet', 'Teams']),
+    callId: z.string().min(2, { message: dictionary?.contactPage.form.validation.callId }),
+    message: z.string().min(10, { message: dictionary?.contactPage.form.validation.message }),
+  });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -50,12 +59,31 @@ export default function ContactoPage() {
       fullName: '',
       email: '',
       country: '',
-      interest: 'Automóviles',
-      callMethod: 'Skype',
+      interest: dictionary?.contactPage.form.interests[0],
+      callMethod: dictionary?.contactPage.form.callMethods[0],
       callId: '',
       message: '',
     },
   });
+  
+  useEffect(() => {
+    if (dictionary) {
+      form.reset({
+        fullName: '',
+        email: '',
+        country: '',
+        interest: dictionary.contactPage.form.interests[0],
+        callMethod: dictionary.contactPage.form.callMethods[0],
+        callId: '',
+        message: '',
+      });
+    }
+  }, [dictionary, form]);
+
+  if (!dictionary) return null; // o un spinner de carga
+
+  const t = dictionary.contactPage;
+  const pageHeaderT = dictionary.pageHeader;
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     const subject = `Solicitud de Contacto Privado: ${values.interest}`;
@@ -76,8 +104,8 @@ export default function ContactoPage() {
     window.location.href = mailtoLink;
 
     toast({
-      title: "Solicitud preparada.",
-      description: "Su cliente de correo se abrirá para enviar la solicitud.",
+      title: t.form.toastTitle,
+      description: t.form.toastDescription,
     });
   }
 
@@ -89,7 +117,7 @@ export default function ContactoPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">
-      <PageHeader title="Contacto Privado" />
+      <PageHeader title={t.title} backButtonText={pageHeaderT.backButton}/>
       
       <div className="relative h-[50vh] w-full">
         {heroImage && (
@@ -104,7 +132,7 @@ export default function ContactoPage() {
         )}
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in slide-in-from-bottom-5 duration-1000 px-4">
-            Atención personalizada para quienes valoran la discreción.
+            {t.hero}
           </h2>
         </div>
       </div>
@@ -112,9 +140,7 @@ export default function ContactoPage() {
       <div className="container mx-auto py-16 px-4">
         <div className="max-w-3xl mx-auto text-center mb-12 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <p className="font-body text-xl text-muted-foreground leading-relaxed">
-            En Rozua Point & Legacy ofrecemos un servicio de atención privada y personalizada.
-            Complete el siguiente formulario y uno de nuestros directores se pondrá en contacto
-            para coordinar una videoconferencia a través de Skype u otra plataforma segura.
+            {t.intro}
           </p>
         </div>
 
@@ -127,9 +153,9 @@ export default function ContactoPage() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nombre completo</FormLabel>
+                      <FormLabel>{t.form.fullName}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Su nombre y apellido" {...field} />
+                        <Input placeholder={t.form.fullNamePlaceholder} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -140,9 +166,9 @@ export default function ContactoPage() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email corporativo o personal</FormLabel>
+                      <FormLabel>{t.form.email}</FormLabel>
                       <FormControl>
-                        <Input placeholder="sudireccion@email.com" {...field} />
+                        <Input placeholder={t.form.emailPlaceholder} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -155,9 +181,9 @@ export default function ContactoPage() {
                 name="country"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>País de residencia</FormLabel>
+                    <FormLabel>{t.form.country}</FormLabel>
                     <FormControl>
-                      <Input placeholder="País desde donde nos contacta" {...field} />
+                      <Input placeholder={t.form.countryPlaceholder} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -170,18 +196,17 @@ export default function ContactoPage() {
                   name="interest"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Área de interés</FormLabel>
+                      <FormLabel>{t.form.interest}</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Seleccione un área" />
+                            <SelectValue placeholder={t.form.interestPlaceholder} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Automóviles">Automóviles</SelectItem>
-                          <SelectItem value="Inmuebles">Inmuebles</SelectItem>
-                          <SelectItem value="Vinos">Vinos</SelectItem>
-                          <SelectItem value="Otro">Otro</SelectItem>
+                          {t.form.interests.map(interest => (
+                            <SelectItem key={interest} value={interest}>{interest}</SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -193,18 +218,17 @@ export default function ContactoPage() {
                   name="callMethod"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Método preferido de llamada</FormLabel>
+                      <FormLabel>{t.form.callMethod}</FormLabel>
                       <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
-                            <SelectValue placeholder="Seleccione una plataforma" />
+                            <SelectValue placeholder={t.form.callMethodPlaceholder} />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Skype">Skype</SelectItem>
-                          <SelectItem value="Zoom">Zoom</SelectItem>
-                          <SelectItem value="Google Meet">Google Meet</SelectItem>
-                          <SelectItem value="Teams">Teams</SelectItem>
+                          {t.form.callMethods.map(method => (
+                            <SelectItem key={method} value={method}>{method}</SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -218,9 +242,9 @@ export default function ContactoPage() {
                 name="callId"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Usuario o ID de videollamada</FormLabel>
+                    <FormLabel>{t.form.callId}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Su ID para la plataforma elegida" {...field} />
+                      <Input placeholder={t.form.callIdPlaceholder} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -232,10 +256,10 @@ export default function ContactoPage() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
+                    <FormLabel>{t.form.message}</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Escriba aquí su consulta o la razón de su contacto."
+                        placeholder={t.form.messagePlaceholder}
                         className="min-h-[120px]"
                         {...field}
                       />
@@ -251,15 +275,15 @@ export default function ContactoPage() {
                   size="lg"
                   className="font-headline tracking-widest text-xl px-10 py-7 bg-primary/90 text-primary-foreground border border-primary-foreground/20 rounded-sm hover:bg-primary hover:shadow-[0_0_15px_hsl(var(--primary)/0.8)] transition-all duration-300 ease-in-out"
                 >
-                  Enviar Solicitud
+                  {t.form.submitButton}
                 </Button>
               </div>
             </form>
           </Form>
 
           <div className="text-center mt-12 text-xs text-muted-foreground/80 animate-in fade-in duration-1000">
-            <p>Toda la información enviada será tratada con estricta confidencialidad.</p>
-            <p>Las reuniones se coordinan únicamente con fines profesionales.</p>
+            <p>{t.confidentialityNotice1}</p>
+            <p>{t.confidentialityNotice2}</p>
           </div>
         </div>
       </div>

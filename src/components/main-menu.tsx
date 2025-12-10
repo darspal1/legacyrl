@@ -1,58 +1,58 @@
+'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { usePathname } from 'next/navigation';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../i18n-config';
+import { useEffect, useState } from 'react';
 
-const menuItems = [
-  {
-    href: '/vinos',
-    title: 'Vinos',
-    subtitle: 'El tiempo, capturado en una botella.',
-    image_id: 'card-vinos',
-  },
-  {
-    href: '/automoviles',
-    title: 'Automóviles',
-    subtitle: 'Ingeniería convertida en arte.',
-    image_id: 'card-automoviles',
-  },
-  {
-    href: '/inmuebles',
-    title: 'Inmuebles',
-    subtitle: 'Muros que han visto la historia pasar.',
-    image_id: 'card-inmuebles',
-  },
-  {
-    href: '/fundadores',
-    title: 'Fundadores',
-    subtitle: 'Nombres que inspiran confianza.',
-    image_id: 'card-fundadores',
-  },
-  {
-    href: '/direccion',
-    title: 'Dirección',
-    subtitle: 'Liderazgo que construye legado.',
-    image_id: 'card-direccion',
-  },
-  {
-    href: '/contacto',
-    title: 'Contacto',
-    subtitle: 'Atención privada y confidencial.',
-    image_id: 'card-contacto',
-  },
-];
+type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
+
+const imageMap: { [key: string]: string } = {
+  Wines: 'card-vinos',
+  Vins: 'card-vinos',
+  Vinos: 'card-vinos',
+  Automobiles: 'card-automoviles',
+  Automóviles: 'card-automoviles',
+  'Real Estate': 'card-inmuebles',
+  Immobilier: 'card-inmuebles',
+  Inmuebles: 'card-inmuebles',
+  Founders: 'card-fundadores',
+  Fondateurs: 'card-fundadores',
+  Fundadores: 'card-fundadores',
+  Direction: 'card-direccion',
+  Dirección: 'card-direccion',
+  Contact: 'card-contacto',
+  Contacto: 'card-contacto',
+};
+
 
 export default function MainMenu() {
+  const pathname = usePathname();
+  const [dictionary, setDictionary] = useState<Dictionary>();
+
+  useEffect(() => {
+    const lang = (pathname.split('/')[1] || 'en') as Locale;
+    getDictionary(lang).then(setDictionary);
+  }, [pathname]);
+
+  if (!dictionary) return null;
+
+  const menuItems = dictionary.mainMenu.items;
   const gridColsClass = menuItems.length === 6 ? 'xl:grid-cols-6' : 'xl:grid-cols-5';
+  const lang = pathname.split('/')[1] || 'en';
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
       <div className={`grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 ${gridColsClass}`}>
         {menuItems.map((item, index) => {
-          const image = PlaceHolderImages.find(p => p.id === item.image_id);
+          const image = PlaceHolderImages.find(p => p.id === imageMap[item.title]);
+          const href = `/${lang}${item.href}`;
           return (
             <Link 
-              href={item.href} 
+              href={href} 
               key={item.title} 
               className="group block animate-in fade-in zoom-in-95" 
               style={{ animationDelay: `${index * 150}ms`, animationDuration: '500ms' }}

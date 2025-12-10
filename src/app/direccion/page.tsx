@@ -1,53 +1,44 @@
-'use client';
 import PageHeader from '@/components/page-header';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useEffect, useState } from 'react';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../../i18n-config';
 
-const regions = [
-  {
-    title: 'Sudamérica',
-    director: 'Daniel Rozúa Jr.',
-    directorImageId: 'director-daniel-rozua',
-    subDirector: 'Facundo Stirling Ruaulth',
-    subDirectorImageId: 'director-facundo-stirling',
-    description: 'Responsables de la expansión patrimonial en mercados emergentes de alto valor, lideran las operaciones automotrices, inmobiliarias y vitivinícolas en Sudamérica. Su enfoque combina precisión técnica, visión estratégica y profundo conocimiento del patrimonio regional.',
-    imageId: 'direccion-sudamerica',
-  },
-  {
-    title: 'Norteamérica',
-    director: 'Victoria Spencer & Asociados',
-    directorImageId: 'director-victoria-spencer',
-    subDirector: null,
-    description: 'Con décadas de experiencia en mercados norteamericanos, Victoria Spencer & Asociados ofrecen una gestión impecable, centrada en activos exclusivos, propiedades históricas certificadas y colecciones privadas de alto valor.',
-    imageId: 'direccion-norteamerica',
-  },
-  {
-    title: 'Europa',
-    director: 'Knight Frank S.A.',
-    subDirector: null,
-    description: 'Socios estratégicos en el continente europeo, Knight Frank S.A. lidera la consultoría patrimonial en bienes raíces históricos y activos exclusivos. Su reputación intachable y su presencia global los posiciona como custodios ideales de los mercados más exigentes del mundo.',
-    imageId: 'direccion-europa',
-  },
-];
+type DireccionPageProps = {
+  params: { lang: Locale }
+}
 
-export default function DireccionPage() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+const regionImageMap: { [key: string]: string } = {
+  'Sudamérica': 'direccion-sudamerica',
+  'South America': 'direccion-sudamerica',
+  'Amérique du Sud': 'direccion-sudamerica',
+  'Norteamérica': 'direccion-norteamerica',
+  'North America': 'direccion-norteamerica',
+  'Amérique du Nord': 'direccion-norteamerica',
+  'Europa': 'direccion-europa',
+  'Europe': 'direccion-europa'
+};
+
+const directorImageMap: { [key: string]: string | null } = {
+  'Daniel Rozúa Jr.': 'director-daniel-rozua',
+  'Facundo Stirling Ruaulth': 'director-facundo-stirling',
+  'Victoria Spencer & Asociados': 'director-victoria-spencer',
+  'Victoria Spencer & Associates': 'director-victoria-spencer',
+  'Knight Frank S.A.': null
+};
+
+export default async function DireccionPage({ params: { lang } }: DireccionPageProps) {
+  const dictionary = await getDictionary(lang);
+  const t = dictionary.directionPage;
+  const pageHeaderT = dictionary.pageHeader;
 
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-direccion');
 
-  if (!isMounted) {
-    return null; // or a loading spinner
-  }
-
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">
-      <PageHeader title="Dirección" />
+      <PageHeader title={t.title} backButtonText={pageHeaderT.backButton} />
       
       <div className="relative h-[50vh] w-full">
         {heroImage && (
@@ -62,7 +53,7 @@ export default function DireccionPage() {
         )}
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in slide-in-from-bottom-5 duration-1000 px-4">
-            La excelencia requiere liderazgo; el legado, visión.
+            {t.hero}
           </h2>
         </div>
       </div>
@@ -70,22 +61,24 @@ export default function DireccionPage() {
       <div className="container mx-auto py-16 px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <p className="font-body text-xl text-muted-foreground leading-relaxed">
-            Rozua Point & Legacy se sostiene sobre una estructura directiva internacional, 
-            compuesta por profesionales que representan la integridad, la discreción 
-            y la visión a largo plazo que define a nuestra firma.
+            {t.intro1}
             <br/><br/>
-            Cada región opera bajo los estándares más altos de gobernanza financiera 
-            y curaduría de activos patrimoniales.
+            {t.intro2}
           </p>
         </div>
 
         <Separator className="my-16 max-w-sm mx-auto bg-primary h-px rounded-full" />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {regions.map((region, index) => {
-            const regionImage = PlaceHolderImages.find(p => p.id === region.imageId);
-            const directorImage = region.directorImageId ? PlaceHolderImages.find(p => p.id === region.directorImageId) : null;
-            const subDirectorImage = region.subDirectorImageId ? PlaceHolderImages.find(p => p.id === region.subDirectorImageId) : null;
+          {t.regions.map((region, index) => {
+            const regionImageId = regionImageMap[region.title];
+            const regionImage = PlaceHolderImages.find(p => p.id === regionImageId);
+
+            const directorImageId = directorImageMap[region.director];
+            const directorImage = directorImageId ? PlaceHolderImages.find(p => p.id === directorImageId) : null;
+            
+            const subDirectorImageId = region.subDirector ? directorImageMap[region.subDirector] : null;
+            const subDirectorImage = subDirectorImageId ? PlaceHolderImages.find(p => p.id === subDirectorImageId) : null;
             
             return (
               <div 
@@ -98,7 +91,7 @@ export default function DireccionPage() {
                     <CardTitle className="font-headline text-3xl text-primary border-b-2 border-primary/20 pb-2">{region.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 pt-0 text-left">
-                     {region.title !== 'Sudamérica' && !directorImage && regionImage && (
+                     {region.title !== 'Sudamérica' && region.title !== 'South America' && region.title !== 'Amérique du Sud' && !directorImage && regionImage && (
                        <div className="relative h-48 w-full mb-6 overflow-hidden rounded-sm">
                          <Image
                             src={regionImage.imageUrl}
@@ -119,12 +112,12 @@ export default function DireccionPage() {
                           </div>
                         )}
                         <div>
-                          <h4 className="font-body font-bold text-lg">Director Regional:</h4>
+                          <h4 className="font-body font-bold text-lg">{region.directorLabel}</h4>
                           <p className="font-body text-md text-foreground">{region.director}</p>
                         </div>
                       </div>
 
-                      {region.subDirector && (
+                      {region.subDirector && region.subDirectorLabel && (
                         <div className="flex items-center gap-4">
                           {subDirectorImage && (
                             <div className="relative h-20 w-20 shrink-0 rounded-full overflow-hidden">
@@ -132,7 +125,7 @@ export default function DireccionPage() {
                             </div>
                           )}
                           <div>
-                            <h4 className="font-body font-bold text-lg">Sub-Director:</h4>
+                            <h4 className="font-body font-bold text-lg">{region.subDirectorLabel}</h4>
                             <p className="font-body text-md text-foreground">{region.subDirector}</p>
                           </div>
                         </div>

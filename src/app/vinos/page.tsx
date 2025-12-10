@@ -1,49 +1,40 @@
-'use client';
 import PageHeader from '@/components/page-header';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent } from '@/components/ui/card';
-import { useEffect, useState } from 'react';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../../i18n-config';
 
-const services = [
-  {
-    title: 'Curaduría de Vinos Icónicos',
-    description: 'Selección de Grands Crus, ediciones limitadas y añadas históricas previamente verificadas por expertos.',
-    image_id: 'vinos-curaduria',
-  },
-  {
-    title: 'Fondos de Inversión Enológicos',
-    description: 'Estructuras financieras que permiten invertir en vinos que aumentan de valor con el paso del tiempo. Diversificación, certificación de autenticidad y almacenamiento profesional.',
-    image_id: 'vinos-inversion',
-  },
-  {
-    title: 'Acceso a Bodegas Exclusivas',
-    description: 'Experiencias privadas en viñedos emblemáticos y encuentros con enólogos de renombre mundial.',
-    image_id: 'vinos-bodegas',
-  },
-  {
-    title: 'Gestión y Custodia de Colecciones',
-    description: 'Protección del valor de la colección mediante almacenamiento especializado y análisis de maduración.',
-    image_id: 'vinos-custodia',
-  },
-];
+type VinosPageProps = {
+  params: { lang: Locale }
+}
 
-export default function VinosPage() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+const serviceImageMap: { [key: string]: string } = {
+  'Curaduría de Vinos Icónicos': 'vinos-curaduria',
+  'Curation of Iconic Wines': 'vinos-curaduria',
+  'Curation de Vins Iconiques': 'vinos-curaduria',
+  'Fondos de Inversión Enológicos': 'vinos-inversion',
+  'Enological Investment Funds': 'vinos-inversion',
+  'Fonds d\'Investissement Œnologiques': 'vinos-inversion',
+  'Acceso a Bodegas Exclusivas': 'vinos-bodegas',
+  'Access to Exclusive Wineries': 'vinos-bodegas',
+  'Accès à des Domaines Exclusifs': 'vinos-bodegas',
+  'Gestión y Custodia de Colecciones': 'vinos-custodia',
+  'Collection Management and Custody': 'vinos-custodia',
+  'Gestion et Garde de Collections': 'vinos-custodia'
+};
+
+export default async function VinosPage({ params: { lang } }: VinosPageProps) {
+  const dictionary = await getDictionary(lang);
+  const t = dictionary.winesPage;
+  const pageHeaderT = dictionary.pageHeader;
 
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-vinos');
 
-  if (!isMounted) {
-    return null; // or a loading spinner
-  }
-
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">
-      <PageHeader title="Vinos" />
+      <PageHeader title={t.title} backButtonText={pageHeaderT.backButton}/>
       
       <div className="relative h-[50vh] w-full">
         {heroImage && (
@@ -58,7 +49,7 @@ export default function VinosPage() {
         )}
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in zoom-in-95 duration-1000">
-            El tiempo, capturado en una botella.
+            {t.hero}
           </h2>
         </div>
       </div>
@@ -66,23 +57,21 @@ export default function VinosPage() {
       <div className="container mx-auto py-16 px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <p className="font-body text-xl text-muted-foreground leading-relaxed">
-            En Rozua Point & Legacy, concebimos el vino como un testamento líquido.
-            Cada botella es un capítulo escrito por la tierra, el clima y el tiempo.
+            {t.intro1}
             <br/><br/>
-            Nuestra división enológica accede a viñedos legendarios, bodegas cerradas al público 
-            y producciones limitadas reservadas para coleccionistas y fondos patrimoniales.
+            {t.intro2}
           </p>
         </div>
 
         <Separator className="my-12 max-w-sm mx-auto bg-primary h-[2px] rounded-full" />
 
         <h3 className="text-center font-headline text-4xl font-bold mb-12 animate-in fade-in duration-500">
-          Servicios Exclusivos
+          {t.servicesTitle}
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
-            const serviceImage = PlaceHolderImages.find(p => p.id === service.image_id);
+          {t.services.map((service, index) => {
+            const serviceImage = PlaceHolderImages.find(p => p.id === serviceImageMap[service.title]);
             return (
               <div 
                 key={service.title} 

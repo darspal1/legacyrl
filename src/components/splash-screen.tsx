@@ -1,13 +1,28 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { getDictionary } from '@/dictionaries';
+import { usePathname } from 'next/navigation';
+import { Locale } from '../../i18n-config';
+import { useEffect, useState } from 'react';
 
 type SplashScreenProps = {
   onEnter: () => void;
 };
 
+type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
+
 export default function SplashScreen({ onEnter }: SplashScreenProps) {
   const splashImage = PlaceHolderImages.find(p => p.id === 'splash-office');
+  const pathname = usePathname();
+  const [dictionary, setDictionary] = useState<Dictionary>();
+
+  useEffect(() => {
+    const lang = (pathname.split('/')[1] || 'en') as Locale;
+    getDictionary(lang).then(setDictionary);
+  }, [pathname]);
+
+  if (!dictionary) return null;
 
   return (
     <div className="dark">
@@ -25,25 +40,22 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
         <div className="relative z-10 mx-auto max-w-4xl text-center p-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
           <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
-            Rozua Point & Legacy
+            {dictionary.splash.title}
           </h1>
           <h2 className="mt-6 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
-            Donde el patrimonio encuentra su historia.
+            {dictionary.splash.subtitle}
           </h2>
           <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-muted-foreground/70 [text-shadow:_0_1px_4px_hsl(var(--background))]">
-            En un mundo efímero, Rozua Point & Legacy S.A. se erige como un bastión de permanencia.
-            No somos simplemente una firma de inversión; somos custodios del buen vivir 
-            y arquitectos de legados familiares.
+            {dictionary.splash.description1}
             <br /><br />
-            Nacida de la unión de una selecta sociedad de inversionistas, nuestra firma fue concebida 
-            bajo una premisa inquebrantable: el verdadero lujo no grita, susurra.
+            {dictionary.splash.description2}
           </p>
           <Button
             onClick={onEnter}
             className="mt-12 font-headline tracking-widest text-2xl px-12 py-8 bg-accent/[.40] text-primary-foreground border border-accent rounded-sm hover:bg-accent/[.60] hover:shadow-[0_0_20px_hsl(var(--accent))] transition-all duration-600 ease-in-out"
             variant="outline"
           >
-            [ ENTER ]
+            {dictionary.splash.enterButton}
           </Button>
         </div>
       </div>

@@ -1,43 +1,30 @@
-'use client';
 import PageHeader from '@/components/page-header';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Separator } from '@/components/ui/separator';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { useEffect, useState } from 'react';
+import { Card } from '@/components/ui/card';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../../i18n-config';
 
-const founders = [
-  {
-    name: 'Daniel Beniamino Rozúa',
-    title: 'Automotive & Electronics Engineer',
-    country: 'Italia',
-    description: 'Con una trayectoria sólida en ingeniería automotriz y electrónica de precisión, Daniel aporta a la firma la visión técnica que define nuestras adquisiciones mecánicas. Su enfoque combina rendimiento, fiabilidad y tradición, atributos esenciales en automóviles de prestigio y activos de colección.',
-    image_id: 'founder-daniel',
-  },
-  {
-    name: 'Clément Lafayette',
-    title: 'BIM Architecture Specialist',
-    country: 'Francia',
-    description: 'Especialista en arquitectura BIM y gestión patrimonial, Clément aporta una perspectiva estructural y estética clave para la selección de inmuebles con carácter. Su sensibilidad europea por el diseño y la preservación histórica fortalece nuestro compromiso con propiedades que trascienden generaciones.',
-    image_id: 'founder-clement',
-  }
-];
+type FundadoresPageProps = {
+  params: { lang: Locale }
+}
 
-export default function FundadoresPage() {
-  const [isMounted, setIsMounted] = useState(false);
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+const founderImageMap: { [key: string]: string } = {
+  'Daniel Beniamino Rozúa': 'founder-daniel',
+  'Clément Lafayette': 'founder-clement'
+};
+
+export default async function FundadoresPage({ params: { lang } }: FundadoresPageProps) {
+  const dictionary = await getDictionary(lang);
+  const t = dictionary.foundersPage;
+  const pageHeaderT = dictionary.pageHeader;
 
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-fundadores');
-
-  if (!isMounted) {
-    return null; // or a loading spinner
-  }
   
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">
-      <PageHeader title="Fundadores" />
+      <PageHeader title={t.title} backButtonText={pageHeaderT.backButton}/>
       
       <div className="relative h-[50vh] w-full">
         {heroImage && (
@@ -52,7 +39,7 @@ export default function FundadoresPage() {
         )}
         <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h2 className="font-body text-4xl md:text-5xl text-white/90 text-center animate-in fade-in zoom-in-95 duration-1000 px-4">
-            Donde la ingeniería y la arquitectura construyen un legado.
+            {t.hero}
           </h2>
         </div>
       </div>
@@ -60,20 +47,18 @@ export default function FundadoresPage() {
       <div className="container mx-auto py-16 px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <p className="font-body text-xl text-muted-foreground leading-relaxed">
-            Rozua Point & Legacy nace del encuentro entre dos visiones complementarias: 
-            la ingeniería aplicada al patrimonio y la arquitectura dedicada a la excelencia.
+            {t.intro1}
             <br/><br/>
-            Nuestros fundadores representan dos corrientes esenciales: 
-            la precisión técnica y la estética estructural. 
-            Juntos, han dado forma a una firma que no solo invierte, sino que preserva legado.
+            {t.intro2}
           </p>
         </div>
 
         <Separator className="my-12 max-w-sm mx-auto bg-primary h-[2px] rounded-full" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {founders.map((founder, index) => {
-            const founderImage = PlaceHolderImages.find(p => p.id === founder.image_id);
+          {t.founders.map((founder, index) => {
+            const founderImageId = founderImageMap[founder.name];
+            const founderImage = PlaceHolderImages.find(p => p.id === founderImageId);
             return (
               <div 
                 key={founder.name} 

@@ -2,29 +2,33 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import Link from 'next/link';
-import { Separator } from '@/components/ui/separator';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '../../i18n-config';
+import LanguageSwitcher from '@/components/language-switcher';
 
 export const metadata: Metadata = {
   title: 'Rozua Point & Legacy',
   description: 'Donde el patrimonio encuentra su historia.',
 };
 
-const footerLinks = [
-  { href: '/politica-de-privacidad', label: 'Política de Privacidad' },
-  { href: '/terminos-y-condiciones', label: 'Términos y Condiciones' },
-  { href: '/gobernanza', label: 'Gobernanza' },
-  { href: '/faq', label: 'FAQ' },
-  { href: '/contacto', label: 'Contacto Privado' },
-];
-
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { lang },
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: Locale };
 }>) {
+  const dictionary = await getDictionary(lang);
+  const footerLinks = [
+    { href: `/${lang}/politica-de-privacidad`, label: dictionary.footer.privacy },
+    { href: `/${lang}/terminos-y-condiciones`, label: dictionary.footer.terms },
+    { href: `/${lang}/gobernanza`, label: dictionary.footer.governance },
+    { href: `/${lang}/faq`, label: dictionary.footer.faq },
+    { href: `/${lang}/contacto`, label: dictionary.footer.contact },
+  ];
+
   return (
-    <html lang="en" className="dark">
+    <html lang={lang} className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -32,13 +36,16 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased film-grain">
+        <header className="absolute top-0 right-0 p-4 z-20">
+          <LanguageSwitcher />
+        </header>
         <main>{children}</main>
         <footer className="w-full bg-background text-foreground border-t border-accent/[.1] mt-auto">
           <div className="container mx-auto py-8 px-4">
             <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
               <div className="mb-4 md:mb-0">
                 <h3 className="font-headline text-xl text-primary">Rozua Point & Legacy</h3>
-                <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} — Todos los derechos reservados.</p>
+                <p className="text-sm text-muted-foreground">{dictionary.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
               </div>
               <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
                 {footerLinks.map(link => (
