@@ -153,13 +153,13 @@
     {
       "id": "hero-direccion",
       "description": "An antique golden compass resting on an old, sepia-toned world map.",
-      "imageUrl": "https://images.unsplash.com/photo-1667069543385-4d0523270998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTI0ODMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667069543385-4d0523270998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTI0ODMxNHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "map compass"
     },
     {
       "id": "direccion-norteamerica",
       "description": "Neoclassical style corporate offices, suggesting tradition and power.",
-      "imageUrl": "https://images.unsplash.com/photo-1688415506734-a08a640b05e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZW9jbGFzc2ljJTIwb2ZmaWNlfGVufDB8fHx8MTc2NTMyNDIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/prFt1qd8/Victoria-Spencer.png",
       "imageHint": "neoclassic office"
     },
     {
