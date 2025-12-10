@@ -13,18 +13,23 @@ type SplashScreenProps = {
 export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps) {
   const splashImage = PlaceHolderImages.find(p => p.id === 'splash-office');
   const [isMounted, setIsMounted] = useState(false);
+  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
+  const handleEnterClick = () => {
+    setIsFading(true);
+    setTimeout(onEnter, 700); // Match this with fade-out duration
+  };
+
   if (!isMounted) {
-    // Render a skeleton or null while loading to avoid flash of un-styled content
     return null;
   }
   
   return (
-    <div className="dark">
+    <div className={`dark transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
       <div className="relative flex h-screen w-full flex-col items-center justify-center bg-background text-foreground overflow-hidden">
         {splashImage && (
           <Image
@@ -50,7 +55,7 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
             {dictionary.splash.description2}
           </p>
           <Button
-            onClick={onEnter}
+            onClick={handleEnterClick}
             className="mt-12 font-headline tracking-widest text-2xl px-12 py-8 bg-accent/[.40] text-primary-foreground border border-accent rounded-sm hover:bg-accent/[.60] hover:shadow-[0_0_20px_hsl(var(--accent))] transition-all duration-600 ease-in-out"
             variant="outline"
           >
