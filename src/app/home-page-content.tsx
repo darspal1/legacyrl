@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import SplashScreen from '@/components/splash-screen';
 import MainMenu from '@/components/main-menu';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { getDictionary } from '@/dictionaries';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
