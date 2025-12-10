@@ -142,25 +142,19 @@
       "id": "founder-daniel",
       "description": "Medium body corporate portrait, soft side lighting, classic dark suit, elegant neutral background (gray, mahogany or ivory).",
       "imageUrl": "https://i.postimg.cc/T3VLycf7/Daniel_Rozua.png",
-      "imageHint": "male portrait"
+      "imageHint": "stately library"
     },
     {
       "id": "founder-clement",
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
       "imageUrl": "https://i.postimg.cc/g2VXwKm8/Clement_Lafayette.jpg",
-      "imageHint": "male portrait"
+      "imageHint": "stately library"
     },
     {
       "id": "hero-direccion",
       "description": "An antique golden compass resting on an old, sepia-toned world map.",
       "imageUrl": "https://images.unsplash.com/photo-1667069543385-4d0523270998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTI0ODMxNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map compass"
-    },
-    {
-      "id": "direccion-sudamerica",
-      "description": "Sober executive portraits with a neutral ivory or stone-gray background, formal attire.",
-      "imageUrl": "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjUyOTE4Mjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "executive portrait"
     },
     {
       "id": "direccion-norteamerica",
@@ -179,6 +173,18 @@
       "description": "A classic desk with an antique telephone and a fountain pen, in sepia tones.",
       "imageUrl": "https://images.unsplash.com/photo-1746792651809-1dff8a04b206?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVza3xlbnwwfHx8fDE3NjUzMjU4MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic desk"
+    },
+    {
+      "id": "director-daniel-rozua",
+      "description": "Portrait of Daniel Rozúa Jr.",
+      "imageUrl": "https://i.postimg.cc/RF1FbSb6/Danel_Rozua.jpg",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "director-facundo-stirling",
+      "description": "Portrait of Facundo Stirling Ruaulth",
+      "imageUrl": "https://i.postimg.cc/NFg033Wr/Facundo_Stirling.png",
+      "imageHint": "executive portrait"
     }
   ]
 }

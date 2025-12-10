@@ -10,7 +10,9 @@ const regions = [
   {
     title: 'Sudamérica',
     director: 'Daniel Rozúa Jr.',
+    directorImageId: 'director-daniel-rozua',
     subDirector: 'Facundo Stirling Ruaulth',
+    subDirectorImageId: 'director-facundo-stirling',
     description: 'Responsables de la expansión patrimonial en mercados emergentes de alto valor, lideran las operaciones automotrices, inmobiliarias y vitivinícolas en Sudamérica. Su enfoque combina precisión técnica, visión estratégica y profundo conocimiento del patrimonio regional.',
     imageId: 'direccion-sudamerica',
   },
@@ -81,6 +83,9 @@ export default function DireccionPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {regions.map((region, index) => {
             const regionImage = PlaceHolderImages.find(p => p.id === region.imageId);
+            const directorImage = region.directorImageId ? PlaceHolderImages.find(p => p.id === region.directorImageId) : null;
+            const subDirectorImage = region.subDirectorImageId ? PlaceHolderImages.find(p => p.id === region.subDirectorImageId) : null;
+            
             return (
               <div 
                 key={region.title} 
@@ -92,7 +97,7 @@ export default function DireccionPage() {
                     <CardTitle className="font-headline text-3xl text-primary border-b-2 border-primary/20 pb-2">{region.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-6 pt-0 text-left">
-                     {regionImage && (
+                     {region.title !== 'Sudamérica' && regionImage && (
                        <div className="relative h-48 w-full mb-6 overflow-hidden rounded-sm">
                          <Image
                             src={regionImage.imageUrl}
@@ -104,17 +109,36 @@ export default function DireccionPage() {
                           />
                        </div>
                     )}
-                    <h4 className="font-body font-bold text-lg">Director Regional:</h4>
-                    <p className="font-body text-md text-foreground mb-4">{region.director}</p>
                     
-                    {region.subDirector && (
-                      <>
-                        <h4 className="font-body font-bold text-lg">Sub-Director:</h4>
-                        <p className="font-body text-md text-foreground mb-4">{region.subDirector}</p>
-                      </>
-                    )}
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-4">
+                        {directorImage && (
+                          <div className="relative h-20 w-20 shrink-0 rounded-full overflow-hidden">
+                            <Image src={directorImage.imageUrl} alt={region.director} fill className="object-cover" sizes="80px" data-ai-hint={directorImage.imageHint} />
+                          </div>
+                        )}
+                        <div>
+                          <h4 className="font-body font-bold text-lg">Director Regional:</h4>
+                          <p className="font-body text-md text-foreground">{region.director}</p>
+                        </div>
+                      </div>
 
-                    <p className="font-body text-sm text-muted-foreground mt-4">{region.description}</p>
+                      {region.subDirector && (
+                        <div className="flex items-center gap-4">
+                          {subDirectorImage && (
+                            <div className="relative h-20 w-20 shrink-0 rounded-full overflow-hidden">
+                              <Image src={subDirectorImage.imageUrl} alt={region.subDirector} fill className="object-cover" sizes="80px" data-ai-hint={subDirectorImage.imageHint} />
+                            </div>
+                          )}
+                          <div>
+                            <h4 className="font-body font-bold text-lg">Sub-Director:</h4>
+                            <p className="font-body text-md text-foreground">{region.subDirector}</p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    <p className="font-body text-sm text-muted-foreground mt-6">{region.description}</p>
                   </CardContent>
                 </Card>
               </div>
