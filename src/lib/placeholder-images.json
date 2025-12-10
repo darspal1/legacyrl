@@ -147,7 +147,7 @@
     {
       "id": "founder-clement",
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
-      "imageUrl": "https://i.postimg.cc/KzjTLyHX/Clement-Lafayette.png",
+      "imageUrl": "https://i.postimg.cc/GhLCjhx6/Clement_Lafayette.jpg",
       "imageHint": "stately library"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "direccion-europa",
       "description": "The stately facade of a historic European building, suggesting a heritage consultancy.",
-      "imageUrl": "https://i.postimg.cc/rpRXpf1T/knight-frank.png",
+      "imageUrl": "https://i.postimg.cc/ZK6cF2m9/knight-frank-SA.jpg",
       "imageHint": "european facade"
     },
     {
@@ -190,6 +190,12 @@
       "id": "director-victoria-spencer",
       "description": "Portrait of Victoria Spencer",
       "imageUrl": "https://i.postimg.cc/prFt1qd8/Victoria-Spencer.png",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "direccion-sudamerica",
+      "description": "Portrait of a man in a suit",
+      "imageUrl": "https://i.postimg.cc/g2VXwKm8/Clement_Lafayette.jpg",
       "imageHint": "executive portrait"
     }
   ]
