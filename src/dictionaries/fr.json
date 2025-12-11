@@ -143,8 +143,10 @@
     "hero": "L'excellence exige le leadership; l'héritage, la vision.",
     "intro1": "Rozua Point & Legacy repose sur une structure de direction internationale, composée de professionnels qui incarnent l'intégrité, la discrétion et la vision à long terme qui définissent notre firme.",
     "intro2": "Chaque région opère selon les normes les plus élevées de gouvernance financière et de curation d'actifs patrimoniaux.",
+    "mapCta": "Survolez une région pour afficher les détails.",
     "regions": [
       {
+        "id": "south-america",
         "title": "Amérique du Sud",
         "director": "Daniel Rozúa Jr.",
         "directorLabel": "Directeur Régional :",
@@ -153,22 +155,25 @@
         "description": "Responsables de l'expansion patrimoniale sur les marchés émergents à haute valeur, ils dirigent les opérations automobiles, immobilières et viticoles en Amérique du Sud. Leur approche combine précision technique, vision stratégique et une connaissance approfondie du patrimoine régional."
       },
       {
+        "id": "north-america",
         "title": "Amérique du Nord",
         "director": "Victoria Spencer & Associés",
         "directorLabel": "Directeur Régional :",
         "description": "Avec des décennies d'expérience sur les marchés nord-américains, Victoria Spencer & Associés offrent une gestion impeccable, axée sur les actifs exclusifs, les propriétés historiques certifiées et les collections privées de grande valeur."
       },
       {
+        "id": "europe",
         "title": "Europe",
         "director": "Knight Frank S.A.",
         "directorLabel": "Directeur Régional :",
         "description": "Partenaires stratégiques sur le continent européen, Knight Frank S.A. est leader dans le conseil patrimonial pour l'immobilier historique et les actifs exclusifs. Leur réputation irréprochable et leur présence mondiale les positionnent comme les gardiens idéaux des marchés les plus exigeants du monde."
       },
-       {
-        "title": "Survolez une région pour afficher les détails.",
+      {
+        "id": "default",
+        "title": "",
         "director": "",
         "directorLabel": "",
-        "description": "Survolez une région pour afficher les détails."
+        "description": ""
       }
     ]
   },

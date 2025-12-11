@@ -4,10 +4,12 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ImagePlaceholder } from '@/lib/placeholder-images';
 import { getDictionary } from '@/dictionaries';
+import { cn } from '@/lib/utils';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
 type RegionData = {
+  id: 'south-america' | 'north-america' | 'europe' | 'default';
   title: string;
   director: string;
   directorLabel: string;
@@ -24,37 +26,16 @@ type InteractiveMapProps = {
   dictionary: Dictionary
 };
 
-type RegionId = 'north-america' | 'south-america' | 'europe' | null;
-
 export default function InteractiveMap({ regions, mapImage, dictionary }: InteractiveMapProps) {
-  const [activeRegionId, setActiveRegionId] = useState<RegionId>(null);
-  
-  const regionIdMap: { [key: string]: RegionId } = {
-    'Sudamérica': 'south-america',
-    'South America': 'south-america',
-    'Amérique du Sud': 'south-america',
-    'Norteamérica': 'north-america',
-    'North America': 'north-america',
-    'Amérique du Nord': 'north-america',
-    'Europa': 'europe',
-    'Europe': 'europe',
-  };
+  const [activeRegionId, setActiveRegionId] = useState<RegionData['id'] | null>(null);
 
-  const getRegionDataById = (id: RegionId): RegionData | undefined => {
-    if (!id) return undefined;
-    const regionTitleKey = Object.keys(regionIdMap).find(key => regionIdMap[key] === id);
-    if (!regionTitleKey) return undefined;
-    // Find a region whose title is one of the keys for the given ID
-    return regions.find(r => regionIdMap[r.title] === id);
-  }
-
-  const activeRegionData = getRegionDataById(activeRegionId);
+  const activeRegionData = regions.find(r => r.id === activeRegionId) || regions.find(r => r.id === 'default');
 
   const renderRegionInfo = (regionData: RegionData | undefined) => {
-    if (!regionData) {
+    if (!regionData || regionData.id === 'default' || !activeRegionId) {
       return (
         <div className="text-center text-muted-foreground p-8 flex items-center justify-center h-full">
-          <p className="font-body text-lg">{dictionary.directionPage.regions[3].description}</p>
+          <p className="font-body text-lg">{dictionary.directionPage.mapCta}</p>
         </div>
       );
     }
@@ -73,7 +54,7 @@ export default function InteractiveMap({ regions, mapImage, dictionary }: Intera
                 </div>
               )}
               <div>
-                <h4 className="font-body font-bold text-lg">{regionData.directorLabel}</h4>
+                <h4 className="font-body font-bold text-lg text-foreground/80">{regionData.directorLabel}</h4>
                 <p className="font-body text-md text-foreground">{regionData.director}</p>
               </div>
             </div>
@@ -86,7 +67,7 @@ export default function InteractiveMap({ regions, mapImage, dictionary }: Intera
                   </div>
                 )}
                 <div>
-                  <h4 className="font-body font-bold text-lg">{regionData.subDirectorLabel}</h4>
+                  <h4 className="font-body font-bold text-lg text-foreground/80">{regionData.subDirectorLabel}</h4>
                   <p className="font-body text-md text-foreground">{regionData.subDirector}</p>
                 </div>
               </div>
@@ -99,33 +80,33 @@ export default function InteractiveMap({ regions, mapImage, dictionary }: Intera
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto" onMouseLeave={() => setActiveRegionId(null)}>
       <div className="relative w-full aspect-[4/3]">
         <Image
           src={mapImage.imageUrl}
           alt={mapImage.description}
           fill
-          className="object-contain opacity-20 sepia"
+          className="object-contain opacity-20 sepia pointer-events-none"
           data-ai-hint={mapImage.imageHint}
         />
-        <svg viewBox="0 0 1000 550" className="absolute inset-0 w-full h-full fill-transparent stroke-foreground/40 stroke-[1.5]" onMouseLeave={() => setActiveRegionId(null)}>
+        <svg viewBox="0 0 1000 550" className="absolute inset-0 w-full h-full fill-transparent stroke-foreground/40 stroke-[1.5]">
             {/* Europe */}
             <path 
               d="M518 135 L525 120 L540 118 L555 130 L560 150 L545 160 L520 150 Z" 
               onMouseEnter={() => setActiveRegionId('europe')}
-              className={`transition-all duration-300 ${activeRegionId === 'europe' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              className={cn('transition-all duration-300 cursor-pointer', activeRegionId === 'europe' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20')}
             />
             {/* North America */}
             <path 
               d="M140 100 L250 80 L350 100 L380 180 L280 230 L160 200 Z"
               onMouseEnter={() => setActiveRegionId('north-america')}
-              className={`transition-all duration-300 ${activeRegionId === 'north-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              className={cn('transition-all duration-300 cursor-pointer', activeRegionId === 'north-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20')}
             />
             {/* South America */}
             <path 
               d="M280 260 L350 250 L400 320 L350 420 L300 380 Z"
               onMouseEnter={() => setActiveRegionId('south-america')}
-              className={`transition-all duration-300 ${activeRegionId === 'south-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              className={cn('transition-all duration-300 cursor-pointer', activeRegionId === 'south-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20')}
             />
         </svg>
       </div>

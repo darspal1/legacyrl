@@ -143,8 +143,10 @@
     "hero": "Excellence requires leadership; legacy, vision.",
     "intro1": "Rozua Point & Legacy is built on an international management structure, composed of professionals who represent the integrity, discretion, and long-term vision that defines our firm.",
     "intro2": "Each region operates under the highest standards of financial governance and curation of patrimonial assets.",
+    "mapCta": "Hover over a region to view details.",
     "regions": [
       {
+        "id": "south-america",
         "title": "South America",
         "director": "Daniel Rozúa Jr.",
         "directorLabel": "Regional Director:",
@@ -153,22 +155,25 @@
         "description": "Responsible for patrimonial expansion in high-value emerging markets, they lead the automotive, real estate, and viticultural operations in South America. Their approach combines technical precision, strategic vision, and deep knowledge of the regional heritage."
       },
       {
+        "id": "north-america",
         "title": "North America",
         "director": "Victoria Spencer & Associates",
         "directorLabel": "Regional Director:",
         "description": "With decades of experience in North American markets, Victoria Spencer & Associates offer impeccable management, focused on exclusive assets, certified historic properties, and high-value private collections."
       },
       {
+        "id": "europe",
         "title": "Europe",
         "director": "Knight Frank S.A.",
         "directorLabel": "Regional Director:",
         "description": "Strategic partners on the European continent, Knight Frank S.A. leads in patrimonial consulting for historic real estate and exclusive assets. Their unblemished reputation and global presence position them as ideal custodians of the world's most demanding markets."
       },
       {
-        "title": "Hover over a region to view details.",
+        "id": "default",
+        "title": "",
         "director": "",
         "directorLabel": "",
-        "description": "Hover over a region to view details."
+        "description": ""
       }
     ]
   },

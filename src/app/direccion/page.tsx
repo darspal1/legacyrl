@@ -23,26 +23,19 @@ export default async function DireccionPage({ params }: DireccionPageProps) {
     'Facundo Stirling Ruaulth': PlaceHolderImages.find(p => p.id === 'director-facundo-stirling')?.imageUrl,
     'Victoria Spencer & Associates': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Victoria Spencer & Asociados': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
+    'Victoria Spencer & Associés': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Knight Frank S.A.': PlaceHolderImages.find(p => p.id === 'direccion-europa')?.imageUrl,
   };
 
   const regionsWithImages = t.regions.map(region => {
+    // Determine the correct image key, which might vary by language
     const directorImage = directorImageMap[region.director];
     const subDirectorImage = region.subDirector ? directorImageMap[region.subDirector] : undefined;
-    
-    // Fallback for South America director images
-    const directorImageFinal = region.title.includes('Sudamérica') || region.title.includes('South America')
-      ? directorImageMap['Daniel Rozúa Jr.']
-      : directorImage;
-    
-    const subDirectorImageFinal = region.title.includes('Sudamérica') || region.title.includes('South America')
-      ? directorImageMap['Facundo Stirling Ruaulth']
-      : subDirectorImage;
 
     return {
       ...region,
-      directorImage: directorImageFinal,
-      subDirectorImage: subDirectorImageFinal,
+      directorImage: directorImage,
+      subDirectorImage: subDirectorImage,
     }
   });
 

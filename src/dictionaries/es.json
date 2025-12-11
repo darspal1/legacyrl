@@ -143,8 +143,10 @@
     "hero": "La excelencia requiere liderazgo; el legado, visión.",
     "intro1": "Rozua Point & Legacy se sostiene sobre una estructura directiva internacional, compuesta por profesionales que representan la integridad, la discreción y la visión a largo plazo que define a nuestra firma.",
     "intro2": "Cada región opera bajo los estándares más altos de gobernanza financiera y curaduría de activos patrimoniales.",
+    "mapCta": "Pase el cursor sobre una región para ver los detalles.",
     "regions": [
       {
+        "id": "south-america",
         "title": "Sudamérica",
         "director": "Daniel Rozúa Jr.",
         "directorLabel": "Director Regional:",
@@ -153,22 +155,25 @@
         "description": "Responsables de la expansión patrimonial en mercados emergentes de alto valor, lideran las operaciones automotrices, inmobiliarias y vitivinícolas en Sudamérica. Su enfoque combina precisión técnica, visión estratégica y profundo conocimiento del patrimonio regional."
       },
       {
+        "id": "north-america",
         "title": "Norteamérica",
         "director": "Victoria Spencer & Asociados",
         "directorLabel": "Director Regional:",
         "description": "Con décadas de experiencia en mercados norteamericanos, Victoria Spencer & Asociados ofrecen una gestión impecable, centrada en activos exclusivos, propiedades históricas certificadas y colecciones privadas de alto valor."
       },
       {
+        "id": "europe",
         "title": "Europa",
         "director": "Knight Frank S.A.",
         "directorLabel": "Director Regional:",
         "description": "Socios estratégicos en el continente europeo, Knight Frank S.A. lidera la consultoría patrimonial en bienes raíces históricos y activos exclusivos. Su reputación intachable y su presencia global los posiciona como custodios ideales de los mercados más exigentes del mundo."
       },
       {
-        "title": "Pase el cursor sobre una región para ver los detalles.",
+        "id": "default",
+        "title": "",
         "director": "",
         "directorLabel": "",
-        "description": "Pase el cursor sobre una región para ver los detalles."
+        "description": ""
       }
     ]
   },
