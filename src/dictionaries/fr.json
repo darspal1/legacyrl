@@ -318,5 +318,31 @@
     "governance": "Gouvernance",
     "faq": "FAQ",
     "contact": "Contact Privé"
+  },
+  "testimonials": {
+    "title": "La Voix de nos Clients",
+    "subtitle": "Notre engagement se reflète dans la confiance que nos clients nous accordent. La discrétion nous empêche de révéler leurs noms, mais leur satisfaction est notre meilleure carte de visite.",
+    "items": [
+      {
+        "quote": "L'équipe de Rozua Point & Legacy n'a pas seulement compris ma vision, elle l'a élevée. Leur accès à des actifs exclusifs est tout simplement inégalé sur le marché.",
+        "author": "A.K.",
+        "role": "Financier, Genève"
+      },
+      {
+        "quote": "Ce que j'apprécie le plus, c'est la discrétion absolue et la gestion méticuleuse de mon portefeuille. Ce sont de véritables gardiens du patrimoine, pas seulement des investisseurs.",
+        "author": "S.W.",
+        "role": "Entrepreneur en technologie, Californie"
+      },
+      {
+        "quote": "Trouver une entreprise qui partage ma passion pour l'histoire de l'automobile et traite chaque acquisition comme une œuvre d'art est rare. Ils ont dépassé toutes mes attentes.",
+        "author": "Lord T.H.",
+        "role": "Collectionneur, Royaume-Uni"
+      },
+      {
+        "quote": "Le processus de restauration architecturale de notre domaine familial a été géré avec une sensibilité et un professionnalisme exquis. Ils ont préservé un héritage pour les générations à venir.",
+        "author": "I.R.",
+        "role": "Famille Industrielle Européenne"
+      }
+    ]
   }
 }

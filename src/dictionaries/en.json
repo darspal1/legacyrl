@@ -318,5 +318,31 @@
     "governance": "Governance",
     "faq": "FAQ",
     "contact": "Private Contact"
+  },
+  "testimonials": {
+    "title": "The Voice of our Clients",
+    "subtitle": "Our commitment is reflected in the trust our clients place in us. Discretion prevents us from revealing their names, but their satisfaction is our best letter of introduction.",
+    "items": [
+      {
+        "quote": "The team at Rozua Point & Legacy not only understood my vision, but elevated it. Their access to exclusive assets is simply unparalleled in the market.",
+        "author": "A.K.",
+        "role": "Financier, Geneva"
+      },
+      {
+        "quote": "What I value most is the absolute discretion and meticulous management of my portfolio. They are true custodians of heritage, not just investors.",
+        "author": "S.W.",
+        "role": "Technology Entrepreneur, California"
+      },
+      {
+        "quote": "Finding a firm that shares my passion for automotive history and treats each acquisition as a work of art is rare. They have exceeded all my expectations.",
+        "author": "Lord T.H.",
+        "role": "Collector, United Kingdom"
+      },
+      {
+        "quote": "The architectural restoration process of our family estate was handled with exquisite sensitivity and professionalism. They have preserved a legacy for generations to come.",
+        "author": "I.R.",
+        "role": "European Industrial Family"
+      }
+    ]
   }
 }

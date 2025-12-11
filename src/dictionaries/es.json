@@ -4,7 +4,7 @@
     "subtitle": "Donde el patrimonio encuentra su historia.",
     "description1": "En un mundo efímero, Rozua Point & Legacy S.A. se erige como un bastión de permanencia. No somos simplemente una firma de inversión; somos custodios del buen vivir y arquitectos de legados familiares.",
     "description2": "Nacida de la unión de una selecta sociedad de inversionistas, nuestra firma fue concebida bajo una premisa inquebrantable: el verdadero lujo no grita, susurra.",
-    "enterButton": "[ ENTER ]"
+    "enterButton": "[ ENTRAR ]"
   },
   "mainMenu": {
     "items": [
@@ -318,5 +318,31 @@
     "governance": "Gobernanza",
     "faq": "FAQ",
     "contact": "Contacto Privado"
+  },
+  "testimonials": {
+    "title": "La Voz de nuestros Clientes",
+    "subtitle": "Nuestro compromiso se refleja en la confianza que nuestros clientes depositan en nosotros. La discreción nos impide revelar sus nombres, pero su satisfacción es nuestra mejor carta de presentación.",
+    "items": [
+      {
+        "quote": "El equipo de Rozua Point & Legacy no solo entendió mi visión, sino que la elevó. Su acceso a activos exclusivos es, sencillamente, inigualable en el mercado.",
+        "author": "A.K.",
+        "role": "Financiero, Ginebra"
+      },
+      {
+        "quote": "Lo que más valoro es la absoluta discreción y la gestión meticulosa de mi portafolio. Son verdaderos custodios del patrimonio, no solo inversores.",
+        "author": "S.W.",
+        "role": "Emprendedor Tecnológico, California"
+      },
+      {
+        "quote": "Encontrar una firma que comparta mi pasión por la historia del automóvil y trate cada adquisición como una obra de arte es raro. Han superado todas mis expectativas.",
+        "author": "Lord T.H.",
+        "role": "Coleccionista, Reino Unido"
+      },
+      {
+        "quote": "El proceso de restauración arquitectónica de nuestra finca familiar fue manejado con una sensibilidad y profesionalismo exquisitos. Han preservado un legado para las próximas generaciones.",
+        "author": "I.R.",
+        "role": "Familia Industrial Europea"
+      }
+    ]
   }
 }
