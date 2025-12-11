@@ -163,6 +163,12 @@
         "director": "Knight Frank S.A.",
         "directorLabel": "Directeur Régional :",
         "description": "Partenaires stratégiques sur le continent européen, Knight Frank S.A. est leader dans le conseil patrimonial pour l'immobilier historique et les actifs exclusifs. Leur réputation irréprochable et leur présence mondiale les positionnent comme les gardiens idéaux des marchés les plus exigeants du monde."
+      },
+       {
+        "title": "Survolez une région pour afficher les détails.",
+        "director": "",
+        "directorLabel": "",
+        "description": "Survolez une région pour afficher les détails."
       }
     ]
   },

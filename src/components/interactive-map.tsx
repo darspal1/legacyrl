@@ -2,7 +2,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
+import { ImagePlaceholder } from '@/lib/placeholder-images';
+import { getDictionary } from '@/dictionaries';
+
+type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
 type RegionData = {
   title: string;
@@ -18,13 +21,14 @@ type RegionData = {
 type InteractiveMapProps = {
   regions: RegionData[];
   mapImage: ImagePlaceholder;
+  dictionary: Dictionary
 };
 
 type RegionId = 'north-america' | 'south-america' | 'europe' | null;
 
-export default function InteractiveMap({ regions, mapImage }: InteractiveMapProps) {
-  const [activeRegion, setActiveRegion] = useState<RegionId>(null);
-
+export default function InteractiveMap({ regions, mapImage, dictionary }: InteractiveMapProps) {
+  const [activeRegionId, setActiveRegionId] = useState<RegionId>(null);
+  
   const regionIdMap: { [key: string]: RegionId } = {
     'Sudamérica': 'south-america',
     'South America': 'south-america',
@@ -36,28 +40,21 @@ export default function InteractiveMap({ regions, mapImage }: InteractiveMapProp
     'Europe': 'europe',
   };
 
-  const handleRegionHover = (regionKey: string | undefined) => {
-    if (!regionKey) {
-      setActiveRegion(null);
-      return;
-    }
-    const regionId = regionIdMap[regionKey];
-    setActiveRegion(regionId);
-  };
-  
-  const getRegionData = (id: RegionId): RegionData | undefined => {
+  const getRegionDataById = (id: RegionId): RegionData | undefined => {
     if (!id) return undefined;
-    const regionKey = Object.keys(regionIdMap).find(key => regionIdMap[key] === id);
-    return regions.find(r => r.title === regionKey);
+    const regionTitleKey = Object.keys(regionIdMap).find(key => regionIdMap[key] === id);
+    if (!regionTitleKey) return undefined;
+    // Find a region whose title is one of the keys for the given ID
+    return regions.find(r => regionIdMap[r.title] === id);
   }
 
-  const activeRegionData = getRegionData(activeRegion);
+  const activeRegionData = getRegionDataById(activeRegionId);
 
   const renderRegionInfo = (regionData: RegionData | undefined) => {
     if (!regionData) {
       return (
-        <div className="text-center text-muted-foreground p-8">
-          <p className="font-body text-lg">Pase el cursor sobre una región para ver los detalles.</p>
+        <div className="text-center text-muted-foreground p-8 flex items-center justify-center h-full">
+          <p className="font-body text-lg">{dictionary.directionPage.regions[3].description}</p>
         </div>
       );
     }
@@ -111,29 +108,29 @@ export default function InteractiveMap({ regions, mapImage }: InteractiveMapProp
           className="object-contain opacity-20 sepia"
           data-ai-hint={mapImage.imageHint}
         />
-        <svg viewBox="0 0 1000 550" className="absolute inset-0 w-full h-full fill-transparent stroke-foreground/40 stroke-[1.5]" onMouseLeave={() => handleRegionHover(undefined)}>
+        <svg viewBox="0 0 1000 550" className="absolute inset-0 w-full h-full fill-transparent stroke-foreground/40 stroke-[1.5]" onMouseLeave={() => setActiveRegionId(null)}>
             {/* Europe */}
             <path 
               d="M518 135 L525 120 L540 118 L555 130 L560 150 L545 160 L520 150 Z" 
-              onMouseEnter={() => handleRegionHover('Europe')}
-              className={`transition-all duration-300 ${activeRegion === 'europe' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              onMouseEnter={() => setActiveRegionId('europe')}
+              className={`transition-all duration-300 ${activeRegionId === 'europe' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
             />
             {/* North America */}
             <path 
               d="M140 100 L250 80 L350 100 L380 180 L280 230 L160 200 Z"
-              onMouseEnter={() => handleRegionHover('North America')}
-              className={`transition-all duration-300 ${activeRegion === 'north-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              onMouseEnter={() => setActiveRegionId('north-america')}
+              className={`transition-all duration-300 ${activeRegionId === 'north-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
             />
             {/* South America */}
             <path 
               d="M280 260 L350 250 L400 320 L350 420 L300 380 Z"
-              onMouseEnter={() => handleRegionHover('South America')}
-              className={`transition-all duration-300 ${activeRegion === 'south-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
+              onMouseEnter={() => setActiveRegionId('south-america')}
+              className={`transition-all duration-300 ${activeRegionId === 'south-america' ? 'fill-primary/30 stroke-primary' : 'hover:fill-primary/20'}`}
             />
         </svg>
       </div>
 
-      <div className="min-h-[350px]">
+      <div className="min-h-[420px]">
         <Card className="h-full border-accent/[.1] bg-card text-card-foreground shadow-xl shadow-black/5 transition-all duration-500">
           {renderRegionInfo(activeRegionData)}
         </Card>

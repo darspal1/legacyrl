@@ -18,18 +18,33 @@ export default async function DireccionPage({ params }: DireccionPageProps) {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-direccion');
   const mapImage = PlaceHolderImages.find(p => p.id === 'world-map-texture');
   
-  const directorImages = {
+  const directorImageMap: { [key: string]: string | undefined } = {
     'Daniel Rozúa Jr.': PlaceHolderImages.find(p => p.id === 'director-daniel-rozua')?.imageUrl,
     'Facundo Stirling Ruaulth': PlaceHolderImages.find(p => p.id === 'director-facundo-stirling')?.imageUrl,
     'Victoria Spencer & Associates': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Victoria Spencer & Asociados': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
+    'Knight Frank S.A.': PlaceHolderImages.find(p => p.id === 'direccion-europa')?.imageUrl,
   };
 
-  const regionsWithImages = t.regions.map(region => ({
-    ...region,
-    directorImage: directorImages[region.director as keyof typeof directorImages],
-    subDirectorImage: region.subDirector ? directorImages[region.subDirector as keyof typeof directorImages] : undefined,
-  }));
+  const regionsWithImages = t.regions.map(region => {
+    const directorImage = directorImageMap[region.director];
+    const subDirectorImage = region.subDirector ? directorImageMap[region.subDirector] : undefined;
+    
+    // Fallback for South America director images
+    const directorImageFinal = region.title.includes('Sudamérica') || region.title.includes('South America')
+      ? directorImageMap['Daniel Rozúa Jr.']
+      : directorImage;
+    
+    const subDirectorImageFinal = region.title.includes('Sudamérica') || region.title.includes('South America')
+      ? directorImageMap['Facundo Stirling Ruaulth']
+      : subDirectorImage;
+
+    return {
+      ...region,
+      directorImage: directorImageFinal,
+      subDirectorImage: subDirectorImageFinal,
+    }
+  });
 
   return (
     <main className="min-h-screen bg-background text-foreground animate-in fade-in duration-1000">
@@ -62,7 +77,7 @@ export default async function DireccionPage({ params }: DireccionPageProps) {
           </p>
         </div>
         
-        {mapImage && <InteractiveMap regions={regionsWithImages} mapImage={mapImage} />}
+        {mapImage && <InteractiveMap regions={regionsWithImages} mapImage={mapImage} dictionary={dictionary} />}
 
       </div>
     </main>
