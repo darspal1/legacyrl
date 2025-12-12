@@ -72,8 +72,8 @@
   "automobilesPage": {
     "title": "Automobiles",
     "hero": "Engineering turned into art.",
-    "intro1": "The automobiles we select transcend their function. They are moving sculptures, symbols of mechanical heritages that will not be repeated.",
-    "intro2": "Each piece has been examined by specialized engineers and automotive history curators to ensure its impeccable condition and lineage.",
+    "intro1": "The automobiles we select transcend mere function. They are rolling sculptures, testaments to eras of unparalleled craftsmanship and audacious design. Our curation spans the golden decades of motoring, from the timeless elegance of the '60s with icons like the Mercedes-Benz 280SL 'Pagoda', to the analogue fury of '70s legends such as the Ferrari 365 GTB/4 'Daytona'.",
+    "intro2": "We celebrate the disruptive engineering of the '80s with masterpieces like the Porsche 959, and the birth of modern myths in the '90s with the McLaren F1. Each piece is meticulously examined by specialized engineers and automotive history curators to ensure not only its impeccable condition and lineage but also its enduring place in the pantheon of automotive art.",
     "servicesTitle": "Exclusive Services",
     "services": [
       {
@@ -358,3 +358,5 @@
     ]
   }
 }
+
+    

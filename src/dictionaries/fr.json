@@ -72,8 +72,8 @@
   "automobilesPage": {
     "title": "Automobiles",
     "hero": "L'ingénierie devenue art.",
-    "intro1": "Les automobiles que nous sélectionnons transcendent leur fonction. Ce sont des sculptures en mouvement, des symboles d'héritages mécaniques qui ne se répéteront pas.",
-    "intro2": "Chaque pièce a été examinée par des ingénieurs spécialisés et des conservateurs de l'histoire automobile pour garantir son état impeccable et sa lignée.",
+    "intro1": "Les automobiles que nous sélectionnons transcendent leur simple fonction. Ce sont des sculptures roulantes, des témoignages d'époques d'artisanat inégalé et de design audacieux. Notre curation couvre les décennies d'or de l'automobile, de l'élégance intemporelle des années 60 avec des icônes comme la Mercedes-Benz 280SL 'Pagode', à la fureur analogique des légendes des années 70 comme la Ferrari 365 GTB/4 'Daytona'.",
+    "intro2": "Nous célébrons l'ingénierie disruptive des années 80 avec des chefs-d'œuvre comme la Porsche 959, et la naissance de mythes modernes dans les années 90 avec la McLaren F1. Chaque pièce est méticuleusement examinée par des ingénieurs spécialisés et des conservateurs de l'histoire automobile pour garantir non seulement son état et sa lignée impeccables, mais aussi sa place durable dans le panthéon de l'art automobile.",
     "servicesTitle": "Services Exclusifs",
     "services": [
       {
@@ -332,28 +332,30 @@
   },
   "testimonials": {
     "title": "La Voix de nos Clients",
-    "subtitle": "Nuestro compromiso se refleja en la confianza que nuestros clientes depositan en nosotros. La discreción nos impide revelar sus nombres, pero su satisfacción es nuestra mejor carta de presentación.",
+    "subtitle": "Notre engagement se reflète dans la confiance que nos clients nous accordent. La discrétion nous empêche de révéler leurs noms, mais leur satisfaction est notre meilleure carte de visite.",
     "items": [
       {
-        "quote": "El equipo de R.L & Legacy no solo entendió mi visión, sino que la elevó. Su acceso a activos exclusivos es, sencillamente, inigualable en el mercado.",
+        "quote": "L'équipe de R.L & Legacy n'a pas seulement compris ma vision, elle l'a élevée. Leur accès à des actifs exclusifs est tout simplement inégalé sur le marché.",
         "author": "A.K.",
-        "role": "Financiero, Ginebra"
+        "role": "Financier, Genève"
       },
       {
-        "quote": "Lo que más valoro es la absoluta discreción y la gestión meticulosa de mi portafolio. Son verdaderos custodios del patrimonio, no solo inversores.",
+        "quote": "Ce que j'apprécie le plus, c'est la discrétion absolue et la gestion méticuleuse de mon portefeuille. Ce sont de véritables gardiens du patrimoine, pas seulement des investisseurs.",
         "author": "S.W.",
-        "role": "Emprendedor Tecnológico, California"
+        "role": "Entrepreneur en technologie, Californie"
       },
       {
-        "quote": "Encontrar una firma que comparta mi pasión por la historia del automóvil y trate cada adquisición como una obra de arte es raro. Han superado todas mis expectativas.",
+        "quote": "Trouver une entreprise qui partage ma passion pour l'histoire de l'automobile et traite chaque acquisition comme une œuvre d'art est rare. Ils ont dépassé toutes mes attentes.",
         "author": "Lord T.H.",
-        "role": "Coleccionista, Reino Unido"
+        "role": "Collectionneur, Royaume-Uni"
       },
       {
-        "quote": "El proceso de restauración arquitectónica de nuestra finca familiar fue manejado con una sensibilidad y profesionalismo exquisitos. Han preservado un legado para las próximas generaciones.",
+        "quote": "Le processus de restauration architecturale de notre domaine familial a été géré avec une sensibilité et un professionnalisme exquis. Ils ont préservé un héritage pour les générations à venir.",
         "author": "I.R.",
-        "role": "Familia Industrial Europea"
+        "role": "Famille industrielle européenne"
       }
     ]
   }
 }
+
+    
