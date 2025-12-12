@@ -58,7 +58,6 @@ export default function MainMenu() {
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === imageMap[item.title]);
           const href = getHref(item.href);
-          const isFoundersCard = item.title === 'Founders' || item.title === 'Fundadores' || item.title === 'Fondateurs';
           
           return (
             <Link 
@@ -69,17 +68,6 @@ export default function MainMenu() {
             >
               <Card className="relative h-[60vh] max-h-[700px] min-h-[500px] overflow-hidden border border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-500 ease-in-out hover:border-accent hover:shadow-2xl hover:shadow-accent/20">
                 {image && (
-                  isFoundersCard ? (
-                     <Image
-                      src={image.imageUrl}
-                      alt={image.description || item.title}
-                      fill
-                      className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      data-ai-hint={image.imageHint}
-                      priority
-                    />
-                  ) : (
                     <Image
                       src={image.imageUrl}
                       alt={image.description || item.title}
@@ -88,7 +76,6 @@ export default function MainMenu() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={image.imageHint}
                     />
-                  )
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
                 <CardContent className="relative flex h-full flex-col justify-end p-8 text-white">
