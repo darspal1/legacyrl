@@ -135,19 +135,19 @@
     {
       "id": "hero-fundadores",
       "description": "A dark wood corporate office, dim light, with an old globe or a stately library.",
-      "imageUrl": "/hero-fundadores.jpg",
+      "imageUrl": "/hero-founders.jpg",
       "imageHint": "stately library"
     },
     {
       "id": "founder-daniel",
       "description": "Medium body corporate portrait, soft side lighting, classic dark suit, elegant neutral background (gray, mahogany or ivory).",
-      "imageUrl": "https://images.unsplash.com/photo-1571969878627-d5c8f8d15c78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGF0ZWx5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/founder-daniel.png",
       "imageHint": "stately library"
     },
     {
       "id": "founder-clement",
       "description": "Corporate portrait with editorial aesthetic, soft natural light, light gray suit, blurred architectural background.",
-      "imageUrl": "https://images.unsplash.com/photo-1655603412600-76899fbc08ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdGF0ZWx5JTIwbGlicmFyeXxlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/founder-clement.png",
       "imageHint": "stately library"
     },
     {
