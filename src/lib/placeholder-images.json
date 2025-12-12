@@ -9,37 +9,37 @@
     {
       "id": "card-vinos",
       "description": "A hand holding a glass of red wine against the light in an old cellar.",
-      "imageUrl": "https://images.unsplash.com/photo-1597905722448-a1df7c00000a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1NDgyNDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1694147183672-57ccff109059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2luZSUyMGdsYXNzfGVufDB8fHx8MTc2NTQ4MjQyMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine glass"
     },
     {
       "id": "card-automoviles",
       "description": "A close-up of a classic European car's chrome emblem.",
-      "imageUrl": "https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGFzc2ljJTIwY2FyfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591293835940-934a7c4f2d9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbGFzc2ljJTIwY2FyfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic car"
     },
     {
       "id": "card-inmuebles",
       "description": "The stone facade of a historic European mansion.",
-      "imageUrl": "https://images.unsplash.com/photo-1736115272011-ac5a26079f4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1712073839057-bd13b32ea8e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mansion facade"
     },
     {
       "id": "card-fundadores",
       "description": "A sophisticated, old-money style corporate portrait setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MDYxNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MDYxNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "corporate portrait"
     },
     {
       "id": "card-direccion",
       "description": "An antique golden compass on a dark wood desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1628498643679-fa021dabb3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnb2xkZW4lMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1765132875625-e3ea8421d0aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "golden compass"
     },
     {
       "id": "card-contacto",
       "description": "An antique rotary phone on a dark, elegant desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1605150934764-e258a4bb6781?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbnRpcXVlJTIwcGhvbmV8ZW58MHx8fHwxNzY1NTE1MTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639148604856-0d8ffc69fa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhbnRpcXVlJTIwcGhvbmV8ZW58MHx8fHwxNzY1NTE1MTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "antique phone"
     },
     {
@@ -51,25 +51,25 @@
     {
       "id": "vinos-curaduria",
       "description": "Close-up of a collection of old wine bottles with aged, dusty labels, resting on an oak shelf.",
-      "imageUrl": "/vinos-curaduria.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1597534181229-b60b8b141610?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvbGQlMjB3aW5lJTIwYm90dGxlc3xlbnwwfHx8fDE3NjU1MTcxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old wine bottles"
     },
     {
       "id": "vinos-inversion",
       "description": "A noble wooden wine case with a wax seal, suggesting exclusivity and high value.",
-      "imageUrl": "/vinos-inversion.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1603314989925-3adb5c9a4891?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3aW5lJTIwY3JhdGV8ZW58MHx8fHwxNzY1NTE3MTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine crate"
     },
     {
       "id": "vinos-bodegas",
       "description": "An old, ornate iron gate leading into a subterranean stone wine cellar.",
-      "imageUrl": "/vinos-bodegas.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1589915906862-73a5e1aad56f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjZWxsYXIlMjBkb29yfGVufDB8fHx8MTc2NTUxNzE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cellar door"
     },
     {
       "id": "vinos-custodia",
       "description": "Modern, climate-controlled wine storage with sleek, illuminated shelves, and a digital inventory system.",
-      "imageUrl": "/vinos-custodia.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1561955147-e9083536e573?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjU1MTcxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine storage"
     },
     {
@@ -111,25 +111,25 @@
     {
       "id": "inmuebles-adquisicion",
       "description": "A classic European palace or a stately manor house in the countryside, exuding timeless elegance.",
-      "imageUrl": "https://images.unsplash.com/photo-1628008044780-fbcaefe5741c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjU1MTY1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1527838508074-c6a19972df7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjU1MTY1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stately home"
     },
     {
       "id": "inmuebles-auditoria",
       "description": "Hands carefully reviewing old architectural blueprints and historical documents on a wooden table.",
-      "imageUrl": "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTUxNjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653769-6001b9b4778f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTUxNjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture blueprints"
     },
     {
       "id": "inmuebles-restauracion",
       "description": "Detailed view of perfectly restored crown molding and noble woodwork in a historic building.",
-      "imageUrl": "https://images.unsplash.com/photo-1561756195-d77f7d163734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1NTE2NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1689655829252-af66529ab626?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1NTE2NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crown molding"
     },
     {
       "id": "inmuebles-gestion",
       "description": "Financial documents and a fountain pen resting on a noble, dark wood desk, signifying strategic asset management.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1NDMwMDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762831063004-bbd3ea38ba3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1NDMwMDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial documents"
     },
     {
