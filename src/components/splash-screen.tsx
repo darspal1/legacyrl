@@ -39,18 +39,24 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
         <div className="relative z-10 mx-auto max-w-4xl text-center p-8 animate-in fade-in slide-in-from-bottom-10 duration-1000">
-          <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
-            {dictionary.splash.title}
-          </h1>
-          <Logo className="mx-auto h-24 w-24" />
+          
+          <div className="flex flex-col items-center">
+            <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
+              {dictionary.splash.title}
+            </h1>
+            <Logo className="mx-auto h-24 w-24" />
+          </div>
+
           <h2 className="mt-4 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
             {dictionary.splash.subtitle}
           </h2>
+
           <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-muted-foreground/70 [text-shadow:_0_1px_4px_hsl(var(--background))]">
             {dictionary.splash.description1}
             <br /><br />
             {dictionary.splash.description2}
           </p>
+
           <Button
             onClick={handleEnterClick}
             className="mt-12 font-headline tracking-widest text-2xl px-12 py-8 bg-accent/[.40] text-primary-foreground border border-accent rounded-sm hover:bg-accent/[.60] hover:shadow-[0_0_20px_hsl(var(--accent))] transition-all duration-600 ease-in-out"
@@ -58,6 +64,7 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
           >
             {dictionary.splash.enterButton}
           </Button>
+
         </div>
       </div>
     </div>
