@@ -325,10 +325,14 @@
   "footer": {
     "copyright": "© {year} — Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
+    "privacyLink": "/politique-de-confidentialite",
     "terms": "Termes et Conditions",
+    "termsLink": "/terminos-y-condiciones",
     "governance": "Gouvernance",
+    "governanceLink": "/gouvernance",
     "faq": "FAQ",
-    "contact": "Contact Privé"
+    "contact": "Contact Privé",
+    "contactLink": "/contact"
   },
   "testimonials": {
     "title": "La Voix de nos Clients",

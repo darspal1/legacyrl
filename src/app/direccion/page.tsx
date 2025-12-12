@@ -23,6 +23,7 @@ export default async function DireccionPage({ params }: DireccionPageProps) {
     'Victoria Spencer & Associates': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Victoria Spencer & Asociados': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Victoria Spencer & Associés': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
+    'Victoria Spencer & Associati': PlaceHolderImages.find(p => p.id === 'director-victoria-spencer')?.imageUrl,
     'Knight Frank S.A.': PlaceHolderImages.find(p => p.id === 'direccion-europa')?.imageUrl,
   };
 

@@ -14,15 +14,19 @@ const serviceImageMap: { [key: string]: string } = {
   'Adquisición de Vehículos Clásicos': 'auto-adquisicion',
   'Acquisition of Classic Vehicles': 'auto-adquisicion',
   'Acquisition de Véhicules de Collection': 'auto-adquisicion',
+  'Acquisizione di Veicoli d\'Epoca': 'auto-adquisicion',
   'Certificación de Autenticidad': 'auto-certificacion',
   'Authenticity Certification': 'auto-certificacion',
   'Certification d\'Authenticité': 'auto-certificacion',
+  'Certificazione di Autenticità': 'auto-certificacion',
   'Restauraciones de Alto Patrimonio': 'auto-restauracion',
   'High-Heritage Restorations': 'auto-restauracion',
   'Restaurations de Haut Patrimoine': 'auto-restauracion',
+  'Restauri di Alto Valore Patrimoniale': 'auto-restauracion',
   'Gestión de Portafolios Automotrices': 'auto-gestion',
   'Automotive Portfolio Management': 'auto-gestion',
-  'Gestion de Portefeuilles Automobiles': 'auto-gestion'
+  'Gestion de Portefeuilles Automobiles': 'auto-gestion',
+  'Gestione di Portafogli Automobilistici': 'auto-gestion'
 };
 
 

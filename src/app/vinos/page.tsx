@@ -14,15 +14,19 @@ const serviceImageMap: { [key: string]: string } = {
   'Curaduría de Vinos Icónicos': 'vinos-curaduria',
   'Curation of Iconic Wines': 'vinos-curaduria',
   'Curation de Vins Iconiques': 'vinos-curaduria',
+  'Curatela di Vini Iconici': 'vinos-curaduria',
   'Fondos de Inversión Enológicos': 'vinos-inversion',
   'Enological Investment Funds': 'vinos-inversion',
   'Fonds d\'Investissement Œnologiques': 'vinos-inversion',
+  'Fondi di Investimento Enologici': 'vinos-inversion',
   'Acceso a Bodegas Exclusivas': 'vinos-bodegas',
   'Access to Exclusive Wineries': 'vinos-bodegas',
   'Accès à des Domaines Exclusifs': 'vinos-bodegas',
+  'Accesso a Cantine Esclusive': 'vinos-bodegas',
   'Gestión y Custodia de Colecciones': 'vinos-custodia',
   'Collection Management and Custody': 'vinos-custodia',
-  'Gestion et Garde de Collections': 'vinos-custodia'
+  'Gestion et Garde de Collections': 'vinos-custodia',
+  'Gestione e Custodia di Collezioni': 'vinos-custodia'
 };
 
 export default async function VinosPage({ params }: VinosPageProps) {

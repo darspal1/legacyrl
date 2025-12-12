@@ -1,0 +1,364 @@
+
+{
+  "splash": {
+    "title": "R.L. Legacy S.A.",
+    "subtitle": "Dove il patrimonio trova la sua storia.",
+    "description1": "In un mondo effimero, R.L. Legacy S.A. si erge come un bastione di permanenza. Non siamo semplicemente una società di investimento; siamo custodi del buon vivere e architetti di lasciti familiari.",
+    "description2": "Nata dall'unione di una selezionata società di investitori, la nostra azienda è stata concepita sotto una premessa incrollabile: il vero lusso non urla, sussurra.",
+    "enterButton": "[ ENTRA ]"
+  },
+  "mainMenu": {
+    "items": [
+      {
+        "href": "/vini",
+        "title": "Vini",
+        "subtitle": "Il tempo, catturato in una bottiglia."
+      },
+      {
+        "href": "/automobili",
+        "title": "Automobili",
+        "subtitle": "Ingegneria trasformata in arte."
+      },
+      {
+        "href": "/immobili",
+        "title": "Immobili",
+        "subtitle": "Mura che hanno visto passare la storia."
+      },
+      {
+        "href": "/fondatori",
+        "title": "Fondatori",
+        "subtitle": "Nomi che ispirano fiducia."
+      },
+      {
+        "href": "/direzione",
+        "title": "Direzione",
+        "subtitle": "Leadership che costruisce un'eredità."
+      },
+      {
+        "href": "/contatto",
+        "title": "Contatto",
+        "subtitle": "Attenzione privata e confidenziale."
+      }
+    ]
+  },
+  "pageHeader": {
+    "backButton": "Torna al Menu"
+  },
+  "winesPage": {
+    "title": "Vini",
+    "hero": "Il tempo, catturato in una bottiglia.",
+    "intro1": "In R.L. Legacy S.A., concepiamo il vino come un testamento liquido. Ogni bottiglia è un capitolo scritto dalla terra, dal clima e dal tempo.",
+    "intro2": "La nostra divisione enologica accede a vigneti leggendari, cantine chiuse al pubblico e produzioni limitate riservate a collezionisti e fondi patrimoniali.",
+    "servicesTitle": "Servizi Esclusivi",
+    "services": [
+      {
+        "title": "Curatela di Vini Iconici",
+        "description": "Selezione di Grands Crus, edizioni limitate e annate storiche preventivamente verificate da esperti."
+      },
+      {
+        "title": "Fondi di Investimento Enologici",
+        "description": "Strutture finanziarie che permettono di investire in vini che aumentano di valore nel tempo. Diversificazione, certificazione di autenticità e stoccaggio professionale."
+      },
+      {
+        "title": "Accesso a Cantine Esclusive",
+        "description": "Esperienze private in vigneti emblematici e incontri con enologi di fama mondiale."
+      },
+      {
+        "title": "Gestione e Custodia di Collezioni",
+        "description": "Protezione del valore della collezione attraverso stoccaggio specializzato e analisi della maturazione."
+      }
+    ]
+  },
+  "automobilesPage": {
+    "title": "Automobili",
+    "hero": "Ingegneria trasformata in arte.",
+    "intro1": "Le automobili che selezioniamo trascendono la mera funzione. Sono sculture in movimento, testimonianze di epoche di artigianato ineguagliabile e design audace. La nostra curatela abbraccia i decenni d'oro dell'automobilismo, dall'eleganza senza tempo degli anni '60 con icone come la Mercedes-Benz 280SL 'Pagoda', alla furia analogica delle leggende degli anni '70 come la Ferrari 365 GTB/4 'Daytona'.",
+    "intro2": "Celebriamo l'ingegneria dirompente degli anni '80 con capolavori come la Porsche 959, e la nascita di miti moderni negli anni '90 con la McLaren F1. Ogni pezzo è meticolosamente esaminato da ingegneri specializzati e curatori di storia automobilistica per garantirne non solo le impeccabili condizioni e il lignaggio, ma anche il suo posto imperituro nel pantheon dell'arte automobilistica.",
+    "servicesTitle": "Servizi Esclusivi",
+    "services": [
+      {
+        "title": "Acquisizione di Veicoli d'Epoca",
+        "description": "Accesso a modelli iconici: Ferrari Dino, Mercedes 300SL, Porsche 356, Aston Martin DB4 ed edizioni limitate."
+      },
+      {
+        "title": "Certificazione di Autenticità",
+        "description": "Storico auditato, origine verificata e tracciabilità completa del veicolo per garantirne la provenienza e il valore."
+      },
+      {
+        "title": "Restauri di Alto Valore Patrimoniale",
+        "description": "Restauri fedeli all'originale, realizzati da specialisti e artigiani riconosciuti a livello internazionale."
+      },
+      {
+        "title": "Gestione di Portafogli Automobilistici",
+        "description": "Modelli selezionati strategicamente per il loro potenziale di apprezzamento futuro, esclusività e significato storico."
+      }
+    ]
+  },
+  "realEstatePage": {
+    "title": "Immobili",
+    "hero": "Mura che hanno visto passare la storia.",
+    "intro1": "Il vero valore di una proprietà non si trova nei suoi metri quadrati, ma nella sua anima.",
+    "intro2": "Selezioniamo immobili che hanno resistito a generazioni: palazzi restaurati, attici con storia e tenute centenarie dove ogni muro narra un'eredità.",
+    "servicesTitle": "Servizi Esclusivi",
+    "services": [
+      {
+        "title": "Acquisizione di Immobili di Carattere",
+        "description": "Selezione di palazzi, tenute e residenze uniche, non disponibili sul mercato tradizionale."
+      },
+      {
+        "title": "Audit Architettonico e Patrimoniale",
+        "description": "Verifica strutturale, autenticità storica e potenziale di restauro per assicurare il valore a lungo termine."
+      },
+      {
+        "title": "Restauro con Artigiani",
+        "description": "Progetti di restauro e modernizzazione eseguiti da artigiani certificati nel patrimonio architettonico."
+      },
+      {
+        "title": "Gestione e Rivalutazione a Lungo Termine",
+        "description": "Strategie di conservazione del valore basate su esclusività, posizione e rarità architettonica."
+      }
+    ]
+  },
+  "foundersPage": {
+    "title": "Fondatori",
+    "hero": "Dove ingegneria e architettura costruiscono un'eredità.",
+    "intro1": "R.L. Legacy S.A. nasce dall'incontro di due visioni complementari: l'ingegneria applicata al patrimonio e l'architettura dedicata all'eccellenza.",
+    "intro2": "I nostri fondatori rappresentano due correnti essenziali: la precisione tecnica e l'estetica strutturale. Insieme, hanno dato forma a un'azienda che non solo investe, ma preserva l'eredità.",
+    "founders": [
+      {
+        "name": "Daniel Beniamino Rozúa",
+        "title": "Ingegnere Automobilistico ed Elettronico",
+        "country": "Italia",
+        "description": "Con una solida carriera in ingegneria automobilistica ed elettronica di precisione, Daniel apporta all'azienda la visione tecnica che definisce le nostre acquisizioni meccaniche. Il suo approccio combina prestazioni, affidabilità e tradizione, attributi essenziali nelle automobili di prestigio e nei beni da collezione."
+      },
+      {
+        "name": "Clément Lafayette",
+        "title": "Specialista in Architettura BIM",
+        "country": "Francia",
+        "description": "Specialista in architettura BIM e gestione del patrimonio, Clément apporta una prospettiva strutturale ed estetica chiave per la selezione di immobili di carattere. La sua sensibilità europea per il design e la conservazione storica rafforza il nostro impegno verso proprietà che trascendono le generazioni."
+      }
+    ]
+  },
+  "directionPage": {
+    "title": "Direzione",
+    "hero": "L'eccellenza richiede leadership; l'eredità, visione.",
+    "intro1": "R.L. Legacy S.A. si basa su una struttura direttiva internazionale, composta da professionisti che rappresentano l'integrità, la discrezione e la visione a lungo termine che definisce la nostra azienda.",
+    "intro2": "Ogni regione opera secondo i più alti standard di governance finanziaria e curatela di attivi patrimoniali.",
+    "mapCta": "Passa il mouse su una regione per visualizzare i dettagli.",
+    "regions": [
+      {
+        "id": "south-america",
+        "title": "Sud America",
+        "director": "Daniel Rozúa Jr.",
+        "directorLabel": "Direttore Regionale:",
+        "subDirector": "Facundo Stirling Ruaulth",
+        "subDirectorLabel": "Sotto-Direttore:",
+        "description": "Responsabili dell'espansione patrimoniale in mercati emergenti di alto valore, guidano le operazioni automobilistiche, immobiliari e vitivinicole in Sud America. Il loro approccio combina precisione tecnica, visione strategica e profonda conoscenza del patrimonio regionale."
+      },
+      {
+        "id": "north-america",
+        "title": "Nord America",
+        "director": "Victoria Spencer & Associati",
+        "directorLabel": "Direttore Regionale:",
+        "description": "Con decenni di esperienza nei mercati nordamericani, Victoria Spencer & Associati offrono una gestione impeccabile, incentrata su attivi esclusivi, proprietà storiche certificate e collezioni private di alto valore."
+      },
+      {
+        "id": "europe",
+        "title": "Europa",
+        "director": "Knight Frank S.A.",
+        "directorLabel": "Direttore Regionale:",
+        "description": "Partner strategici nel continente europeo, Knight Frank S.A. è leader nella consulenza patrimoniale per immobili storici e attivi esclusivi. La loro reputazione immacolata e la loro presenza globale li posizionano come custodi ideali dei mercati più esigenti del mondo."
+      },
+      {
+        "id": "default",
+        "title": "",
+        "director": "",
+        "directorLabel": "",
+        "description": ""
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contatto Privato",
+    "hero": "Attenzione personalizzata for coloro che apprezzano la discrezione.",
+    "intro": "In R.L. Legacy S.A., offriamo un servizio di attenzione privata e personalizzata. Compila il seguente modulo e uno dei nostri direttori si metterà in contatto per coordinare una videoconferenza tramite Skype o un'altra piattaforma sicura.",
+    "form": {
+      "fullName": "Nome completo",
+      "fullNamePlaceholder": "Il tuo nome e cognome",
+      "email": "Email aziendale o personale",
+      "emailPlaceholder": "tuoindirizzo@email.com",
+      "country": "Paese di residenza",
+      "countryPlaceholder": "Paese da cui ci contatti",
+      "interest": "Area di interesse",
+      "interestPlaceholder": "Seleziona un'area",
+      "interests": ["Automobili", "Immobili", "Vini", "Altro"],
+      "callMethod": "Metodo di chiamata preferito",
+      "callMethodPlaceholder": "Seleziona una piattaforma",
+      "callMethods": ["Skype", "Zoom", "Google Meet", "Teams"],
+      "callId": "Utente o ID della videochiamata",
+      "callIdPlaceholder": "Il tuo ID per la piattaforma scelta",
+      "message": "Messaggio",
+      "messagePlaceholder": "Scrivi qui la tua domanda o il motivo del tuo contatto.",
+      "submitButton": "Invia Richiesta",
+      "toastTitle": "Richiesta preparata.",
+      "toastDescription": "Il tuo client di posta elettronica si aprirà per inviare la richiesta.",
+      "validation": {
+        "fullName": "Il nome completo è obbligatorio.",
+        "email": "Inserisci un'email valida.",
+        "country": "Il paese è obbligatorio.",
+        "callId": "Il tuo ID/nome utente è obbligatorio.",
+        "message": "Il messaggio deve contenere almeno 10 caratteri."
+      }
+    },
+    "confidentialityNotice1": "Tutte le informazioni inviate saranno trattate con la massima riservatezza.",
+    "confidentialityNotice2": "Le riunioni sono coordinate esclusivamente per scopi professionali."
+  },
+  "governancePage": {
+    "title": "Governance Aziendale",
+    "intro": "La struttura di R.L. Legacy S.A. si fonda su principi di governance che garantiscono l'allineamento degli interessi, una gestione prudente del rischio e un impegno incrollabile nella protezione del patrimonio dei nostri clienti. La nostra visione non è solo investire, ma custodire e valorizzare eredità.",
+    "principles": [
+      {
+        "title": "Codice Etico Incrollabile",
+        "description": "Le nostre operazioni sono regolate da un codice di condotta che dà priorità a integrità, onestà e trasparenza. Ogni decisione, dall'acquisizione di un bene alla comunicazione con il cliente, è soggetta ai più alti standard etici."
+      },
+      {
+        "title": "Visione di Eredità a Lungo Termine",
+        "description": "Non cerchiamo rendimenti effimeri. La nostra strategia di investimento e gestione si basa sulla conservazione e la crescita del capitale attraverso le generazioni, assicurando che il patrimonio perduri nel tempo."
+      },
+      {
+        "title": "Impegno per l'Eccellenza",
+        "description": "L'eccellenza è la norma, non l'eccezione. Dalla curatela dei nostri beni al servizio clienti, ci impegniamo a offrire una qualità superlativa in ogni aspetto della nostra azienda."
+      },
+      {
+        "title": "La Riservatezza come Pilastro",
+        "description": "La privacy dei nostri clienti è sacra. Implementiamo rigorose misure di sicurezza e protocolli di discrezione per garantire che tutte le interazioni e i dati siano gestiti con la massima riservatezza."
+      }
+    ],
+    "supervisionTitle": "Struttura di Supervisione",
+    "supervisionText": "Sebbene la composizione del nostro consiglio di amministrazione e del nostro comitato di investimento sia privata, la sua struttura è progettata per garantire una supervisione indipendente, un processo decisionale collegiale e un audit costante dei processi. Gli interessi dei nostri clienti sono e saranno sempre la nostra massima priorità."
+  },
+  "faqPage": {
+    "title": "Domande Frequenti",
+    "intro": "Di seguito, rispondiamo ad alcune delle domande più comuni sulla nostra azienda, i nostri principi e il nostro metodo di lavoro.",
+    "faqs": [
+      {
+        "question": "In quali aree di investimento è specializzata R.L. Legacy S.A.?",
+        "answer": "La nostra azienda si concentra su tre pilastri dell'investimento patrimoniale: vini da collezione e annate uniche; automobili iconiche e a produzione limitata; e immobili di valore storico e architettonico. Ogni area è gestita da curatori e specialisti dedicati."
+      },
+      {
+        "question": "Come garantite la riservatezza dei clienti?",
+        "answer": "La discrezione è il fondamento della nostra azienda. Tutte le comunicazioni e le informazioni dei clienti sono trattate secondo i più rigidi protocolli di riservatezza. Non condividiamo dati con terze parti e utilizziamo piattaforme sicure per tutte le interazioni."
+      },
+      {
+        "question": "Che tipo di trattamento posso aspettarmi come cliente?",
+        "answer": "Offriamo un servizio diretto e personalizzato. Ogni cliente viene assegnato a un direttore dell'azienda, che funge da unico punto di contatto per garantire una comunicazione fluida, una profonda comprensione dei tuoi obiettivi e un'esecuzione impeccabile."
+      },
+      {
+        "question": "Come posso avviare una conversazione con l'azienda?",
+        "answer": "Per avviare una consultazione, ti invitiamo a utilizzare il nostro modulo nella sezione 'Contatto Privato'. Uno dei nostri direttori esaminerà la tua richiesta e si metterà in contatto per coordinare una videoconferenza privata sulla piattaforma di tua scelta."
+      },
+      {
+        "question": "Investite in attività finanziarie tradizionali?",
+        "answer": "No. Il nostro focus è esclusivamente su beni tangibili e passionali con potenziale di rivalutazione a lungo termine. Crediamo nel valore dell'eredità, della storia e dell'artigianato come pilastri di un solido portafoglio patrimoniale."
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Politica sulla Privacy",
+    "intro": "In R.L. Legacy S.A., la riservatezza e la protezione dei tuoi dati sono pilastri fondamentali della nostra relazione. Questa politica descrive come le tue informazioni personali vengono raccolte, utilizzate e protette.",
+    "sections": [
+      {
+        "title": "Informazioni che Raccogliamo",
+        "content": "Raccogliamo solo le informazioni necessarie per stabilire un contatto e comprendere i tuoi interessi di investimento, come richiesto nel nostro modulo di contatto privato. Ciò può includere il tuo nome, email, paese e interessi. Non raccogliamo automaticamente dati sensibili."
+      },
+      {
+        "title": "Uso delle Informazioni",
+        "content": "Le tue informazioni vengono utilizzate esclusivamente per scopi di comunicazione professionale. Ciò include rispondere alle tue domande, coordinare riunioni e fornire informazioni pertinenti sulle nostre aree di competenza. Non venderemo, affitteremo o condivideremo mai le tue informazioni personali con terze parti non autorizzate."
+      },
+      {
+        "title": "Sicurezza e Riservatezza",
+        "content": "Implementiamo misure di sicurezza tecniche e organizzative ragionevoli per proteggere le tue informazioni da accessi, alterazioni o divulgazioni non autorizzate. La comunicazione viene gestita tramite canali sicuri e l'accesso ai tuoi dati è limitato al personale direttivo autorizzato."
+      },
+      {
+        "title": "Cookie e Tecnologie di Tracciamento",
+        "content": "Il nostro sito web utilizza cookie essenziali per migliorare la tua esperienza di navigazione, come il mantenimento delle tue preferenze di tema (chiaro/scuro). Non utilizziamo cookie di tracciamento per scopi pubblicitari né condividiamo dati di navigazione con terze parti per tali scopi."
+      },
+      {
+        "title": "I Tuoi Diritti",
+        "content": "Hai il diritto di richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati personali in nostro possesso. Per esercitare questi diritti, ti preghiamo di contattarci tramite i canali di comunicazione stabiliti."
+      },
+      {
+        "title": "Modifiche alla Politica",
+        "content": "Ci riserviamo il diritto di modificare questa politica sulla privacy in qualsiasi momento. Eventuali modifiche saranno pubblicate su questa pagina ed entreranno in vigore immediatamente."
+      }
+    ]
+  },
+  "termsPage": {
+    "title": "Termini e Condizioni",
+    "intro": "L'accesso e l'uso di questo sito web, di proprietà di R.L. Legacy S.A., implica l'accettazione dei seguenti termini e condizioni. Si prega di leggerli attentamente.",
+    "sections": [
+      {
+        "title": "1. Uso Consentito del Sito",
+        "content": "Questo sito web è destinato a fornire informazioni sui nostri servizi e aree di competenza. Il contenuto è per uso personale e non commerciale. È vietato qualsiasi uso del sito che possa danneggiarlo, disabilitarlo, sovraccaricarlo o comprometterlo o interferire con l'uso e il godimento da parte di terzi."
+      },
+      {
+        "title": "2. Proprietà Intellettuale e Diritto d'Autore",
+        "content": "Tutto il contenuto di questo sito, inclusi testi, grafica, loghi, immagini e la loro selezione e disposizione, è di proprietà esclusiva di R.L. Legacy S.A. o dei suoi licenziatari ed è protetto dalle leggi internazionali sul diritto d'autore. La riproduzione, la modifica, la distribuzione o la ripubblicazione di qualsiasi contenuto senza il nostro previo consenso scritto non è consentita."
+      },
+      {
+        "title": "3. Limitazione di Responsabilità",
+        "content": "Le informazioni contenute in questo sito web sono fornite \"così come sono\" e a scopo informativo generale. Sebbene ci sforziamo di mantenere le informazioni aggiornate e corrette, non forniamo garanzie di alcun tipo, esplicite o implicite, circa la completezza, l'accuratezza, l'affidabilità o l'idoneità del contenuto. In nessun caso saremo responsabili per eventuali perdite o danni, diretti o indiretti, derivanti dall'uso di questo sito web."
+      },
+      {
+        "title": "4. Divieto di Uso Improprio",
+        "content": "L'utente si impegna a non utilizzare questo sito per scopi illeciti, fraudolenti o non autorizzati. Ciò include, a titolo esemplificativo, la trasmissione di materiale diffamatorio, l'introduzione di virus informatici o la raccolta di informazioni da altri utenti senza il loro consenso."
+      },
+      {
+        "title": "5. Link a Terze Parti",
+        "content": "Questo sito può contenere link a siti web di terze parti. Questi link sono forniti solo per comodità. Non abbiamo alcun controllo sul contenuto di tali siti e non ci assumiamo alcuna responsabilità per essi."
+      },
+      {
+        "title": "6. Legge Applicabile e Giurisdizione",
+        "content": "Qualsiasi controversia relativa a questi termini e condizioni sarà regolata dalle leggi della giurisdizione principale di operazioni dell'azienda, senza tener conto dei conflitti di principi legali."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} R.L. Legacy S.A. — Tutti i diritti riservati.",
+    "privacy": "Politica sulla Privacy",
+    "privacyLink": "/politica-sulla-privacy",
+    "terms": "Termini e Condizioni",
+    "termsLink": "/termini-e-condizioni",
+    "governance": "Governance",
+    "governanceLink": "/governance",
+    "faq": "FAQ",
+    "contact": "Contatto Privato",
+    "contactLink": "/contatto"
+  },
+  "testimonials": {
+    "title": "La Voce dei nostri Clienti",
+    "subtitle": "Il nostro impegno si riflette nella fiducia che i nostri clienti ripongono in noi. La discrezione ci impedisce di rivelare i loro nomi, ma la loro soddisfazione è la nostra migliore lettera di presentazione.",
+    "items": [
+      {
+        "quote": "Il team di R.L. Legacy S.A. non solo ha capito la mia visione, ma l'ha elevata. Il loro accesso a beni esclusivi è semplicemente ineguagliabile sul mercato.",
+        "author": "A.K.",
+        "role": "Finanziere, Ginevra"
+      },
+      {
+        "quote": "Ciò che apprezzo di più è la discrezione assoluta e la gestione meticolosa del mio portafoglio. Sono veri custodi del patrimonio, non solo investitori.",
+        "author": "S.W.",
+        "role": "Imprenditore Tecnologico, California"
+      },
+      {
+        "quote": "Trovare un'azienda che condivide la mia passione per la storia dell'automobile e tratta ogni acquisizione come un'opera d'arte è raro. Hanno superato tutte le mie aspettative.",
+        "author": "Lord T.H.",
+        "role": "Collezionista, Regno Unito"
+      },
+      {
+        "quote": "Il processo di restauro architettonico della nostra tenuta di famiglia è stato gestito con una sensibilità e una professionalità squisite. Hanno preservato un'eredità per le generazioni a venire.",
+        "author": "I.R.",
+        "role": "Famiglia Industriale Europea"
+      }
+    ]
+  }
+}

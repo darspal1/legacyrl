@@ -11,7 +11,7 @@ import { Separator } from '@/components/ui/separator';
 
 export const metadata: Metadata = {
   title: 'R.L. Legacy S.A.',
-  description: 'Donde el patrimonio encuentra su historia.',
+  description: 'Dove il patrimonio trova la sua storia.',
 };
 
 export default async function RootLayout({
@@ -23,12 +23,20 @@ export default async function RootLayout({
 }>) {
   const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
+  
+  const getLink = (path: string) => {
+    if (lang === i18n.defaultLocale) {
+      return path;
+    }
+    return `/${lang}${path}`;
+  }
+
   const footerLinks = [
-    { href: `/${lang}/politica-de-privacidad`, label: dictionary.footer.privacy },
-    { href: `/${lang}/terminos-y-condiciones`, label: dictionary.footer.terms },
-    { href: `/${lang}/gobernanza`, label: dictionary.footer.governance },
-    { href: `/${lang}/faq`, label: dictionary.footer.faq },
-    { href: `/${lang}/contacto`, label: dictionary.footer.contact },
+    { href: getLink(dictionary.footer.privacyLink), label: dictionary.footer.privacy },
+    { href: getLink(dictionary.footer.termsLink), label: dictionary.footer.terms },
+    { href: getLink(dictionary.footer.governanceLink), label: dictionary.footer.governance },
+    { href: getLink('/faq'), label: dictionary.footer.faq },
+    { href: getLink(dictionary.footer.contactLink), label: dictionary.footer.contact },
   ];
   const seals = [
     { icon: ShieldCheck, text: "Chamber of Commerce Seal" },

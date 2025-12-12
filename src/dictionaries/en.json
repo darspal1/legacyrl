@@ -326,10 +326,14 @@
   "footer": {
     "copyright": "© {year} — All rights reserved.",
     "privacy": "Privacy Policy",
+    "privacyLink": "/politica-de-privacidad",
     "terms": "Terms and Conditions",
+    "termsLink": "/terminos-y-condiciones",
     "governance": "Governance",
+    "governanceLink": "/gobernanza",
     "faq": "FAQ",
-    "contact": "Private Contact"
+    "contact": "Private Contact",
+    "contactLink": "/contacto"
   },
   "testimonials": {
     "title": "The Voice of our Clients",

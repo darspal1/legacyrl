@@ -14,15 +14,19 @@ const serviceImageMap: { [key: string]: string } = {
   'Adquisición de Propiedades con Carácter': 'inmuebles-adquisicion',
   'Acquisition of Properties with Character': 'inmuebles-adquisicion',
   'Acquisition de Propriétés de Caractère': 'inmuebles-adquisicion',
+  'Acquisizione di Immobili di Carattere': 'inmuebles-adquisicion',
   'Auditoría Arquitectónica y Patrimonial': 'inmuebles-auditoria',
   'Architectural and Heritage Audit': 'inmuebles-auditoria',
   'Audit Architectural et Patrimonial': 'inmuebles-auditoria',
+  'Audit Architettonico e Patrimoniale': 'inmuebles-auditoria',
   'Restauración con Artesanos': 'inmuebles-restauracion',
   'Restoration with Artisans': 'inmuebles-restauracion',
   'Restauration avec des Artisans': 'inmuebles-restauracion',
+  'Restauro con Artigiani': 'inmuebles-restauracion',
   'Gestión y Revalorización a Largo Plazo': 'inmuebles-gestion',
   'Long-Term Management and Revaluation': 'inmuebles-gestion',
-  'Gestion et Revalorisation à Long Terme': 'inmuebles-gestion'
+  'Gestion et Revalorisation à Long Terme': 'inmuebles-gestion',
+  'Gestione e Rivalutazione a Lungo Termine': 'inmuebles-gestion'
 };
 
 
