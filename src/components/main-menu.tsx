@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { getDictionary } from '@/dictionaries';
 import { Locale, i18n } from '../../i18n-config';
 import { useEffect, useState } from 'react';
+import LanguageSwitcher from './language-switcher';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
@@ -59,7 +60,10 @@ export default function MainMenu() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8">
+    <div className="flex min-h-screen items-center justify-center bg-background p-4 md:p-8 relative">
+       <div className="absolute top-4 right-4 z-20">
+          <LanguageSwitcher />
+        </div>
       <div className="grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {menuItems.map((item, index) => {
           const image = PlaceHolderImages.find(p => p.id === imageMap[item.title]);

@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { getDictionary } from '@/dictionaries';
 import { useEffect, useState } from 'react';
+import LanguageSwitcher from './language-switcher';
 
 type SplashScreenProps = {
   onEnter: () => void;
@@ -22,6 +23,9 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
   return (
     <div className={`dark transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
       <div className="relative flex h-screen w-full flex-col items-center justify-center bg-background text-foreground overflow-hidden">
+        <div className="absolute top-4 right-4 z-20">
+          <LanguageSwitcher />
+        </div>
         {splashImage && (
           <Image
             src={splashImage.imageUrl}
