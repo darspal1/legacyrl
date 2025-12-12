@@ -12,16 +12,13 @@ export default function Logo({ className }: { className?: string }) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      {/* Central element */}
       <path d="M50 90 V 25 C 50 15, 40 10, 35 10" />
       <path d="M50 25 C 50 15, 60 10, 65 10" />
 
-      {/* Side leaves (right) */}
       <path d="M50 75 C 60 70, 70 55, 75 45" />
       <path d="M50 60 C 58 55, 65 45, 70 35" />
       <path d="M50 45 C 55 40, 60 35, 65 25" />
 
-      {/* Side leaves (left) */}
       <path d="M50 75 C 40 70, 30 55, 25 45" />
       <path d="M50 60 C 42 55, 35 45, 30 35" />
       <path d="M50 45 C 45 40, 40 35, 35 25" />
