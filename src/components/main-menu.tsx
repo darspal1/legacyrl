@@ -7,7 +7,6 @@ import { usePathname } from 'next/navigation';
 import { getDictionary } from '@/dictionaries';
 import { Locale, i18n } from '../../i18n-config';
 import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
 
 type Dictionary = Awaited<ReturnType<typeof getDictionary>>;
 
@@ -74,9 +73,8 @@ export default function MainMenu() {
                      <Image
                       src={image.imageUrl}
                       alt={image.description || item.title}
-                      width={800}
-                      height={600}
-                      className="h-auto w-full scale-125 object-contain transition-transform duration-700 ease-in-out group-hover:scale-150"
+                      fill
+                      className="object-contain transition-transform duration-700 ease-in-out group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       data-ai-hint={image.imageHint}
                       priority
