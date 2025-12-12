@@ -3,8 +3,15 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { i18n, type Locale } from '../../i18n-config';
-import { useState, useEffect, Fragment } from 'react';
-import { cn } from '@/lib/utils';
+import { useState, useEffect } from 'react';
+import { Globe } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 export default function LanguageSwitcher() {
   const pathName = usePathname();
@@ -49,27 +56,29 @@ export default function LanguageSwitcher() {
   };
   
   if (!isClient) {
-    return <div className="h-8 w-24"></div>; // Placeholder to prevent layout shift
+    return <div className="h-10 w-10"></div>; // Placeholder to prevent layout shift
   }
 
   return (
-    <nav className="flex items-center space-x-2">
-      {i18n.locales.map((locale, index) => (
-        <Fragment key={locale}>
-          <Link 
-            href={redirectedPathName(locale)} 
-            className={cn(
-              "font-mono uppercase text-sm transition-colors hover:text-primary",
-              currentLocale === locale ? 'text-foreground font-bold' : 'text-muted-foreground'
-            )}
-          >
-            {locale}
-          </Link>
-          {index < i18n.locales.length - 1 && (
-            <span className="text-muted-foreground">|</span>
-          )}
-        </Fragment>
-      ))}
-    </nav>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon">
+          <Globe className="h-[1.2rem] w-[1.2rem]" />
+          <span className="sr-only">Toggle language</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {i18n.locales.map((locale) => (
+           <DropdownMenuItem key={locale} asChild>
+            <Link 
+              href={redirectedPathName(locale)}
+              className="font-mono uppercase"
+            >
+              {locale}
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }
