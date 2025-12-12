@@ -9,13 +9,13 @@
     {
       "id": "card-vinos",
       "description": "A hand holding a glass of red wine against the light in an old cellar.",
-      "imageUrl": "https://images.unsplash.com/photo-1635232823121-e88ed96d8d5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1NDgyNDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1597905722448-a1df7c00000a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aW5lJTIwZ2xhc3N8ZW58MHx8fHwxNzY1NDgyNDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wine glass"
     },
     {
       "id": "card-automoviles",
       "description": "A close-up of a classic European car's chrome emblem.",
-      "imageUrl": "https://images.unsplash.com/photo-1621971231299-d2b69f9b3fec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwY2FyfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGFzc2ljJTIwY2FyfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic car"
     },
     {
@@ -27,19 +27,19 @@
     {
       "id": "card-fundadores",
       "description": "A sophisticated, old-money style corporate portrait setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29ycG9yYXRlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY1NTA2MTcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MDYxNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "corporate portrait"
     },
     {
       "id": "card-direccion",
       "description": "An antique golden compass on a dark wood desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1758413148742-783c68a03085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xkZW4lMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628498643679-fa021dabb3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnb2xkZW4lMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "golden compass"
     },
     {
       "id": "card-contacto",
       "description": "An antique rotary phone on a dark, elegant desk.",
-      "imageUrl": "https://images.unsplash.com/photo-1622645014779-4564b807d195?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YW50aXF1ZSUyMHBob25lfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605150934764-e258a4bb6781?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbnRpcXVlJTIwcGhvbmV8ZW58MHx8fHwxNzY1NTE1MTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "antique phone"
     },
     {
@@ -111,25 +111,25 @@
     {
       "id": "inmuebles-adquisicion",
       "description": "A classic European palace or a stately manor house in the countryside, exuding timeless elegance.",
-      "imageUrl": "/inmuebles-adquisicion.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1628008044780-fbcaefe5741c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjU1MTY1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stately home"
     },
     {
       "id": "inmuebles-auditoria",
       "description": "Hands carefully reviewing old architectural blueprints and historical documents on a wooden table.",
-      "imageUrl": "/inmuebles-auditoria.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTUxNjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "architecture blueprints"
     },
     {
       "id": "inmuebles-restauracion",
       "description": "Detailed view of perfectly restored crown molding and noble woodwork in a historic building.",
-      "imageUrl": "/inmuebles-restauracion.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1561756195-d77f7d163734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1NTE2NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crown molding"
     },
     {
       "id": "inmuebles-gestion",
       "description": "Financial documents and a fountain pen resting on a noble, dark wood desk, signifying strategic asset management.",
-      "imageUrl": "/inmuebles-gestion.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1NDMwMDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "financial documents"
     },
     {
