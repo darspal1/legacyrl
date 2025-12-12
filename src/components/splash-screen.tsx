@@ -5,6 +5,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { getDictionary } from '@/dictionaries';
 import { useEffect, useState } from 'react';
 import LanguageSwitcher from './language-switcher';
+import Logo from './logo';
 
 type SplashScreenProps = {
   onEnter: () => void;
@@ -41,7 +42,8 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
           <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
             {dictionary.splash.title}
           </h1>
-          <h2 className="mt-6 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
+          <Logo className="mx-auto mt-4" />
+          <h2 className="mt-4 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
             {dictionary.splash.subtitle}
           </h2>
           <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-muted-foreground/70 [text-shadow:_0_1px_4px_hsl(var(--background))]">
