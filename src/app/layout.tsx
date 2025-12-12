@@ -9,10 +9,56 @@ import { ShieldCheck, Lock, Handshake, Gem, Library, Scale, KeyRound, DatabaseZa
 import { Separator } from '@/components/ui/separator';
 
 
-export const metadata: Metadata = {
-  title: 'R.L. Legacy S.A.',
-  description: 'Dove il patrimonio trova la sua storia.',
+const siteConfig = {
+  name: "R.L. Legacy S.A.",
+  description: "Custodios del buen vivir y arquitectos de legados familiares. Inversiones patrimoniales en vinos, automóviles clásicos e inmuebles con historia.",
+  url: "https://legacyrl.com",
+  ogImage: "https://legacyrl.com/og-image.jpg", // Debes crear y añadir esta imagen en tu carpeta /public
 };
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+    languages: {
+      'en': '/en',
+      'es': '/es',
+      'fr': '/fr',
+      'it': '/it',
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "it_IT",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  robots: "index, follow",
+  icons: {
+    icon: "/favicon.ico", // Debes crear y añadir este icono
+  },
+};
+
 
 export default async function RootLayout({
   children,
