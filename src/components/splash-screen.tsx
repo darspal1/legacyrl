@@ -42,7 +42,7 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
           <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
             {dictionary.splash.title}
           </h1>
-          <Logo className="mx-auto mt-4" />
+          <Logo className="mx-auto mt-4 h-24 w-24" />
           <h2 className="mt-4 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
             {dictionary.splash.subtitle}
           </h2>
