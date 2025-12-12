@@ -1,9 +1,9 @@
 
 {
   "splash": {
-    "title": "R.L & Legacy",
+    "title": "R.L Legacy",
     "subtitle": "Where heritage finds its history.",
-    "description1": "In an ephemeral world, R.L & Legacy S.A. stands as a bastion of permanence. We are not merely an investment firm; we are custodians of fine living and architects of family legacies.",
+    "description1": "In an ephemeral world, R.L Legacy S.A. stands as a bastion of permanence. We are not merely an investment firm; we are custodians of fine living and architects of family legacies.",
     "description2": "Born from the union of a select society of investors, our firm was conceived under an unbreakable premise: true luxury does not shout, it whispers.",
     "enterButton": "[ ENTER ]"
   },
@@ -47,7 +47,7 @@
   "winesPage": {
     "title": "Wines",
     "hero": "Time, captured in a bottle.",
-    "intro1": "At R.L & Legacy, we see wine as a liquid testament. Each bottle is a chapter written by the earth, the climate, and time.",
+    "intro1": "At R.L Legacy, we see wine as a liquid testament. Each bottle is a chapter written by the earth, the climate, and time.",
     "intro2": "Our enological division accesses legendary vineyards, cellars closed to the public, and limited productions reserved for collectors and patrimonial funds.",
     "servicesTitle": "Exclusive Services",
     "services": [
@@ -122,7 +122,7 @@
   "foundersPage": {
     "title": "Founders",
     "hero": "Where engineering and architecture build a legacy.",
-    "intro1": "R.L & Legacy is born from the meeting of two complementary visions: engineering applied to heritage and architecture dedicated to excellence.",
+    "intro1": "R.L Legacy is born from the meeting of two complementary visions: engineering applied to heritage and architecture dedicated to excellence.",
     "intro2": "Our founders represent two essential currents: technical precision and structural aesthetics. Together, they have shaped a firm that not only invests, but preserves legacy.",
     "founders": [
       {
@@ -142,7 +142,7 @@
   "directionPage": {
     "title": "Direction",
     "hero": "Excellence requires leadership; legacy, vision.",
-    "intro1": "R.L & Legacy is built on an international management structure, composed of professionals who represent the integrity, discretion, and long-term vision that defines our firm.",
+    "intro1": "R.L Legacy is built on an international management structure, composed of professionals who represent the integrity, discretion, and long-term vision that defines our firm.",
     "intro2": "Each region operates under the highest standards of financial governance and curation of patrimonial assets.",
     "mapCta": "Hover over a region to view details.",
     "regions": [
@@ -181,7 +181,7 @@
   "contactPage": {
     "title": "Private Contact",
     "hero": "Personalized attention for those who value discretion.",
-    "intro": "At R.L & Legacy, we offer a private and personalized attention service. Complete the following form and one of our directors will contact you to coordinate a video conference via Skype or another secure platform.",
+    "intro": "At R.L Legacy, we offer a private and personalized attention service. Complete the following form and one of our directors will contact you to coordinate a video conference via Skype or another secure platform.",
     "form": {
       "fullName": "Full name",
       "fullNamePlaceholder": "Your first and last name",
@@ -215,7 +215,7 @@
   },
   "governancePage": {
     "title": "Corporate Governance",
-    "intro": "The structure of R.L & Legacy is based on governance principles that ensure the alignment of interests, prudent risk management, and an unwavering commitment to protecting our clients' assets. Our vision is not just to invest, but to guard and enhance legacies.",
+    "intro": "The structure of R.L Legacy is based on governance principles that ensure the alignment of interests, prudent risk management, and an unwavering commitment to protecting our clients' assets. Our vision is not just to invest, but to guard and enhance legacies.",
     "principles": [
       {
         "title": "Unbreakable Ethical Code",
@@ -242,7 +242,7 @@
     "intro": "Below, we answer some of the most common questions about our firm, our principles, and our work method.",
     "faqs": [
       {
-        "question": "What investment areas does R.L & Legacy specialize in?",
+        "question": "What investment areas does R.L Legacy specialize in?",
         "answer": "Our firm focuses on three pillars of patrimonial investment: collectible wines and unique vintages; iconic and limited-production automobiles; and real estate with historical and architectural value. Each area is managed by dedicated curators and specialists."
       },
       {
@@ -265,7 +265,7 @@
   },
   "privacyPage": {
     "title": "Privacy Policy",
-    "intro": "At R.L & Legacy, the confidentiality and protection of your data are fundamental pillars of our relationship. This policy describes how your personal information is collected, used, and protected.",
+    "intro": "At R.L Legacy, the confidentiality and protection of your data are fundamental pillars of our relationship. This policy describes how your personal information is collected, used, and protected.",
     "sections": [
       {
         "title": "Information We Collect",
@@ -295,7 +295,7 @@
   },
   "termsPage": {
     "title": "Terms and Conditions",
-    "intro": "Access to and use of this website, owned by R.L & Legacy S.A., implies acceptance of the following terms and conditions. Please read them carefully.",
+    "intro": "Access to and use of this website, owned by R.L Legacy S.A., implies acceptance of the following terms and conditions. Please read them carefully.",
     "sections": [
       {
         "title": "1. Permitted Use of the Site",
@@ -303,7 +303,7 @@
       },
       {
         "title": "2. Intellectual Property and Copyright",
-        "content": "All content on this site, including text, graphics, logos, images, and their selection and arrangement, is the exclusive property of R.L & Legacy S.A. or its licensors and is protected by international copyright laws. Reproduction, modification, distribution, or republication of any content without our prior written consent is not permitted."
+        "content": "All content on this site, including text, graphics, logos, images, and their selection and arrangement, is the exclusive property of R.L Legacy S.A. or its licensors and is protected by international copyright laws. Reproduction, modification, distribution, or republication of any content without our prior written consent is not permitted."
       },
       {
         "title": "3. Limitation of Liability",
@@ -336,7 +336,7 @@
     "subtitle": "Our commitment is reflected in the trust our clients place in us. Discretion prevents us from revealing their names, but their satisfaction is our best letter of introduction.",
     "items": [
       {
-        "quote": "The team at R.L & Legacy not only understood my vision, but elevated it. Their access to exclusive assets is simply unparalleled in the market.",
+        "quote": "The team at R.L Legacy not only understood my vision, but elevated it. Their access to exclusive assets is simply unparalleled in the market.",
         "author": "A.K.",
         "role": "Financier, Geneva"
       },
