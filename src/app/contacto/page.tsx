@@ -103,7 +103,7 @@ export default function ContactoPage() {
       ${values.message}
     `;
 
-    const mailtoLink = `mailto:contact@rozua-legacy.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:private@legacyrl.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     window.location.href = mailtoLink;
 
