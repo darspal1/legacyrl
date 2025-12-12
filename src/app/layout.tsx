@@ -10,7 +10,7 @@ import { Separator } from '@/components/ui/separator';
 
 
 export const metadata: Metadata = {
-  title: 'R.L Legacy',
+  title: 'R.L. Legacy S.A.',
   description: 'Donde el patrimonio encuentra su historia.',
 };
 
@@ -58,7 +58,7 @@ export default async function RootLayout({
           <div className="container mx-auto py-8 px-4">
             <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
               <div className="mb-4 md:mb-0">
-                <h3 className="font-headline text-xl text-primary">R.L Legacy</h3>
+                <h3 className="font-headline text-xl text-primary">R.L. Legacy S.A.</h3>
                 <p className="text-sm text-muted-foreground">{dictionary.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
               </div>
               <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
