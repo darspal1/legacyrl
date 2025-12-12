@@ -7,8 +7,7 @@ export default function Logo({ className }: { className?: string }) {
       <Image
         src="/logo.png"
         alt="R.L. Legacy S.A. Logo"
-        width={100}
-        height={100}
+        fill
         className="object-contain"
         priority
       />

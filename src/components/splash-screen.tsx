@@ -21,6 +21,8 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
     setTimeout(onEnter, 700); // Match this with fade-out duration
   };
   
+  const subtitleParts = dictionary.splash.subtitle.split('finds');
+
   return (
     <div className={`dark transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
       <div className="relative flex h-screen w-full flex-col items-center justify-center bg-background text-foreground overflow-hidden">
@@ -44,12 +46,13 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
             <h1 className="font-headline text-5xl md:text-7xl font-bold text-muted-foreground [text-shadow:_0_2px_10px_hsl(var(--background)/_0.5)]">
               {dictionary.splash.title}
             </h1>
-            <Logo className="mx-auto h-24 w-24" />
           </div>
 
-          <h2 className="mt-4 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
-            {dictionary.splash.subtitle}
-          </h2>
+          <div className="mt-4 flex items-center justify-center gap-4 font-body text-xl md:text-2xl text-muted-foreground/80 tracking-widest uppercase [text-shadow:_0_1px_4px_hsl(var(--background))]">
+            <span>{subtitleParts[0]}</span>
+            <Logo className="h-12 w-12" />
+            <span>{`finds${subtitleParts[1]}`}</span>
+          </div>
 
           <p className="mt-8 max-w-2xl mx-auto font-body text-lg text-muted-foreground/70 [text-shadow:_0_1px_4px_hsl(var(--background))]">
             {dictionary.splash.description1}
