@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { i18n } from '../../i18n-config';
+import LanguageSwitcher from './language-switcher';
 
 type PageHeaderProps = {
   title: string;
@@ -16,18 +17,23 @@ export default function PageHeader({ title, backButtonText = "Volver al Menú" }
   const homeHref = i18n.locales.includes(lang as any) && lang !== i18n.defaultLocale ? `/${lang}/#menu` : '/#menu';
 
   return (
-    <header className="w-full p-4 md:p-8 border-b">
+    <header className="w-full p-4 md:p-6 border-b">
       <div className="max-w-7xl mx-auto flex items-center justify-between relative">
-        <Button asChild variant="ghost" className="text-muted-foreground hover:text-foreground md:absolute md:left-0">
-          <Link href={homeHref}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            {backButtonText}
-          </Link>
-        </Button>
-        <h1 className="font-headline text-3xl md:text-4xl font-bold text-foreground text-center flex-grow">
+        <div className="flex-1">
+          <Button asChild variant="ghost" className="text-muted-foreground hover:text-foreground">
+            <Link href={homeHref}>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              <span className="hidden md:inline">{backButtonText}</span>
+              <span className="md:hidden">Menu</span>
+            </Link>
+          </Button>
+        </div>
+        <h1 className="font-headline text-2xl md:text-4xl font-bold text-foreground text-center flex-1 truncate px-2">
           {title}
         </h1>
-        <div className="hidden md:block w-48" /> 
+        <div className="flex-1 flex justify-end">
+           <LanguageSwitcher />
+        </div> 
       </div>
     </header>
   );

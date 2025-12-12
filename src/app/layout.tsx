@@ -57,10 +57,7 @@ export default async function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased film-grain" suppressHydrationWarning>
-        <header className="absolute top-0 right-0 p-4 z-20">
-          <LanguageSwitcher />
-        </header>
+      <body className="font-body antialiased" suppressHydrationWarning>
         <main>{children}</main>
         <footer className="w-full bg-background text-foreground border-t border-accent/[.1] mt-auto">
           <div className="container mx-auto py-8 px-4">
