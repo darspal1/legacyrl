@@ -2,7 +2,7 @@
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
-    "subtitle": "Donde el patrimonio {{logo}} su historia.",
+    "subtitle": "Donde el patrimonio {{logo}} escribe su historia.",
     "description1": "En un mundo efímero, R.L. Legacy S.A. se erige como un bastión de permanencia. No somos simplemente una firma de inversión; somos custodios del buen vivir y arquitectos de legados familiares.",
     "description2": "Nacida de la unión de una selecta sociedad de inversionistas, nuestra firma fue concebida bajo una premisa inquebrantable: el verdadero lujo no grita, susurra.",
     "enterButton": "[ ENTRAR ]"
@@ -259,7 +259,7 @@
       },
       {
         "question": "¿Invierten en activos financieros tradicionales?",
-        "answer": "No. Nuestro enfoque se centra exclusivamente en activos tangibles y pasionales con potencial de revalorización a largo plazo. Creemos en el valor del legado, la historia y la artesanía como pilares de una cartera patrimonial sólida."
+        "answer": "No. Nuestro enfoque se centra exclusively en activos tangibles y pasionales con potencial de revalorización a largo plazo. Creemos en el valor del legado, la historia y la artesanía como pilares de una cartera patrimonial sólida."
       }
     ]
   },
