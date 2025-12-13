@@ -22,9 +22,8 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
   };
   
   const subtitleText = dictionary.splash.subtitle;
-  const logoPlaceholder = "logo";
-  const textWithPlaceholder = subtitleText.replace('finds', logoPlaceholder);
-  const subtitleParts = textWithPlaceholder.split(logoPlaceholder);
+  const logoPlaceholder = "{{logo}}";
+  const subtitleParts = subtitleText.split(logoPlaceholder);
 
   return (
     <div className={`dark transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>

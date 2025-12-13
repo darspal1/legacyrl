@@ -2,7 +2,7 @@
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
-    "subtitle": "Donde el patrimonio encuentra su historia.",
+    "subtitle": "Donde el patrimonio {{logo}} su historia.",
     "description1": "En un mundo efímero, R.L. Legacy S.A. se erige como un bastión de permanencia. No somos simplemente una firma de inversión; somos custodios del buen vivir y arquitectos de legados familiares.",
     "description2": "Nacida de la unión de una selecta sociedad de inversionistas, nuestra firma fue concebida bajo una premisa inquebrantable: el verdadero lujo no grita, susurra.",
     "enterButton": "[ ENTRAR ]"
@@ -358,5 +358,3 @@
     ]
   }
 }
-
-    
