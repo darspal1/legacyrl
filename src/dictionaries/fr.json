@@ -92,7 +92,33 @@
         "title": "Gestion de Portefeuilles Automobiles",
         "description": "Modèles sélectionnés stratégiquement pour leur potentiel d'appréciation future, leur exclusivité et leur importance historique."
       }
-    ]
+    ],
+    "restorationExcellence": {
+      "title": "L'Excellence en Restauration",
+      "intro": "Notre expertise se démontre le mieux à travers notre travail. Les véhicules suivants représentent des études de cas en restauration de haut patrimoine, où notre engagement envers l'authenticité et l'artisanat magistral a préservé l'histoire de l'automobile pour les générations futures.",
+      "cars": [
+        {
+          "name": "Mercedes-Benz 300SL",
+          "description": "Une restauration complète qui a ramené cette 'Portes papillon' à sa gloire d'origine, préservant l'une des plus grandes icônes de l'automobile.",
+          "imageId": "mercedes-300sl"
+        },
+        {
+          "name": "Ferrari 250 GTO",
+          "description": "Un audit d'authenticité approfondi et une préservation minutieuse d'une légende de la course, garantissant l'intégrité de son pedigree de compétition et de son immense valeur.",
+          "imageId": "ferrari-250gto"
+        },
+        {
+          "name": "Aston Martin DB5",
+          "description": "Une restauration méticuleuse qui a su équilibrer la renommée cinématographique avec la précision historique, créant un exemple d'art automobile britannique primé en concours.",
+          "imageId": "aston-martin-db5"
+        },
+        {
+          "name": "Porsche 911 (901)",
+          "description": "Une préservation axée sur le patrimoine de l'une des toutes premières 911, visant à conserver son caractère original et la pureté de son design initial.",
+          "imageId": "porsche-911"
+        }
+      ]
+    }
   },
   "realEstatePage": {
     "title": "Immobilier",

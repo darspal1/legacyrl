@@ -82,7 +82,7 @@ export default async function AutomovilesPage({ params }: AutomovilesPageProps) 
                 className="animate-in fade-in slide-in-from-bottom-5"
                 style={{animationDelay: `${index * 150}ms`, animationDuration: '700ms'}}
               >
-                <Card className="h-full overflow-hidden border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-accent/10 hover:-translate-y-2">
+                <Card className="h-full overflow-hidden border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-accent/10 hover:-translate-y-2 group">
                   <div className="relative h-48 w-full overflow-hidden">
                     {serviceImage && (
                        <Image
@@ -104,6 +104,50 @@ export default async function AutomovilesPage({ params }: AutomovilesPageProps) 
             );
           })}
         </div>
+
+        <Separator className="my-24 max-w-sm mx-auto bg-primary h-[2px] rounded-full" />
+
+        <div className="text-center max-w-4xl mx-auto">
+          <h3 className="font-headline text-4xl font-bold mb-4 animate-in fade-in duration-500">
+            {t.restorationExcellence.title}
+          </h3>
+          <p className="font-body text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-5 duration-700">
+            {t.restorationExcellence.intro}
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          {t.restorationExcellence.cars.map((car, index) => {
+            const carImage = PlaceHolderImages.find(p => p.id === car.imageId);
+            return(
+              <div 
+                key={car.name} 
+                className="animate-in fade-in slide-in-from-bottom-5"
+                style={{animationDelay: `${index * 150}ms`, animationDuration: '700ms'}}
+              >
+                <Card className="h-full overflow-hidden border-accent/[.1] bg-card text-card-foreground shadow-2xl shadow-black/10 transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2 group">
+                  <div className="relative h-64 w-full overflow-hidden">
+                    {carImage && (
+                      <Image
+                        src={carImage.imageUrl}
+                        alt={carImage.description}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        sizes="(max-width: 1280px) 100vw, 50vw"
+                        data-ai-hint={carImage.imageHint}
+                      />
+                    )}
+                  </div>
+                  <CardContent className="p-6">
+                    <h4 className="font-headline text-2xl font-bold mb-2 text-primary">{car.name}</h4>
+                    <p className="font-body text-md text-foreground">{car.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
+            )
+          })}
+        </div>
+
       </div>
     </main>
   );

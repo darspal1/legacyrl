@@ -92,7 +92,33 @@
         "title": "Gestione di Portafogli Automobilistici",
         "description": "Modelli selezionati strategicamente per il loro potenziale di apprezzamento futuro, esclusività e significato storico."
       }
-    ]
+    ],
+    "restorationExcellence": {
+      "title": "Eccellenza nel Restauro",
+      "intro": "La nostra competenza si dimostra al meglio attraverso il nostro lavoro. I seguenti veicoli rappresentano casi di studio nel restauro di alto patrimonio, dove il nostro impegno per l'autenticità e l'artigianato magistrale ha preservato la storia dell'automobile per le generazioni future.",
+      "cars": [
+        {
+          "name": "Mercedes-Benz 300SL",
+          "description": "Un restauro completo che ha riportato questa 'Ali di gabbiano' al suo splendore originale di fabbrica, preservando una delle più grandi icone dell'automobilismo.",
+          "imageId": "mercedes-300sl"
+        },
+        {
+          "name": "Ferrari 250 GTO",
+          "description": "Un'approfondita verifica di autenticità e una conservazione rispettosa di una leggenda delle corse, assicurando che il suo pedigree da competizione e il suo immenso valore rimanessero intatti.",
+          "imageId": "ferrari-250gto"
+        },
+        {
+          "name": "Aston Martin DB5",
+          "description": "Un restauro meticoloso che ha bilanciato la fama cinematografica con l'accuratezza storica, creando un esempio da concorso dell'arte automobilistica britannica.",
+          "imageId": "aston-martin-db5"
+        },
+        {
+          "name": "Porsche 911 (901)",
+          "description": "Una conservazione focalizzata sul patrimonio di una delle primissime 911, incentrata sul mantenimento del suo carattere originale e della purezza del suo design iniziale.",
+          "imageId": "porsche-911"
+        }
+      ]
+    }
   },
   "realEstatePage": {
     "title": "Immobili",

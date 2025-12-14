@@ -69,7 +69,7 @@
     {
       "id": "vinos-custodia",
       "description": "Modern, climate-controlled wine storage with sleek, illuminated shelves, and a digital inventory system.",
-      "imageUrl": "https://images.unsplash.com/photo-1672676935290-fa2ce117d5de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjU1MTcxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1672676935290-fa2ce117d5de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aW5lJTIwc3RvcmFnZXxlbnwwfHx8fDE3NjU1MTcxNDR8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "wine storage"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "auto-adquisicion",
       "description": "The silhouette of a classic European sports car in a dimly lit, aristocratic garage.",
-      "imageUrl": "https://images.unsplash.com/photo-1617917142884-402d396a50aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGFzc2ljJTIwY2FyJTIwZ2FyYWdlfGVufDB8fHx8MTc2NTUxNzQwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617917142884-402d396a50aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGFzc2ljJTIwY2FyJTIwZ2FyYWdlfGVufDB8fHx8MTc2NTUxNzQwOXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "classic car garage"
     },
     {
@@ -93,43 +93,43 @@
     {
       "id": "auto-restauracion",
       "description": "A boutique workshop with artisan tools neatly arranged, where a classic car is being meticulously restored.",
-      "imageUrl": "https://images.unsplash.com/photo-1703875497368-512f045c87f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjByZXN0b3JhdGlvbnxlbnwwfHx8fDE3NjU1MTc0MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703875497368-512f045c87f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXIlMjByZXN0b3JhdGlvbnxlbnwwfHx8fDE3NjU1MTc0MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "car restoration"
     },
     {
       "id": "auto-gestion",
       "description": "A collection of pristine classic cars perfectly aligned in a museum-like setting with dramatic lighting.",
-      "imageUrl": "https://images.unsplash.com/photo-1613234259978-98229fb76d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NTQ0MTgwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1613234259978-98229fb76d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXIlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2NTQ0MTgwM3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "car collection"
     },
     {
       "id": "hero-inmuebles",
       "description": "The majestic stone facade of a historic mansion with grand windows and an imposing entrance.",
-      "imageUrl": "https://images.unsplash.com/photo-1755801355045-1c36d7d236aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1755801355045-1c36d7d236aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5zaW9uJTIwZmFjYWRlfGVufDB8fHx8MTc2NTUxNTE0NXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mansion facade"
     },
     {
       "id": "inmuebles-adquisicion",
       "description": "A classic European palace or a stately manor house in the countryside, exuding timeless elegance.",
-      "imageUrl": "https://images.unsplash.com/photo-1568486993567-d8cd75df22ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjU1MTY1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568486993567-d8cd75df22ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGF0ZWx5JTIwaG9tZXxlbnwwfHx8fDE3NjU1MTY1NjR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "stately home"
     },
     {
       "id": "inmuebles-auditoria",
       "description": "Hands carefully reviewing old architectural blueprints and historical documents on a wooden table.",
-      "imageUrl": "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTUxNjU2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBibHVlcHJpbnRzfGVufDB8fHx8MTc2NTUxNjU2NHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "architecture blueprints"
     },
     {
       "id": "inmuebles-restauracion",
       "description": "Detailed view of perfectly restored crown molding and noble woodwork in a historic building.",
-      "imageUrl": "https://images.unsplash.com/photo-1569924259120-22d9307489cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1NTE2NTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569924259120-22d9307489cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm93biUyMG1vbGRpbmd8ZW58MHx8fHwxNzY1NTE2NTY0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "crown molding"
     },
     {
       "id": "inmuebles-gestion",
       "description": "Financial documents and a fountain pen resting on a noble, dark wood desk, signifying strategic asset management.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1NDMwMDkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-cfa08c2a758f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkb2N1bWVudHN8ZW58MHx8fHwxNzY1NDMwMDkzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "financial documents"
     },
     {
@@ -153,13 +153,13 @@
     {
       "id": "hero-direccion",
       "description": "An antique golden compass resting on an old, sepia-toned world map.",
-      "imageUrl": "https://images.unsplash.com/photo-1519992599773-1e1d4029929d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxODUyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519992599773-1e1d4029929d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXAlMjBjb21wYXNzfGVufDB8fHx8MTc2NTUxODUyNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "map compass"
     },
     {
       "id": "direccion-norteamerica",
       "description": "Neoclassical style corporate offices, suggesting tradition and power.",
-      "imageUrl": "https://images.unsplash.com/photo-1688415506915-3e32a04c6ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZW9jbGFzc2ljJTIwb2ZmaWNlfGVufDB8fHx8MTc2NTUxODUyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1688415506915-3e32a04c6ff5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZW9jbGFzc2ljJTIwb2ZmaWNlfGVufDB8fHx8MTc2NTUxODUyNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "neoclassic office"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "hero-contacto",
       "description": "A classic desk with an antique telephone and a fountain pen, in sepia tones.",
-      "imageUrl": "https://images.unsplash.com/photo-1514472186299-337ba5ca11f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjTGFzc2ljJTIwZGVza3xlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1514472186299-337ba5ca11f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjTGFzc2ljJTIwZGVza3xlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "classic desk"
     },
     {
@@ -195,7 +195,7 @@
     {
       "id": "direccion-sudamerica",
       "description": "Portrait of a man in a suit",
-      "imageUrl": "https://images.unsplash.com/photo-1700774606371-70d1b9d426e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1700774606371-70d1b9d426e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "executive portrait"
     },
     {
@@ -221,6 +221,30 @@
       "description": "Villa Capra 'La Rotonda', a masterpiece of Renaissance architecture by Andrea Palladio, known for its completely symmetrical design.",
       "imageUrl": "https://www.whitemad.pl/wp-content/uploads/2024/10/Villa_Rotonda_front.jpg",
       "imageHint": "palladian villa"
+    },
+    {
+      "id": "mercedes-300sl",
+      "description": "The iconic Mercedes-Benz 300SL with its 'Gullwing' doors open, a masterpiece of German engineering.",
+      "imageUrl": "https://images.unsplash.com/photo-1616789916145-2d141e5e4b7f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "gullwing car"
+    },
+    {
+      "id": "ferrari-250gto",
+      "description": "The legendary Ferrari 250 GTO, a symbol of Italian passion and racing dominance, considered a holy grail for collectors.",
+      "imageUrl": "https://images.unsplash.com/photo-1582883522482-262804b90875?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "classic ferrari"
+    },
+    {
+      "id": "aston-martin-db5",
+      "description": "The Aston Martin DB5, an icon of British style and sophistication, famously associated with James Bond.",
+      "imageUrl": "https://images.unsplash.com/photo-1605638230588-3434f4796335?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "classic aston martin"
+    },
+    {
+      "id": "porsche-911",
+      "description": "An early Porsche 911 (901), representing the pure, timeless design and engineering that started a legend.",
+      "imageUrl": "https://images.unsplash.com/photo-1555516335-51655b333405?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "classic porsche"
     }
   ]
 }

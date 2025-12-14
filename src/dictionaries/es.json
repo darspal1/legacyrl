@@ -92,7 +92,33 @@
         "title": "Gestión de Portafolios Automotrices",
         "description": "Modelos seleccionados estratégicamente por su potencial de apreciación futura, exclusividad y significado histórico."
       }
-    ]
+    ],
+    "restorationExcellence": {
+      "title": "Excelencia en la Restauración",
+      "intro": "Nuestra pericia se demuestra mejor a través de nuestro trabajo. Los siguientes vehículos representan casos de estudio en restauración de alto patrimonio, donde nuestro compromiso con la autenticidad y la artesanía magistral ha preservado la historia automotriz para las generaciones futuras.",
+      "cars": [
+        {
+          "name": "Mercedes-Benz 300SL",
+          "description": "Una restauración completa que devolvió este 'Alas de Gaviota' a su gloria original de fábrica, preservando uno de los mayores iconos del automovilismo.",
+          "imageId": "mercedes-300sl"
+        },
+        {
+          "name": "Ferrari 250 GTO",
+          "description": "Una extensa auditoría de autenticidad y preservación respetuosa de una leyenda de las carreras, asegurando que su pedigrí de competición y su inmenso valor permanecieran intactos.",
+          "imageId": "ferrari-250gto"
+        },
+        {
+          "name": "Aston Martin DB5",
+          "description": "Una restauración meticulosa que equilibró la fama cinematográfica con la precisión histórica, creando un ejemplar de concurso del arte automotriz británico.",
+          "imageId": "aston-martin-db5"
+        },
+        {
+          "name": "Porsche 911 (901)",
+          "description": "Una preservación centrada en el patrimonio de uno de los primeros 911, enfocada en retener su carácter original y la pureza de su diseño inicial.",
+          "imageId": "porsche-911"
+        }
+      ]
+    }
   },
   "realEstatePage": {
     "title": "Inmuebles",
@@ -303,7 +329,7 @@
       },
       {
         "title": "Uso de la Información",
-        "content": "Su información se utiliza exclusivamente para fines de comunicación profesional. Esto incluye responder a sus consultas, coordinar reuniones y proporcionar información relevante sobre nuestras áreas de especialización. Jamás venderemos, alquilaremos o compartiremos su información personal con terceros no autorizados."
+        "content": "Su información se utiliza exclusively para fines de comunicación profesional. Esto incluye responder a sus consultas, coordinar reuniones y proporcionar información relevante sobre nuestras áreas de especialización. Jamás venderemos, alquilaremos o compartiremos su información personal con terceros no autorizados."
       },
       {
         "title": "Seguridad y Confidencialidad",
