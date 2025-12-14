@@ -111,7 +111,7 @@
       },
       {
         "title": "Restauration avec des Artisans",
-        "description": "Projets de restauration et de modernisation exécutés par des artisans certifiés en patrimoine architectural."
+        "description": "Projets de restauration et de modernisation qui préservent la valeur patrimoniale. Exécutés par des artisans certifiés, nous garantissons que l'héritage architectural est non seulement maintenu, mais aussi certifié et valorisé pour l'avenir."
       },
       {
         "title": "Gestion et Revalorisation à Long Terme",
@@ -125,26 +125,22 @@
         {
           "name": "Palais Ducal",
           "location": "Mantoue, Italie",
-          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir.",
-          "imageId": "palazzo-ducale"
+          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir."
         },
         {
           "name": "Palais Vendramin Calergi",
           "location": "Venise, Italie",
-          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner."
         },
         {
           "name": "Domaine de Chamarande",
           "location": "Chamarande, France",
-          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé.",
-          "imageId": "domaine-chamarande"
+          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé."
         },
         {
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicence, Italie",
-          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO.",
-          "imageId": "villa-capra"
+          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO."
         }
       ]
     }
@@ -391,7 +387,5 @@
     ]
   }
 }
-
-    
 
     
