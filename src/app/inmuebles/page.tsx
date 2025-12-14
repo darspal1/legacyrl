@@ -114,7 +114,7 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
           {t.featuredProperties.title}
         </h3>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {t.featuredProperties.properties.map((property, index) => {
             const propertyImage = PlaceHolderImages.find(p => p.id === property.imageId);
             return(

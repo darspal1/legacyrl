@@ -215,6 +215,12 @@
       "description": "The Château de Chamarande, surrounded by its public park, a place mixing art, nature, and heritage.",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Chateau_de_Chamarande.jpg",
       "imageHint": "french estate"
+    },
+    {
+      "id": "villa-capra",
+      "description": "Villa Capra 'La Rotonda', a masterpiece of Renaissance architecture by Andrea Palladio, known for its completely symmetrical design.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Vicenza_-_Villa_Capra%2C_%22La_Rotonda%22_3.jpg/1920px-Vicenza_-_Villa_Capra%2C_%22La_Rotonda%22_3.jpg",
+      "imageHint": "palladian villa"
     }
   ]
 }

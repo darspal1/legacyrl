@@ -138,6 +138,12 @@
           "location": "Chamarande, France",
           "description": "An 18th-century château set within a vast public park, blending classical architecture with contemporary art and a preserved natural landscape.",
           "imageId": "domaine-chamarande"
+        },
+        {
+          "name": "Villa Capra 'La Rotonda'",
+          "location": "Vicenza, Italy",
+          "description": "An icon of Palladian architecture, this villa is a masterpiece of symmetry and Renaissance harmony, designated a UNESCO World Heritage site.",
+          "imageId": "villa-capra"
         }
       ]
     }
