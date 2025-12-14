@@ -201,19 +201,19 @@
     {
       "id": "palazzo-ducale",
       "description": "Facade of the historic Palazzo Ducale in Mantua, Italy, a complex of buildings that were the royal residence of the Gonzaga family.",
-      "imageUrl": "https://images.unsplash.com/photo-1628177501344-9642ea3cc917?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWxhenpvJTIwZHVjYWxlJTIwbWFudG92YXxlbnwwfHx8fDE3MjE4MzYxNTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://www.weekendinitaly.com/media/5/4/547/slide_big_slide.jpg",
       "imageHint": "ducale palace"
     },
     {
       "id": "palazzo-vendramin",
       "description": "The Palazzo Vendramin Calergi on the Grand Canal in Venice, Italy, a noteworthy example of the Venetian Renaissance.",
-      "imageUrl": "https://images.unsplash.com/photo-1628945237326-455b382d6108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWxhenpvJTIwdmVuZHJhbWluJTIwY2FsZXJnaSUyMHZlbmljZXxlbnwwfHx8fDE3MjE4MzYxODN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://www.fondazionealberodoro.org/site/assets/files/2938/img_5418.1024x0.jpg",
       "imageHint": "venetian palace"
     },
     {
       "id": "domaine-chamarande",
       "description": "The Château de Chamarande, surrounded by its public park, a place mixing art, nature, and heritage.",
-      "imageUrl": "https://images.unsplash.com/photo-1620241077673-a03a628a8816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGF0ZWF1JTIwZGUlMjBjaGFtYXJhbmRlfGVufDB8fHx8MTcyMTgzNjIzMHww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Chateau_de_Chamarande.jpg",
       "imageHint": "french estate"
     }
   ]
