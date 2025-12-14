@@ -10,9 +10,9 @@
   "mainMenu": {
     "items": [
       {
-        "href": "/vinos",
-        "title": "Vinos",
-        "subtitle": "El tiempo, capturado en una botella."
+        "href": "/inmuebles",
+        "title": "Inmuebles",
+        "subtitle": "Muros que han visto la historia pasar."
       },
       {
         "href": "/automoviles",
@@ -20,9 +20,9 @@
         "subtitle": "Ingeniería convertida en arte."
       },
       {
-        "href": "/inmuebles",
-        "title": "Inmuebles",
-        "subtitle": "Muros que han visto la historia pasar."
+        "href": "/vinos",
+        "title": "Vinos",
+        "subtitle": "El tiempo, capturado en una botella."
       },
       {
         "href": "/fundadores",
@@ -149,28 +149,28 @@
       "intro": "Nuestro compromiso con el patrimonio se demuestra a través de nuestra participación en el estudio y la preservación de propiedades emblemáticas. Los siguientes monumentos no están a la venta; representan casos de estudio donde nuestra pericia en auditoría arquitectónica y gestión patrimonial ha contribuido a asegurar que su legado perdure.",
       "properties": [
         {
+          "imageId": "palazzo-ducale",
           "name": "Palacio Ducal",
           "location": "Mantua, Italia",
-          "description": "Un extenso complejo de edificios, patios y jardines que sirvió como residencia real de la familia Gonzaga, encarnando siglos de arte y poder.",
-          "imageId": "palazzo-ducale"
+          "description": "Un extenso complejo de edificios, patios y jardines que sirvió como residencia real de la familia Gonzaga, encarnando siglos de arte y poder."
         },
         {
+          "imageId": "palazzo-vendramin",
           "name": "Palacio Vendramin Calergi",
           "location": "Venecia, Italia",
-          "description": "Un ejemplo perfecto de la arquitectura renacentista veneciana en el Gran Canal, este palacio acogió a la realeza y fue el último hogar del compositor Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "Un ejemplo perfecto de la arquitectura renacentista veneciana en el Gran Canal, este palacio acogió a la realeza y fue el último hogar del compositor Richard Wagner."
         },
         {
+          "imageId": "domaine-chamarande",
           "name": "Finca de Chamarande",
           "location": "Chamarande, Francia",
-          "description": "Un castillo del siglo XVIII ubicado en un vasto parque público, que combina la arquitectura clásica con el arte contemporáneo y un paisaje natural preservado.",
-          "imageId": "domaine-chamarande"
+          "description": "Un castillo del siglo XVIII ubicado en un vasto parque público, que combina la arquitectura clásica con el arte contemporáneo y un paisaje natural preservado."
         },
         {
+          "imageId": "villa-capra",
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicenza, Italia",
-          "description": "Un icono de la arquitectura palladiana, esta villa es una obra maestra de simetría y armonía renacentista, declarada Patrimonio de la Humanidad por la UNESCO.",
-          "imageId": "villa-capra"
+          "description": "Un icono de la arquitectura palladiana, esta villa es una obra maestra de simetría y armonía renacentista, declarada Patrimonio de la Humanidad por la UNESCO."
         }
       ]
     }
@@ -329,7 +329,7 @@
       },
       {
         "title": "Uso de la Información",
-        "content": "Su información se utiliza exclusively para fines de comunicación profesional. Esto incluye responder a sus consultas, coordinar reuniones y proporcionar información relevante sobre nuestras áreas de especialización. Jamás venderemos, alquilaremos o compartiremos su información personal con terceros no autorizados."
+        "content": "Su información se utiliza exclusivamente para fines de comunicación profesional. Esto incluye responder a sus consultas, coordinar reuniones y proporcionar información relevante sobre nuestras áreas de especialización. Jamás venderemos, alquilaremos o compartiremos su información personal con terceros no autorizados."
       },
       {
         "title": "Seguridad y Confidencialidad",

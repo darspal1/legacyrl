@@ -10,9 +10,9 @@
   "mainMenu": {
     "items": [
       {
-        "href": "/vinos",
-        "title": "Wines",
-        "subtitle": "Time, captured in a bottle."
+        "href": "/inmuebles",
+        "title": "Real Estate",
+        "subtitle": "Walls that have seen history pass."
       },
       {
         "href": "/automoviles",
@@ -20,9 +20,9 @@
         "subtitle": "Engineering turned into art."
       },
       {
-        "href": "/inmuebles",
-        "title": "Real Estate",
-        "subtitle": "Walls that have seen history pass."
+        "href": "/vinos",
+        "title": "Wines",
+        "subtitle": "Time, captured in a bottle."
       },
       {
         "href": "/fundadores",
@@ -149,28 +149,28 @@
       "intro": "Our commitment to heritage is demonstrated through our involvement in the study and preservation of emblematic properties. The following monuments are not for sale; they represent case studies where our expertise in architectural auditing and heritage management has contributed to ensuring their legacy endures.",
       "properties": [
         {
+          "imageId": "palazzo-ducale",
           "name": "Ducal Palace",
           "location": "Mantua, Italy",
-          "description": "A sprawling complex of buildings, courtyards, and gardens that served as the royal residence of the Gonzaga family, embodying centuries of art and power.",
-          "imageId": "palazzo-ducale"
+          "description": "A sprawling complex of buildings, courtyards, and gardens that served as the royal residence of the Gonzaga family, embodying centuries of art and power."
         },
         {
+          "imageId": "palazzo-vendramin",
           "name": "Palazzo Vendramin Calergi",
           "location": "Venice, Italy",
-          "description": "A perfect example of Venetian Renaissance architecture on the Grand Canal, this palace hosted royalty and was the final home of composer Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "A perfect example of Venetian Renaissance architecture on the Grand Canal, this palace hosted royalty and was the final home of composer Richard Wagner."
         },
         {
+          "imageId": "domaine-chamarande",
           "name": "Domaine de Chamarande",
           "location": "Chamarande, France",
-          "description": "An 18th-century château set within a vast public park, blending classical architecture with contemporary art and a preserved natural landscape.",
-          "imageId": "domaine-chamarande"
+          "description": "An 18th-century château set within a vast public park, blending classical architecture with contemporary art and a preserved natural landscape."
         },
         {
+          "imageId": "villa-capra",
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicenza, Italy",
-          "description": "An icon of Palladian architecture, this villa is a masterpiece of symmetry and Renaissance harmony, designated a UNESCO World Heritage site.",
-          "imageId": "villa-capra"
+          "description": "An icon of Palladian architecture, this villa is a masterpiece of symmetry and Renaissance harmony, designated a UNESCO World Heritage site."
         }
       ]
     }

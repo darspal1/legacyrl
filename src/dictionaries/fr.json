@@ -10,9 +10,9 @@
   "mainMenu": {
     "items": [
       {
-        "href": "/vins",
-        "title": "Vins",
-        "subtitle": "Le temps, capturé dans une bouteille."
+        "href": "/immobilier",
+        "title": "Immobilier",
+        "subtitle": "Des murs qui ont vu l'histoire passer."
       },
       {
         "href": "/automobiles",
@@ -20,9 +20,9 @@
         "subtitle": "L'ingénierie devenue art."
       },
       {
-        "href": "/immobilier",
-        "title": "Immobilier",
-        "subtitle": "Des murs qui ont vu l'histoire passer."
+        "href": "/vins",
+        "title": "Vins",
+        "subtitle": "Le temps, capturé dans une bouteille."
       },
       {
         "href": "/fondateurs",
@@ -149,28 +149,28 @@
       "intro": "Notre engagement envers le patrimoine se manifeste par notre participation à l'étude et à la préservation de propriétés emblématiques. Les monuments suivants ne sont pas à vendre ; ils représentent des études de cas où notre expertise en audit architectural et en gestion de patrimoine a contribué à assurer la pérennité de leur héritage.",
       "properties": [
         {
+          "imageId": "palazzo-ducale",
           "name": "Palais Ducal",
           "location": "Mantoue, Italie",
-          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir.",
-          "imageId": "palazzo-ducale"
+          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir."
         },
         {
+          "imageId": "palazzo-vendramin",
           "name": "Palais Vendramin Calergi",
           "location": "Venise, Italie",
-          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner."
         },
         {
+          "imageId": "domaine-chamarande",
           "name": "Domaine de Chamarande",
           "location": "Chamarande, France",
-          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé.",
-          "imageId": "domaine-chamarande"
+          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé."
         },
         {
+          "imageId": "villa-capra",
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicence, Italie",
-          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO.",
-          "imageId": "villa-capra"
+          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO."
         }
       ]
     }

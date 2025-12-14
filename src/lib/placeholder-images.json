@@ -171,7 +171,7 @@
     {
       "id": "hero-contacto",
       "description": "A classic desk with an antique telephone and a fountain pen, in sepia tones.",
-      "imageUrl": "https://images.unsplash.com/photo-1514472186299-337ba5ca11f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjTGFzc2ljJTIwZGVza3xlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "classic desk"
     },
     {
@@ -225,25 +225,25 @@
     {
       "id": "mercedes-300sl",
       "description": "The iconic Mercedes-Benz 300SL with its 'Gullwing' doors open, a masterpiece of German engineering.",
-      "imageUrl": "https://images.unsplash.com/photo-1616789916145-2d141e5e4b7f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1724944112237-6f9a387d0b9b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "gullwing car"
     },
     {
       "id": "ferrari-250gto",
       "description": "The legendary Ferrari 250 GTO, a symbol of Italian passion and racing dominance, considered a holy grail for collectors.",
-      "imageUrl": "https://images.unsplash.com/photo-1582883522482-262804b90875?q=80&w=1968&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1662757776990-ba453cfb350f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "classic ferrari"
     },
     {
       "id": "aston-martin-db5",
       "description": "The Aston Martin DB5, an icon of British style and sophistication, famously associated with James Bond.",
-      "imageUrl": "https://images.unsplash.com/photo-1605638230588-3434f4796335?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1679638883601-9dee430482a5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "classic aston martin"
     },
     {
       "id": "porsche-911",
       "description": "An early Porsche 911 (901), representing the pure, timeless design and engineering that started a legend.",
-      "imageUrl": "https://images.unsplash.com/photo-1555516335-51655b333405?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1691315036348-85bf02674ae1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "classic porsche"
     }
   ]
