@@ -125,22 +125,26 @@
         {
           "name": "Palazzo Ducale",
           "location": "Mantova, Italia",
-          "description": "Un vasto complesso di edifici, cortili e giardini che fungeva da residenza reale della famiglia Gonzaga, incarnando secoli di arte e potere."
+          "description": "Un vasto complesso di edifici, cortili e giardini che fungeva da residenza reale della famiglia Gonzaga, incarnando secoli di arte e potere.",
+          "imageId": "palazzo-ducale"
         },
         {
           "name": "Palazzo Vendramin Calergi",
           "location": "Venezia, Italia",
-          "description": "Un perfetto esempio di architettura rinascimentale veneziana sul Canal Grande, questo palazzo ospitò la nobiltà e fu l'ultima dimora del compositore Richard Wagner."
+          "description": "Un perfetto esempio di architettura rinascimentale veneziana sul Canal Grande, questo palazzo ospitò la nobiltà e fu l'ultima dimora del compositore Richard Wagner.",
+          "imageId": "palazzo-vendramin"
         },
         {
           "name": "Domaine de Chamarande",
           "location": "Chamarande, Francia",
-          "description": "Un castello del XVIII secolo situato in un vasto parco pubblico, che unisce architettura classica, arte contemporanea e un paesaggio naturale preservato."
+          "description": "Un castello del XVIII secolo situato in un vasto parco pubblico, che unisce architettura classica, arte contemporanea e un paesaggio naturale preservato.",
+          "imageId": "domaine-chamarande"
         },
         {
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicenza, Italia",
-          "description": "Icona dell'architettura palladiana, questa villa è un capolavoro di simmetria e armonia rinascimentale, dichiarata Patrimonio dell'Umanità dall'UNESCO."
+          "description": "Icona dell'architettura palladiana, questa villa è un capolavoro di simmetria e armonia rinascimentale, dichiarata Patrimonio dell'Umanità dall'UNESCO.",
+          "imageId": "villa-capra"
         }
       ]
     }

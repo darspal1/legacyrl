@@ -125,22 +125,26 @@
         {
           "name": "Palais Ducal",
           "location": "Mantoue, Italie",
-          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir."
+          "description": "Un vaste complexe de bâtiments, cours et jardins qui fut la résidence royale de la famille Gonzague, incarnant des siècles d'art et de pouvoir.",
+          "imageId": "palazzo-ducale"
         },
         {
           "name": "Palais Vendramin Calergi",
           "location": "Venise, Italie",
-          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner."
+          "description": "Exemple parfait de l'architecture Renaissance vénitienne sur le Grand Canal, ce palais a accueilli la royauté et fut la dernière demeure du compositeur Richard Wagner.",
+          "imageId": "palazzo-vendramin"
         },
         {
           "name": "Domaine de Chamarande",
           "location": "Chamarande, France",
-          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé."
+          "description": "Un château du XVIIIe siècle situé dans un vaste parc public, mêlant architecture classique, art contemporain et paysage naturel préservé.",
+          "imageId": "domaine-chamarande"
         },
         {
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicence, Italie",
-          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO."
+          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO.",
+          "imageId": "villa-capra"
         }
       ]
     }
