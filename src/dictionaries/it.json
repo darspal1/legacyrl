@@ -118,8 +118,9 @@
         "description": "Strategie di conservazione del valore basate su esclusività, posizione e rarità architettonica."
       }
     ],
-    "featuredProperties": {
-      "title": "Proprietà d'Eccezione",
+    "architecturalFocus": {
+      "title": "Il Nostro Approccio Architettonico",
+      "intro": "Le seguenti proprietà non sono in vendita, ma servono come ispirazione ed esempio del livello di importanza storica e architettonica che cerchiamo per i nostri clienti. Sono una testimonianza del nostro impegno per il patrimonio.",
       "properties": [
         {
           "name": "Palazzo Ducale",
@@ -391,5 +392,7 @@
     ]
   }
 }
+
+    
 
     

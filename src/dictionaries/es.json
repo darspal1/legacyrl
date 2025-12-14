@@ -118,32 +118,29 @@
         "description": "Estrategias de preservación de valor basadas en exclusividad, ubicación y rareza arquitectónica."
       }
     ],
-    "featuredProperties": {
-      "title": "Propiedades Destacadas",
+    "architecturalFocus": {
+      "title": "Nuestro Enfoque Arquitectónico",
+      "intro": "Las siguientes propiedades no están a la venta, sino que sirven de inspiración y ejemplo del nivel de significación histórica y arquitectónica que buscamos para nuestros clientes. Son un testamento de nuestro compromiso con el patrimonio.",
       "properties": [
         {
           "name": "Palacio Ducal",
           "location": "Mantua, Italia",
-          "description": "Un extenso complejo de edificios, patios y jardines que sirvió como residencia real de la familia Gonzaga, encarnando siglos de arte y poder.",
-          "imageId": "palazzo-ducale"
+          "description": "Un extenso complejo de edificios, patios y jardines que sirvió como residencia real de la familia Gonzaga, encarnando siglos de arte y poder."
         },
         {
           "name": "Palacio Vendramin Calergi",
           "location": "Venecia, Italia",
-          "description": "Un ejemplo perfecto de la arquitectura renacentista veneciana en el Gran Canal, este palacio acogió a la realeza y fue el último hogar del compositor Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "Un ejemplo perfecto de la arquitectura renacentista veneciana en el Gran Canal, este palacio acogió a la realeza y fue el último hogar del compositor Richard Wagner."
         },
         {
           "name": "Finca de Chamarande",
           "location": "Chamarande, Francia",
-          "description": "Un castillo del siglo XVIII ubicado en un vasto parque público, que combina la arquitectura clásica con el arte contemporáneo y un paisaje natural preservado.",
-          "imageId": "domaine-chamarande"
+          "description": "Un castillo del siglo XVIII ubicado en un vasto parque público, que combina la arquitectura clásica con el arte contemporáneo y un paisaje natural preservado."
         },
         {
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicenza, Italia",
-          "description": "Un icono de la arquitectura palladiana, esta villa es una obra maestra de simetría y armonía renacentista, declarada Patrimonio de la Humanidad por la UNESCO.",
-          "imageId": "villa-capra"
+          "description": "Un icono de la arquitectura palladiana, esta villa es una obra maestra de simetría y armonía renacentista, declarada Patrimonio de la Humanidad por la UNESCO."
         }
       ]
     }
@@ -387,5 +384,7 @@
     ]
   }
 }
+
+    
 
     

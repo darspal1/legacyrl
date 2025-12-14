@@ -118,8 +118,9 @@
         "description": "Stratégies de préservation de la valeur basées sur l'exclusivité, l'emplacement et la rareté architecturale."
       }
     ],
-    "featuredProperties": {
-      "title": "Propriétés d'Exception",
+    "architecturalFocus": {
+      "title": "Notre Approche Architecturale",
+      "intro": "Les propriétés suivantes ne sont pas à vendre, mais servent d'inspiration et d'exemple du niveau de signification historique et architecturale que nous recherchons pour nos clients. Elles témoignent de notre engagement envers le patrimoine.",
       "properties": [
         {
           "name": "Palais Ducal",
@@ -305,7 +306,7 @@
       },
       {
         "title": "Sécurité et Confidentialité",
-        "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles raisonnables pour protéger vos informations contre l'accès, la modification ou la divulgation non autorisés. La communication est gérée via des canaux sécurisés et l'accès à vos données est limité au personnel de direction autorisé."
+        "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles raisonnables pour proteger vos informations contre l'accès, la modification ou la divulgation non autorisés. La communication est gérée via des canaux sécurisés et l'accès à vos données est limité au personnel de direction autorisé."
       },
       {
         "title": "Cookies et Technologies de Suivi",
@@ -390,5 +391,7 @@
     ]
   }
 }
+
+    
 
     

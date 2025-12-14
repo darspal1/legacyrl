@@ -118,8 +118,9 @@
         "description": "Value preservation strategies based on exclusivity, location, and architectural rarity."
       }
     ],
-    "featuredProperties": {
-      "title": "Featured Properties",
+    "architecturalFocus": {
+      "title": "Our Architectural Focus",
+      "intro": "The following properties are not for sale, but serve as inspiration and an example of the level of historical and architectural significance we seek for our clients. They are a testament to our commitment to heritage.",
       "properties": [
         {
           "name": "Ducal Palace",
@@ -391,5 +392,7 @@
     ]
   }
 }
+
+    
 
     

@@ -110,12 +110,17 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
 
         <Separator className="my-24 max-w-sm mx-auto bg-primary h-[2px] rounded-full" />
 
-        <h3 className="text-center font-headline text-4xl font-bold mb-12 animate-in fade-in duration-500">
-          {t.featuredProperties.title}
-        </h3>
+        <div className="text-center max-w-4xl mx-auto">
+          <h3 className="font-headline text-4xl font-bold mb-4 animate-in fade-in duration-500">
+            {t.architecturalFocus.title}
+          </h3>
+          <p className="font-body text-lg text-muted-foreground mb-12 animate-in fade-in slide-in-from-bottom-5 duration-700">
+            {t.architecturalFocus.intro}
+          </p>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
-          {t.featuredProperties.properties.map((property, index) => {
+          {t.architecturalFocus.properties.map((property, index) => {
             const propertyImage = PlaceHolderImages.find(p => p.id === property.imageId);
             return(
               <div 
@@ -152,3 +157,5 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
     </main>
   );
 }
+
+    
