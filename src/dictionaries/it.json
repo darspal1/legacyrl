@@ -2,7 +2,7 @@
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
-    "subtitle": "DOVE IL PATRIMONIO... SCRIVE LA SUA STORIA.",
+    "subtitle": "DOVE IL PATRIMONIO... {{logo}} SCRIVE LA SUA STORIA.",
     "description1": "In un mondo effimero, R.L. Legacy S.A. si erge come un bastione di permanenza. Non siamo semplicemente una società di investimento; siamo custodi del buon vivere e architetti di lasciti familiari.",
     "description2": "Nata dall'unione di una selezionata società di investitori, la nostra azienda è stata concepita sotto una premessa incrollabile: il vero lusso non urla, sussurra.",
     "enterButton": "[ ENTRA ]"
@@ -117,7 +117,30 @@
         "title": "Gestione e Rivalutazione a Lungo Termine",
         "description": "Strategie di conservazione del valore basate su esclusività, posizione e rarità architettonica."
       }
-    ]
+    ],
+    "featuredProperties": {
+      "title": "Proprietà d'Eccezione",
+      "properties": [
+        {
+          "name": "Palazzo Medici Riccardi",
+          "location": "Firenze, Italia",
+          "description": "Capolavoro del Rinascimento, questo palazzo è una testimonianza del potere e del mecenatismo della famiglia Medici. Le sue mura custodiscono arte e storia in egual misura.",
+          "imageId": "palazzo-medici"
+        },
+        {
+          "name": "Palazzo Pfanner",
+          "location": "Lucca, Italia",
+          "description": "Noto per i suoi spettacolari giardini barocchi, questo palazzo è un'oasi di arte e natura che ha fatto da sfondo a capolavori del cinema.",
+          "imageId": "palazzo-pfanner"
+        },
+        {
+          "name": "Castello di Rambouillet",
+          "location": "Rambouillet, Francia",
+          "description": "Antica residenza reale e presidenziale, questo imponente castello unisce la grandiosità medievale all'eleganza del XVIII secolo, circondato da una vasta tenuta naturale.",
+          "imageId": "chateau-rambouillet"
+        }
+      ]
+    }
   },
   "foundersPage": {
     "title": "Fondatori",

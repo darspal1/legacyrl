@@ -197,6 +197,24 @@
       "description": "Portrait of a man in a suit",
       "imageUrl": "https://images.unsplash.com/photo-1700774606371-70d1b9d426e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxleGVjdXRpdmUlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjU1MTg1MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "executive portrait"
+    },
+    {
+      "id": "palazzo-medici",
+      "description": "Facade of the historic Palazzo Medici Riccardi in Florence, Italy, a symbol of Renaissance power and art.",
+      "imageUrl": "https://images.unsplash.com/photo-1658332159491-58641dfb9087?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWxhenpvJTIwbWVkaWNpJTIwcmljY2FyZGl8ZW58MHx8fHwxNzE4NzQ0OTI3fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "renaissance palace"
+    },
+    {
+      "id": "palazzo-pfanner",
+      "description": "The beautiful baroque gardens of Palazzo Pfanner in Lucca, Italy, with its ornate statues and fountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1622760638394-55c3c2a86b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWxhenpvJTIwcGZhbm5lcnxlbnwwfHx8fDE3MTg3NDQ5NTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "baroque garden"
+    },
+    {
+      "id": "chateau-rambouillet",
+      "description": "The imposing Château de Rambouillet, a former royal and presidential residence, surrounded by a vast forest.",
+      "imageUrl": "https://images.unsplash.com/photo-1634011736233-5e3a8a3b3b0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGF0ZWF1JTIwZGUlMjByYW1ib3VpbGxldHxlbnwwfHx8fDE3MTg3NDUwMDJ8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "french chateau"
     }
   ]
 }

@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import { Card, CardContent } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
 import { Locale, i18n } from '../../../i18n-config';
+import { Building, MapPin, Landmark } from 'lucide-react';
 
 type InmueblesPageProps = {
   params: { lang?: Locale }
@@ -104,6 +105,47 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
                 </Card>
               </div>
             );
+          })}
+        </div>
+
+        <Separator className="my-24 max-w-sm mx-auto bg-primary h-[2px] rounded-full" />
+
+        <h3 className="text-center font-headline text-4xl font-bold mb-12 animate-in fade-in duration-500">
+          {t.featuredProperties.title}
+        </h3>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+          {t.featuredProperties.properties.map((property, index) => {
+            const propertyImage = PlaceHolderImages.find(p => p.id === property.imageId);
+            return(
+              <div 
+                key={property.name} 
+                className="animate-in fade-in slide-in-from-bottom-5"
+                style={{animationDelay: `${index * 150}ms`, animationDuration: '700ms'}}
+              >
+                <Card className="h-full overflow-hidden border-accent/[.1] bg-card text-card-foreground shadow-2xl shadow-black/10 transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2 group">
+                  <div className="relative h-64 w-full overflow-hidden">
+                    {propertyImage && (
+                      <Image
+                        src={propertyImage.imageUrl}
+                        alt={propertyImage.description}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                        sizes="(max-width: 1280px) 100vw, 33vw"
+                        data-ai-hint={propertyImage.imageHint}
+                      />
+                    )}
+                  </div>
+                  <CardContent className="p-6">
+                    <h4 className="font-headline text-2xl font-bold mb-1 text-primary">{property.name}</h4>
+                    <p className="font-body text-sm font-semibold text-muted-foreground flex items-center gap-2 mb-4">
+                      <MapPin size={14} /> {property.location}
+                    </p>
+                    <p className="font-body text-md text-foreground">{property.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
+            )
           })}
         </div>
       </div>

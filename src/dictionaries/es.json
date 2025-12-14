@@ -2,7 +2,7 @@
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
-    "subtitle": "Donde el patrimonio {{logo}} escribe su historia.",
+    "subtitle": "DONDE EL PATRIMONIO... {{logo}} ESCRIBE SU HISTORIA.",
     "description1": "En un mundo efímero, R.L. Legacy S.A. se erige como un bastión de permanencia. No somos simplemente una firma de inversión; somos custodios del buen vivir y arquitectos de legados familiares.",
     "description2": "Nacida de la unión de una selecta sociedad de inversionistas, nuestra firma fue concebida bajo una premisa inquebrantable: el verdadero lujo no grita, susurra.",
     "enterButton": "[ ENTRAR ]"
@@ -117,7 +117,30 @@
         "title": "Gestión y Revalorización a Largo Plazo",
         "description": "Estrategias de preservación de valor basadas en exclusividad, ubicación y rareza arquitectónica."
       }
-    ]
+    ],
+    "featuredProperties": {
+      "title": "Propiedades Destacadas",
+      "properties": [
+        {
+          "name": "Palacio Medici Riccardi",
+          "location": "Florencia, Italia",
+          "description": "Una obra maestra del Renacimiento, este palacio es un testimonio del poder y el mecenazgo de la familia Médici. Sus muros albergan arte e historia en igual medida.",
+          "imageId": "palazzo-medici"
+        },
+        {
+          "name": "Palazzo Pfanner",
+          "location": "Lucca, Italia",
+          "description": "Conocido por sus espectaculares jardines barrocos, este palacio es un oasis de arte y naturaleza que ha servido de escenario para obras maestras del cine.",
+          "imageId": "palazzo-pfanner"
+        },
+        {
+          "name": "Palacio de Rambouillet",
+          "location": "Rambouillet, Francia",
+          "description": "Antigua residencia real y presidencial, este imponente castillo combina la grandeza medieval con la elegancia del siglo XVIII, rodeado de un vasto dominio natural.",
+          "imageId": "chateau-rambouillet"
+        }
+      ]
+    }
   },
   "foundersPage": {
     "title": "Fundadores",

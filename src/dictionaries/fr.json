@@ -2,7 +2,7 @@
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
-    "subtitle": "OÙ LE PATRIMOINE... ÉCRIT SON HISTOIRE.",
+    "subtitle": "OÙ LE PATRIMOINE... {{logo}} ÉCRIT SON HISTOIRE.",
     "description1": "Dans un monde éphémère, R.L. Legacy S.A. se dresse comme un bastion de permanence. Nous ne sommes pas simplement une société d'investissement; nous sommes les gardiens du bien-vivre et les architectes de legs familiaux.",
     "description2": "Née de l'union d'une société sélecte d'investisseurs, notre firme a été conçue sous une prémisse inébranlable : le vrai luxe ne crie pas, il chuchote.",
     "enterButton": "[ ENTRER ]"
@@ -117,7 +117,30 @@
         "title": "Gestion et Revalorisation à Long Terme",
         "description": "Stratégies de préservation de la valeur basées sur l'exclusivité, l'emplacement et la rareté architecturale."
       }
-    ]
+    ],
+    "featuredProperties": {
+      "title": "Propriétés d'Exception",
+      "properties": [
+        {
+          "name": "Palais Médicis-Riccardi",
+          "location": "Florence, Italie",
+          "description": "Chef-d'œuvre de la Renaissance, ce palais témoigne du pouvoir et du mécénat de la famille Médicis. Ses murs renferment art et histoire à parts égales.",
+          "imageId": "palazzo-medici"
+        },
+        {
+          "name": "Palazzo Pfanner",
+          "location": "Lucques, Italie",
+          "description": "Connu pour ses spectaculaires jardins baroques, ce palais est une oasis d'art et de nature qui a servi de décor à des chefs-d'œuvre du cinéma.",
+          "imageId": "palazzo-pfanner"
+        },
+        {
+          "name": "Château de Rambouillet",
+          "location": "Rambouillet, France",
+          "description": "Ancienne résidence royale et présidentielle, cet imposant château allie la grandeur médiévale à l'élégance du XVIIIe siècle, entouré d'un vaste domaine naturel.",
+          "imageId": "chateau-rambouillet"
+        }
+      ]
+    }
   },
   "foundersPage": {
     "title": "Fondateurs",
