@@ -120,31 +120,27 @@
     ],
     "architecturalFocus": {
       "title": "Il Nostro Approccio Architettonico",
-      "intro": "Le seguenti proprietà non sono in vendita, ma servono come ispirazione ed esempio del livello di importanza storica e architettonica che cerchiamo per i nostri clienti. Sono una testimonianza del nostro impegno per il patrimonio.",
+      "intro": "Il nostro impegno per il patrimonio è dimostrato dal nostro coinvolgimento nello studio e nella conservazione di proprietà emblematiche. I seguenti monumenti non sono in vendita; rappresentano casi di studio in cui la nostra esperienza nell'auditing architettonico e nella gestione del patrimonio ha contribuito a garantirne la sopravvivenza dell'eredità.",
       "properties": [
         {
           "name": "Palazzo Ducale",
           "location": "Mantova, Italia",
-          "description": "Un vasto complesso di edifici, cortili e giardini che fungeva da residenza reale della famiglia Gonzaga, incarnando secoli di arte e potere.",
-          "imageId": "palazzo-ducale"
+          "description": "Un vasto complesso di edifici, cortili e giardini che fungeva da residenza reale della famiglia Gonzaga, incarnando secoli di arte e potere."
         },
         {
           "name": "Palazzo Vendramin Calergi",
           "location": "Venezia, Italia",
-          "description": "Un perfetto esempio di architettura rinascimentale veneziana sul Canal Grande, questo palazzo ospitò la nobiltà e fu l'ultima dimora del compositore Richard Wagner.",
-          "imageId": "palazzo-vendramin"
+          "description": "Un perfetto esempio di architettura rinascimentale veneziana sul Canal Grande, questo palazzo ospitò la nobiltà e fu l'ultima dimora del compositore Richard Wagner."
         },
         {
           "name": "Domaine de Chamarande",
           "location": "Chamarande, Francia",
-          "description": "Un castello del XVIII secolo situato in un vasto parco pubblico, che unisce architettura classica, arte contemporanea e un paesaggio naturale preservato.",
-          "imageId": "domaine-chamarande"
+          "description": "Un castello del XVIII secolo situato in un vasto parco pubblico, che unisce architettura classica, arte contemporanea e un paesaggio naturale preservato."
         },
         {
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicenza, Italia",
-          "description": "Icona dell'architettura palladiana, questa villa è un capolavoro di simmetria e armonia rinascimentale, dichiarata Patrimonio dell'Umanità dall'UNESCO.",
-          "imageId": "villa-capra"
+          "description": "Icona dell'architettura palladiana, questa villa è un capolavoro di simmetria e armonia rinascimentale, dichiarata Patrimonio dell'Umanità dall'UNESCO."
         }
       ]
     }
@@ -392,7 +388,5 @@
     ]
   }
 }
-
-    
 
     
