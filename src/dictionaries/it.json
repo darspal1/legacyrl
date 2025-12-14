@@ -122,22 +122,22 @@
       "title": "Proprietà d'Eccezione",
       "properties": [
         {
-          "name": "Palazzo Medici Riccardi",
-          "location": "Firenze, Italia",
-          "description": "Capolavoro del Rinascimento, questo palazzo è una testimonianza del potere e del mecenatismo della famiglia Medici. Le sue mura custodiscono arte e storia in egual misura.",
-          "imageId": "palazzo-medici"
+          "name": "Palazzo Ducale",
+          "location": "Mantova, Italia",
+          "description": "Un vasto complesso di edifici, cortili e giardini che fungeva da residenza reale della famiglia Gonzaga, incarnando secoli di arte e potere.",
+          "imageId": "palazzo-ducale"
         },
         {
-          "name": "Palazzo Pfanner",
-          "location": "Lucca, Italia",
-          "description": "Noto per i suoi spettacolari giardini barocchi, questo palazzo è un'oasi di arte e natura che ha fatto da sfondo a capolavori del cinema.",
-          "imageId": "palazzo-pfanner"
+          "name": "Palazzo Vendramin Calergi",
+          "location": "Venezia, Italia",
+          "description": "Un perfetto esempio di architettura rinascimentale veneziana sul Canal Grande, questo palazzo ospitò la nobiltà e fu l'ultima dimora del compositore Richard Wagner.",
+          "imageId": "palazzo-vendramin"
         },
         {
-          "name": "Castello di Rambouillet",
-          "location": "Rambouillet, Francia",
-          "description": "Antica residenza reale e presidenziale, questo imponente castello unisce la grandiosità medievale all'eleganza del XVIII secolo, circondato da una vasta tenuta naturale.",
-          "imageId": "chateau-rambouillet"
+          "name": "Domaine de Chamarande",
+          "location": "Chamarande, Francia",
+          "description": "Un castello del XVIII secolo situato in un vasto parco pubblico, che unisce architettura classica, arte contemporanea e un paesaggio naturale preservato.",
+          "imageId": "domaine-chamarande"
         }
       ]
     }
@@ -385,3 +385,5 @@
     ]
   }
 }
+
+    

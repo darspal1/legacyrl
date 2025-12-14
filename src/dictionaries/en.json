@@ -122,22 +122,22 @@
       "title": "Featured Properties",
       "properties": [
         {
-          "name": "Palazzo Medici Riccardi",
-          "location": "Florence, Italy",
-          "description": "A masterpiece of the Renaissance, this palace stands as a testament to the power and patronage of the Medici family. Its walls hold art and history in equal measure.",
-          "imageId": "palazzo-medici"
+          "name": "Ducal Palace",
+          "location": "Mantua, Italy",
+          "description": "A sprawling complex of buildings, courtyards, and gardens that served as the royal residence of the Gonzaga family, embodying centuries of art and power.",
+          "imageId": "palazzo-ducale"
         },
         {
-          "name": "Palazzo Pfanner",
-          "location": "Lucca, Italy",
-          "description": "Known for its spectacular baroque gardens, this palace is an oasis of art and nature that has served as a backdrop for cinematic masterpieces.",
-          "imageId": "palazzo-pfanner"
+          "name": "Palazzo Vendramin Calergi",
+          "location": "Venice, Italy",
+          "description": "A perfect example of Venetian Renaissance architecture on the Grand Canal, this palace hosted royalty and was the final home of composer Richard Wagner.",
+          "imageId": "palazzo-vendramin"
         },
         {
-          "name": "Château de Rambouillet",
-          "location": "Rambouillet, France",
-          "description": "A former royal and presidential residence, this imposing château blends medieval grandeur with 18th-century elegance, surrounded by a vast natural estate.",
-          "imageId": "chateau-rambouillet"
+          "name": "Domaine de Chamarande",
+          "location": "Chamarande, France",
+          "description": "An 18th-century château set within a vast public park, blending classical architecture with contemporary art and a preserved natural landscape.",
+          "imageId": "domaine-chamarande"
         }
       ]
     }
@@ -385,3 +385,5 @@
     ]
   }
 }
+
+    
