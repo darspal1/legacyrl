@@ -1,4 +1,3 @@
-
 {
   "splash": {
     "title": "R.L. Legacy S.A.",
@@ -229,6 +228,7 @@
         "id": "default",
         "title": "",
         "director": "",
+        "directorLabel": "",
         "description": ""
       }
     ]
@@ -370,7 +370,7 @@
       },
       {
         "title": "5. Liens vers des Tiers",
-        "content": "Ce site peut contenir des liens vers des sites Web de tiers. Ces liens sont fournis pour votre commodité uniquement. Nous n'avons aucun contrôle sur le contenu de ces sites et n'assumons aucune responsabilité à leur égard."
+        "content": "Ce site peut contenir des liens vers des sites Web de tiers. Ces liens sont fournis pour votre commodité uniquement. Nous n'avons aucun contrôle over le contenu de ces sites et n'assumons aucune responsabilité à leur égard."
       },
       {
         "title": "6. Droit Applicable et Juridiction",
