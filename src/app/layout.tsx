@@ -1,3 +1,4 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
@@ -13,7 +14,7 @@ const siteConfig = {
   name: "R.L. Legacy S.A.",
   description: "Custodios del buen vivir y arquitectos de legados familiares. Inversiones patrimoniales en vinos, automóviles clásicos e inmuebles con historia.",
   url: "https://legacyrl.com",
-  ogImage: "https://legacyrl.com/og-image.jpg", // Debes crear y añadir esta imagen en tu carpeta /public
+  ogImage: "https://legacyrl.com/og-image.jpg",
 };
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "it_IT",
+    locale: "es_ES",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -54,9 +55,6 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
   },
   robots: "index, follow",
-  icons: {
-    icon: "/favicon.ico", // Debes crear y añadir este icono
-  },
 };
 
 

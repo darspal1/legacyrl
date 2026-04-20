@@ -1,6 +1,10 @@
 
 {
   "splash": {
+    "seo": {
+      "title": "Inicio | R.L. Legacy S.A.",
+      "description": "Custodios del buen vivir y arquitectos de legados familiares. Inversiones patrimoniales en vinos, automóviles e inmuebles."
+    },
     "title": "R.L. Legacy S.A.",
     "subtitle": "DONDE EL PATRIMONIO... {{logo}} ESCRIBE SU HISTORIA.",
     "description1": "En un mundo efímero, R.L. Legacy S.A. se erige como un bastión de permanencia. No somos simplemente una firma de inversión; somos custodios del buen vivir y arquitectos de legados familiares.",
@@ -45,6 +49,10 @@
     "backButton": "Volver al Menú"
   },
   "winesPage": {
+    "seo": {
+      "title": "Vinos Icónicos | R.L. Legacy S.A.",
+      "description": "Acceso a viñedos legendarios y fondos de inversión enológicos para coleccionistas de alto patrimonio."
+    },
     "title": "Vinos",
     "hero": "El tiempo, capturado en una botella.",
     "intro1": "En R.L. Legacy S.A., concebimos el vino como un testamento líquido. Cada botella es un capítulo escrito por la tierra, el clima y el tiempo.",
@@ -70,6 +78,10 @@
     ]
   },
   "automobilesPage": {
+    "seo": {
+      "title": "Automóviles Clásicos | R.L. Legacy S.A.",
+      "description": "Selección y restauración de vehículos icónicos que son obras de arte en movimiento y activos de inversión."
+    },
     "title": "Automóviles",
     "hero": "Ingeniería convertida en arte.",
     "intro1": "Los automóviles que seleccionamos trascienden la mera función. Son esculturas rodantes, testimonios de eras de artesanía inigualable y diseño audaz. Nuestra curaduría abarca las décadas doradas del automovilismo, desde la elegancia atemporal de los años 60 con iconos como el Mercedes-Benz 280SL 'Pagoda', hasta la furia análoga de leyendas de los 70 como el Ferrari 365 GTB/4 'Daytona'.",
@@ -121,6 +133,10 @@
     }
   },
   "realEstatePage": {
+    "seo": {
+      "title": "Inmuebles Históricos | R.L. Legacy S.A.",
+      "description": "Auditoría, curaduría y restauración de propiedades con carácter y legado arquitectónico a nivel global."
+    },
     "title": "Inmuebles",
     "hero": "Muros que han visto la historia pasar.",
     "intro1": "El verdadero valor de una propiedad no se encuentra en sus metros cuadrados, sino en su alma.",
@@ -176,6 +192,10 @@
     }
   },
   "foundersPage": {
+    "seo": {
+      "title": "Nuestros Fundadores | R.L. Legacy S.A.",
+      "description": "Conozca a los visionarios detrás de R.L. Legacy S.A., expertos en ingeniería patrimonial y arquitectura de legado."
+    },
     "title": "Fundadores",
     "hero": "Donde la ingeniería y la arquitectura construyen un legado.",
     "intro1": "R.L. Legacy S.A. nace del encuentro entre dos visiones complementarias: la ingeniería aplicada al patrimonio y la arquitectura dedicada a la excelencia.",
@@ -196,6 +216,10 @@
     ]
   },
   "directionPage": {
+    "seo": {
+      "title": "Dirección Internacional | R.L. Legacy S.A.",
+      "description": "Estructura directiva global de R.L. Legacy S.A., liderando la gestión de activos patrimoniales con integridad y visión."
+    },
     "title": "Dirección",
     "hero": "La excelencia requiere liderazgo; el legado, visión.",
     "intro1": "R.L. Legacy S.A. se sostiene sobre una estructura directiva internacional, compuesta por profesionales que representan la integridad, la discreción y la visión a largo plazo que define a nuestra firma.",
@@ -235,6 +259,10 @@
     ]
   },
   "contactPage": {
+    "seo": {
+      "title": "Contacto Privado | R.L. Legacy S.A.",
+      "description": "Solicite una consulta privada y confidencial con nuestros directores para la gestión de su legado patrimonial."
+    },
     "title": "Contacto Privado",
     "hero": "Atención personalizada para quienes valoran la discreción.",
     "intro": "En R.L. Legacy S.A. ofrecemos un servicio de atención privada y personalizada. Complete el siguiente formulario y uno de nuestros directores se pondrá en contacto para coordinar una videoconferencia a través de Skype u otra plataforma segura.",
@@ -270,6 +298,10 @@
     "confidentialityNotice2": "Las reuniones se coordinan únicamente con fines profesionales."
   },
   "governancePage": {
+    "seo": {
+      "title": "Gobernanza Corporativa | R.L. Legacy S.A.",
+      "description": "Nuestros principios de ética, transparencia y visión de largo plazo para la protección de legados familiares."
+    },
     "title": "Gobernanza Corporativa",
     "intro": "La estructura de R.L. Legacy S.A. se cimienta en principios de gobernanza que garantizan la alineación de intereses, la gestión prudente del riesgo y un compromiso ineludible con la protección del patrimonio de nuestros clientes. Nuestra visión no es solo invertir, sino custodiar y engrandecer legados.",
     "principles": [
@@ -294,6 +326,10 @@
     "supervisionText": "Aunque la composición de nuestro comité directivo y de inversiones es de carácter privado, su estructura está diseñada para asegurar una supervisión independiente, una toma de decisiones colegiada y una auditoría constante de los procesos. Los intereses de nuestros clientes son y serán siempre nuestra máxima prioridad."
   },
   "faqPage": {
+    "seo": {
+      "title": "Preguntas Frecuentes | R.L. Legacy S.A.",
+      "description": "Respuestas a las consultas habituales sobre nuestra firma de inversión patrimonial y servicios exclusivos."
+    },
     "title": "Preguntas Frecuentes",
     "intro": "A continuación, respondemos algunas de las consultas más habituales sobre nuestra firma, nuestros principios y nuestro método de trabajo.",
     "faqs": [
@@ -320,6 +356,10 @@
     ]
   },
   "privacyPage": {
+    "seo": {
+      "title": "Política de Privacidad | R.L. Legacy S.A.",
+      "description": "Cómo protegemos y gestionamos su información confidencial en R.L. Legacy S.A."
+    },
     "title": "Política de Privacidad",
     "intro": "En R.L. Legacy S.A., la confidencialidad y la protección de sus datos son pilares fundamentales de nuestra relación. Esta política describe cómo se recopila, utiliza y protege su información personal.",
     "sections": [
@@ -350,6 +390,10 @@
     ]
   },
   "termsPage": {
+    "seo": {
+      "title": "Términos y Condiciones | R.L. Legacy S.A.",
+      "description": "Condiciones de uso y aspectos legales del sitio web de R.L. Legacy S.A."
+    },
     "title": "Términos y Condiciones",
     "intro": "El acceso y uso de este sitio web, propiedad de R.L. Legacy S.A., implica la aceptación de los siguientes términos y condiciones. Le rogamos que los lea atentamente.",
     "sections": [
