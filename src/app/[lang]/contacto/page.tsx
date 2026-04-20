@@ -5,17 +5,19 @@ import { getDictionary } from '@/dictionaries';
 import { Metadata } from 'next';
 
 type ContactoLangPageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export async function generateMetadata({ params }: ContactoLangPageProps): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return {
     title: dictionary.contactPage.seo.title,
     description: dictionary.contactPage.seo.description,
   };
 }
 
-export default function ContactoLangPage() {
+export default async function ContactoLangPage({ params }: ContactoLangPageProps) {
+    const { lang } = await params;
     return <ContactoPage />;
 }

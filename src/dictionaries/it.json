@@ -1,6 +1,10 @@
 
 {
   "splash": {
+    "seo": {
+      "title": "Home | R.L. Legacy S.A.",
+      "description": "Custodi del buon vivere e architetti di lasciti familiari. Investimenti patrimoniali in vini, automobili e immobili storici."
+    },
     "title": "R.L. Legacy S.A.",
     "subtitle": "DOVE IL PATRIMONIO... {{logo}} SCRIVE LA SUA STORIA.",
     "description1": "In un mondo effimero, R.L. Legacy S.A. si erge come un bastione di permanenza. Non siamo semplicemente una società di investimento; siamo custodi del buon vivere e architetti di lasciti familiari.",
@@ -45,6 +49,10 @@
     "backButton": "Torna al Menu"
   },
   "winesPage": {
+    "seo": {
+      "title": "Vini Iconici | R.L. Legacy S.A.",
+      "description": "Accesso a vigneti leggendari e fondi di investimento enologici per collezionisti di alto patrimonio."
+    },
     "title": "Vini",
     "hero": "Il tempo, catturato in una bottiglia.",
     "intro1": "In R.L. Legacy S.A., concepiamo il vino come un testamento liquido. Ogni bottiglia è un capitolo scritto dalla terra, dal clima e dal tempo.",
@@ -70,9 +78,13 @@
     ]
   },
   "automobilesPage": {
+    "seo": {
+      "title": "Automobili d'Epoca | R.L. Legacy S.A.",
+      "description": "Selezione e restauro de veicoli iconici che sono opere d'arte in movimento e attivi di investimento."
+    },
     "title": "Automobili",
     "hero": "Ingegneria trasformata in arte.",
-    "intro1": "Le automobili che selezioniamo trascendono la mera funzione. Sono sculture in movimento, testimonianze di epoche di artigianato ineguagliabile e design audace. La nostra curatela abbraccia i decenni d'oro dell'automobilismo, dall'eleganza senza tempo degli anni '60 con icone come la Mercedes-Benz 280SL 'Pagoda', alla furia analogica delle leggende degli anni '70 come la Ferrari 365 GTB/4 'Daytona'.",
+    "intro1": "Le automobili che selezioniamo trascendono la mera funzione. Sono sculture in movimento, testimonianze di epoche di artigianato ineguagliabile e design audace. La nostra curatela abbraccia i decenni d'oro dell'automobilismo, dall'eleganza senza tempo degli anni '60 con icone come la Mercedes-Benz 280SL 'Pagoda', alla furia analogica delle leggende degli anni '70 como la Ferrari 365 GTB/4 'Daytona'.",
     "intro2": "Celebriamo l'ingegneria dirompente degli anni '80 con capolavori come la Porsche 959, e la nascita di miti moderni negli anni '90 con la McLaren F1. Ogni pezzo è meticolosamente esaminato da ingegneri specializzati e curatori di storia automobilistica per garantirne non solo le impeccabili condizioni e il lignaggio, ma anche il suo posto imperituro nel pantheon dell'arte automobilistica.",
     "servicesTitle": "Servizi Esclusivi",
     "services": [
@@ -121,6 +133,10 @@
     }
   },
   "realEstatePage": {
+    "seo": {
+      "title": "Immobili Storici | R.L. Legacy S.A.",
+      "description": "Audit, curatela e restauro de proprietà di carattere e patrimonio architettonico a livello globale."
+    },
     "title": "Immobili",
     "hero": "Mura che hanno visto passare la storia.",
     "intro1": "Il vero valore di una proprietà non si trova nei suoi metri quadrati, ma nella sua anima.",
@@ -132,7 +148,7 @@
         "description": "Selezione di palazzi, tenute e residenze uniche, non disponibili sul mercato tradizionale."
       },
       {
-        "title": "Audit Architettonico e Patrimoniale",
+        "title": "Audit Architettonico e Patrimonial",
         "description": "Verifica strutturale, autenticità storica e potenziale di restauro per assicurare il valore a lungo termine."
       },
       {
@@ -176,6 +192,10 @@
     }
   },
   "foundersPage": {
+    "seo": {
+      "title": "I Nostri Fondatori | R.L. Legacy S.A.",
+      "description": "Incontra i visionari dietro R.L. Legacy S.A., esperti in ingegneria patrimoniale e architettura di eredità."
+    },
     "title": "Fondatori",
     "hero": "Dove ingegneria e architettura costruiscono un'eredità.",
     "intro1": "R.L. Legacy S.A. nasce dall'incontro di due visioni complementari: l'ingegneria applicata al patrimonio e l'architettura dedicata all'eccellenza.",
@@ -196,6 +216,10 @@
     ]
   },
   "directionPage": {
+    "seo": {
+      "title": "Direzione Internazionale | R.L. Legacy S.A.",
+      "description": "Struttura direttiva globale de R.L. Legacy S.A., leader nella gestione de attivi patrimoniali con integrità e visione."
+    },
     "title": "Direzione",
     "hero": "L'eccellenza richiede leadership; l'eredità, visione.",
     "intro1": "R.L. Legacy S.A. si basa su una struttura direttiva internazionale, composta da professionisti che rappresentano l'integrità, la discrezione e la visione a lungo termine che definisce la nostra azienda.",
@@ -235,6 +259,10 @@
     ]
   },
   "contactPage": {
+    "seo": {
+      "title": "Contatto Privato | R.L. Legacy S.A.",
+      "description": "Richiedi una consulenza privata e confidenziale con i nostri direttori per la gestione della tua eredità patrimoniale."
+    },
     "title": "Contatto Privato",
     "hero": "Attenzione personalizzata for coloro che apprezzano la discrezione.",
     "intro": "In R.L. Legacy S.A., offriamo un servizio di attenzione privata e personalizzata. Compila il seguente modulo e uno dei nostri direttori si metterà in contatto per coordinare una videoconferenza tramite Skype o un'altra piattaforma sicura.",
@@ -270,8 +298,12 @@
     "confidentialityNotice2": "Le riunioni sono coordinate esclusivamente per scopi professionali."
   },
   "governancePage": {
+    "seo": {
+      "title": "Governance Aziendale | R.L. Legacy S.A.",
+      "description": "I nostri principi de etica, trasparenza e visione a lungo termine per la protezione de lasciti familiari."
+    },
     "title": "Governance Aziendale",
-    "intro": "La struttura di R.L. Legacy S.A. si fonda su principi di governance che garantiscono l'allineamento degli interessi, una gestione prudente del rischio e un impegno incrollabile nella protezione del patrimonio dei nostri clienti. La nostra visione non è solo investire, ma custodire e valorizzare eredità.",
+    "intro": "La struttura di R.L. Legacy S.A. si fonda su principi de governance che garantiscono l'allineamento degli interessi, una gestione prudente del rischio e un impegno incrollabile nella protezione del patrimonio dei nostri clienti. La nostra visione non è solo investire, ma custodire e valorizzare eredità.",
     "principles": [
       {
         "title": "Codice Etico Incrollabile",
@@ -294,6 +326,10 @@
     "supervisionText": "Sebbene la composizione del nostro consiglio di amministrazione e del nostro comitato di investimento sia privata, la sua struttura è progettata per garantire una supervisione indipendente, un processo decisionale collegiale e un audit costante dei processi. Gli interessi dei nostri clienti sono e saranno sempre la nostra massima priorità."
   },
   "faqPage": {
+    "seo": {
+      "title": "FAQ | R.L. Legacy S.A.",
+      "description": "Risposte alle domande comuni sulla nostra società de investimento patrimoniale e servizi esclusivi."
+    },
     "title": "Domande Frequenti",
     "intro": "Di seguito, rispondiamo ad alcune delle domande più comuni sulla nostra azienda, i nostri principi e il nostro metodo di lavoro.",
     "faqs": [
@@ -320,6 +356,10 @@
     ]
   },
   "privacyPage": {
+    "seo": {
+      "title": "Informativa sulla Privacy | R.L. Legacy S.A.",
+      "description": "Come proteggiamo e gestiamo le tue informazioni riservate presso R.L. Legacy S.A."
+    },
     "title": "Politica sulla Privacy",
     "intro": "In R.L. Legacy S.A., la riservatezza e la protezione dei tuoi dati sono pilastri fondamentali della nostra relazione. Questa politica descrive come le tue informazioni personali vengono raccolte, utilizzate e protette.",
     "sections": [
@@ -350,6 +390,10 @@
     ]
   },
   "termsPage": {
+    "seo": {
+      "title": "Termini e Condizioni | R.L. Legacy S.A.",
+      "description": "Condizioni de uso e aspetti legali del sito Web de R.L. Legacy S.A."
+    },
     "title": "Termini e Condizioni",
     "intro": "L'accesso e l'uso di questo sito web, di proprietà di R.L. Legacy S.A., implica l'accettazione dei seguenti termini e condizioni. Si prega di leggerli attentamente.",
     "sections": [
@@ -384,7 +428,7 @@
     "privacy": "Politica sulla Privacy",
     "privacyLink": "/politica-sulla-privacy",
     "terms": "Termini e Condizioni",
-    "termsLink": "/termini-e-condizioni",
+    "termsLink": "/terminos-y-condiciones",
     "governance": "Governance",
     "governanceLink": "/governance",
     "faq": "FAQ",

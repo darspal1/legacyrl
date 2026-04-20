@@ -5,17 +5,19 @@ import { getDictionary } from '@/dictionaries';
 import { Metadata } from 'next';
 
 type GobernanzaLangPageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export async function generateMetadata({ params }: GobernanzaLangPageProps): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return {
     title: dictionary.governancePage.seo.title,
     description: dictionary.governancePage.seo.description,
   };
 }
 
-export default function GobernanzaLangPage({ params }: GobernanzaLangPageProps) {
-    return <GobernanzaPage params={params} />;
+export default async function GobernanzaLangPage({ params }: GobernanzaLangPageProps) {
+    const { lang } = await params;
+    return <GobernanzaPage params={{ lang }} />;
 }

@@ -1,5 +1,10 @@
+
 {
   "splash": {
+    "seo": {
+      "title": "Accueil | R.L. Legacy S.A.",
+      "description": "Gardiens du bien-vivre et architectes de legs familiaux. Investissements patrimoniaux dans les vins, les automobiles et l'immobilier."
+    },
     "title": "R.L. Legacy S.A.",
     "subtitle": "OÙ LE PATRIMOINE... {{logo}} ÉCRIT SON HISTOIRE.",
     "description1": "Dans un monde éphémère, R.L. Legacy S.A. se dresse comme un bastion de permanence. Nous ne sommes pas simplement une société d'investissement; nous sommes les gardiens du bien-vivre et les architectes de legs familiaux.",
@@ -44,6 +49,10 @@
     "backButton": "Retour au Menu"
   },
   "winesPage": {
+    "seo": {
+      "title": "Vins Iconiques | R.L. Legacy S.A.",
+      "description": "Accès à des vignobles légendaires et fonds d'investissement œnologiques pour collectionneurs de haut patrimoine."
+    },
     "title": "Vins",
     "hero": "Le temps, capturé dans une bouteille.",
     "intro1": "Chez R.L. Legacy S.A., nous concevons le vin comme un testament liquide. Chaque bouteille est un chapitre écrit par la terre, le climat et le temps.",
@@ -69,6 +78,10 @@
     ]
   },
   "automobilesPage": {
+    "seo": {
+      "title": "Automobiles de Collection | R.L. Legacy S.A.",
+      "description": "Sélection et restauration de véhicules emblématiques qui sont des œuvres d'art en mouvement et des actifs d'investissement."
+    },
     "title": "Automobiles",
     "hero": "L'ingénierie devenue art.",
     "intro1": "Les automobiles que nous sélectionnons transcendent leur simple fonction. Ce sont des sculptures roulantes, des témoignages d'époques d'artisanat inégalé et de design audacieux. Notre curation couvre les décennies d'or de l'automobile, de l'élégance intemporelle des années 60 avec des icônes comme la Mercedes-Benz 280SL 'Pagode', à la fureur analogique des légendes des années 70 comme la Ferrari 365 GTB/4 'Daytona'.",
@@ -120,6 +133,10 @@
     }
   },
   "realEstatePage": {
+    "seo": {
+      "title": "Immobilier Historique | R.L. Legacy S.A.",
+      "description": "Audit, curation et restauration de propriétés de caractère et de patrimoine architectural à l'échelle mondiale."
+    },
     "title": "Immobilier",
     "hero": "Des murs qui ont vu l'histoire passer.",
     "intro1": "La vraie valeur d'une propriété ne se trouve pas dans ses mètres carrés, mais dans son âme.",
@@ -169,12 +186,16 @@
           "imageId": "villa-capra",
           "name": "Villa Capra 'La Rotonda'",
           "location": "Vicence, Italie",
-          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de symétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO."
+          "description": "Icône de l'architecture palladienne, cette villa est un chef-d'œuvre de simétrie et d'harmonie de la Renaissance, classée au patrimoine mondial de l'UNESCO."
         }
       ]
     }
   },
   "foundersPage": {
+    "seo": {
+      "title": "Nos Fondateurs | R.L. Legacy S.A.",
+      "description": "Rencontrez les visionnaires derrière R.L. Legacy S.A., experts en ingénierie patrimoniale et architecture d'héritage."
+    },
     "title": "Fondateurs",
     "hero": "Où l'ingénierie et l'architecture construisent un héritage.",
     "intro1": "R.L. Legacy S.A. est né de la rencontre de deux visions complémentaires : l'ingénierie appliquée au patrimoine et l'architecture dédiée à l'excellence.",
@@ -195,6 +216,10 @@
     ]
   },
   "directionPage": {
+    "seo": {
+      "title": "Direction Internationale | R.L. Legacy S.A.",
+      "description": "Structure de direction mondiale de R.L. Legacy S.A., leader de la gestion d'actifs patrimoniaux avec intégrité et vision."
+    },
     "title": "Direction",
     "hero": "L'excellence exige le leadership; l'héritage, la vision.",
     "intro1": "R.L. Legacy S.A. repose sur une structure de direction internationale, composée de professionnels qui incarnent l'intégrité, la discrétion et la vision à long terme qui définissent notre firme.",
@@ -234,6 +259,10 @@
     ]
   },
   "contactPage": {
+    "seo": {
+      "title": "Contact Privé | R.L. Legacy S.A.",
+      "description": "Demandez une consultation privée et confidentielle avec nos directeurs pour la gestion de votre héritage patrimonial."
+    },
     "title": "Contact Privé",
     "hero": "Une attention personnalisée pour ceux qui apprécient la discrétion.",
     "intro": "Chez R.L. Legacy S.A., nous offrons un service d'attention privée et personnalisée. Remplissez le formulaire suivant et l'un de nos directeurs vous contactera pour coordonner une vidéoconférence via Skype ou une autre plateforme sécurisée.",
@@ -269,6 +298,10 @@
     "confidentialityNotice2": "Les réunions sont coordonnées à des fins professionnelles uniquement."
   },
   "governancePage": {
+    "seo": {
+      "title": "Gouvernance d'Entreprise | R.L. Legacy S.A.",
+      "description": "Nos principes d'éthique, de transparence et de vision à long terme pour la protection des héritages familiaux."
+    },
     "title": "Gouvernance d'Entreprise",
     "intro": "La structure de R.L. Legacy S.A. est fondée sur des principes de gouvernance qui garantissent l'alignement des intérêts, une gestion prudente des risques et un engagement indéfectible à protéger le patrimoine de nos clients. Notre vision n'est pas seulement d'investir, mais de préserver et d'enrichir des héritages.",
     "principles": [
@@ -293,6 +326,10 @@
     "supervisionText": "Bien que la composition de notre conseil d'administration et de notre comité d'investissement soit privée, sa structure est conçue pour assurer une supervision indépendante, une prise de décision collégiale et un audit constant des processus. Les intérêts de nos clients sont et seront toujours notre priorité absolue."
   },
   "faqPage": {
+    "seo": {
+      "title": "FAQ | R.L. Legacy S.A.",
+      "description": "Réponses aux questions courantes sur notre cabinet d'investissement patrimonial et nos services exclusifs."
+    },
     "title": "Questions Fréquentes",
     "intro": "Ci-dessous, nous répondons à certaines des questions les plus courantes sur notre cabinet, nos principes et notre méthode de travail.",
     "faqs": [
@@ -319,6 +356,10 @@
     ]
   },
   "privacyPage": {
+    "seo": {
+      "title": "Politique de Confidentialité | R.L. Legacy S.A.",
+      "description": "Comment nous protégeons et gérons vos informations confidentielles chez R.L. Legacy S.A."
+    },
     "title": "Politique de Confidentialité",
     "intro": "Chez R.L. Legacy S.A., la confidentialité et la protection de vos données sont des piliers fondamentaux de notre relation. Cette politique décrit comment vos informations personnelles sont collectées, utilisées et protégées.",
     "sections": [
@@ -349,6 +390,10 @@
     ]
   },
   "termsPage": {
+    "seo": {
+      "title": "Conditions Générales | R.L. Legacy S.A.",
+      "description": "Conditions d'utilisation et aspects juridiques du site Web de R.L. Legacy S.A."
+    },
     "title": "Termes et Conditions",
     "intro": "L'accès et l'utilisation de ce site Web, propriété de R.L. Legacy S.A., impliquent l'acceptation des termes et conditions suivants. Veuillez les lire attentivement.",
     "sections": [
@@ -362,7 +407,7 @@
       },
       {
         "title": "3. Limitation de Responsabilité",
-        "content": "Les informations contenues sur ce site Web sont fournies \"telles quelles\" à des fins d'information générale. Bien que nous nous efforcions de maintenir les informations à jour et correctes, nous ne donnons aucune garantie d'aucune sorte, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité ou la pertinence du contenu. En aucun cas, nous ne serons responsables de toute perte ou dommage, direct ou indirect, résultant de l'utilisation de ce site Web."
+        "content": "Les informations contenues sur ce site Web sont fournies \"telles quelles\" à des fins d'information générale. Bien que nous nous efforcions de maintenir les informations à jour et correctes, we ne donnons aucune garantie d'aucune sorte, expresse ou implicite, quant à l'exhaustivité, l'exactitude, la fiabilité ou la pertinence du contenu. En aucun cas, nous ne serons responsables de toute perte ou dommage, direct ou indirect, résultant de l'utilisation de ce site Web."
       },
       {
         "title": "4. Interdiction d'Utilisation Abusive",

@@ -1,6 +1,10 @@
 
 {
   "splash": {
+    "seo": {
+      "title": "Home | R.L. Legacy S.A.",
+      "description": "Custodians of fine living and architects of family legacies. Heritage investments in wines, classic automobiles, and historic real estate."
+    },
     "title": "R.L. Legacy S.A.",
     "subtitle": "WHERE HERITAGE... {{logo}} WRITES ITS HISTORY.",
     "description1": "In an ephemeral world, R.L. Legacy S.A. stands as a bastion of permanence. We are not merely an investment firm; we are custodians of fine living and architects of family legacies.",
@@ -45,6 +49,10 @@
     "backButton": "Back to Menu"
   },
   "winesPage": {
+    "seo": {
+      "title": "Iconic Wines | R.L. Legacy S.A.",
+      "description": "Access to legendary vineyards and enological investment funds for high-net-worth collectors."
+    },
     "title": "Wines",
     "hero": "Time, captured in a bottle.",
     "intro1": "At R.L. Legacy S.A., we see wine as a liquid testament. Each bottle is a chapter written by the earth, the climate, and time.",
@@ -70,6 +78,10 @@
     ]
   },
   "automobilesPage": {
+    "seo": {
+      "title": "Classic Automobiles | R.L. Legacy S.A.",
+      "description": "Selection and restoration of iconic vehicles that are works of art in motion and investment assets."
+    },
     "title": "Automobiles",
     "hero": "Engineering turned into art.",
     "intro1": "The automobiles we select transcend mere function. They are rolling sculptures, testaments to eras of unparalleled craftsmanship and audacious design. Our curation spans the golden decades of motoring, from the timeless elegance of the '60s with icons like the Mercedes-Benz 280SL 'Pagoda', to the analogue fury of '70s legends such as the Ferrari 365 GTB/4 'Daytona'.",
@@ -121,6 +133,10 @@
     }
   },
   "realEstatePage": {
+    "seo": {
+      "title": "Historic Real Estate | R.L. Legacy S.A.",
+      "description": "Audit, curation, and restoration of properties with character and architectural legacy globally."
+    },
     "title": "Real Estate",
     "hero": "Walls that have seen history pass.",
     "intro1": "The true value of a property is not found in its square meters, but in its soul.",
@@ -176,6 +192,10 @@
     }
   },
   "foundersPage": {
+    "seo": {
+      "title": "Our Founders | R.L. Legacy S.A.",
+      "description": "Meet the visionaries behind R.L. Legacy S.A., experts in patrimonial engineering and legacy architecture."
+    },
     "title": "Founders",
     "hero": "Where engineering and architecture build a legacy.",
     "intro1": "R.L. Legacy S.A. is born from the meeting of two complementary visions: engineering applied to heritage and architecture dedicated to excellence.",
@@ -196,6 +216,10 @@
     ]
   },
   "directionPage": {
+    "seo": {
+      "title": "International Direction | R.L. Legacy S.A.",
+      "description": "Global management structure of R.L. Legacy S.A., leading patrimonial asset management with integrity and vision."
+    },
     "title": "Direction",
     "hero": "Excellence requires leadership; legacy, vision.",
     "intro1": "R.L. Legacy S.A. is built on an international management structure, composed of professionals who represent the integrity, discretion, and long-term vision that defines our firm.",
@@ -235,6 +259,10 @@
     ]
   },
   "contactPage": {
+    "seo": {
+      "title": "Private Contact | R.L. Legacy S.A.",
+      "description": "Request a private and confidential consultation with our directors for your patrimonial legacy management."
+    },
     "title": "Private Contact",
     "hero": "Personalized attention for those who value discretion.",
     "intro": "At R.L. Legacy S.A., we offer a private and personalized attention service. Complete the following form and one of our directors will contact you to coordinate a video conference via Skype or another secure platform.",
@@ -270,6 +298,10 @@
     "confidentialityNotice2": "Meetings are coordinated for professional purposes only."
   },
   "governancePage": {
+    "seo": {
+      "title": "Corporate Governance | R.L. Legacy S.A.",
+      "description": "Our principles of ethics, transparency, and long-term vision for protecting family legacies."
+    },
     "title": "Corporate Governance",
     "intro": "The structure of R.L. Legacy S.A. is based on governance principles that ensure the alignment of interests, prudent risk management, and an unwavering commitment to protecting our clients' assets. Our vision is not just to invest, but to guard and enhance legacies.",
     "principles": [
@@ -294,6 +326,10 @@
     "supervisionText": "Although the composition of our board and investment committee is private, its structure is designed to ensure independent supervision, collegial decision-making, and constant auditing of processes. The interests of our clients are and will always be our top priority."
   },
   "faqPage": {
+    "seo": {
+      "title": "FAQ | R.L. Legacy S.A.",
+      "description": "Answers to common questions about our patrimonial investment firm and exclusive services."
+    },
     "title": "Frequently Asked Questions",
     "intro": "Below, we answer some of the most common questions about our firm, our principles, and our work method.",
     "faqs": [
@@ -320,6 +356,10 @@
     ]
   },
   "privacyPage": {
+    "seo": {
+      "title": "Privacy Policy | R.L. Legacy S.A.",
+      "description": "How we protect and manage your confidential information at R.L. Legacy S.A."
+    },
     "title": "Privacy Policy",
     "intro": "At R.L. Legacy S.A., the confidentiality and protection of your data are fundamental pillars of our relationship. This policy describes how your personal information is collected, used, and protected.",
     "sections": [
@@ -350,6 +390,10 @@
     ]
   },
   "termsPage": {
+    "seo": {
+      "title": "Terms and Conditions | R.L. Legacy S.A.",
+      "description": "Usage conditions and legal aspects of the R.L. Legacy S.A. website."
+    },
     "title": "Terms and Conditions",
     "intro": "Access to and use of this website, owned by R.L. Legacy S.A., implies acceptance of the following terms and conditions. Please read them carefully.",
     "sections": [

@@ -5,17 +5,19 @@ import { getDictionary } from '@/dictionaries';
 import { Metadata } from 'next';
 
 type FAQLangPageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export async function generateMetadata({ params }: FAQLangPageProps): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return {
     title: dictionary.faqPage.seo.title,
     description: dictionary.faqPage.seo.description,
   };
 }
 
-export default function FAQLangPage({ params }: FAQLangPageProps) {
-    return <FAQPage params={params} />;
+export default async function FAQLangPage({ params }: FAQLangPageProps) {
+    const { lang } = await params;
+    return <FAQPage params={{ lang }} />;
 }

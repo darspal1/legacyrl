@@ -5,17 +5,19 @@ import { getDictionary } from '@/dictionaries';
 import { Metadata } from 'next';
 
 type VinosLangPageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export async function generateMetadata({ params }: VinosLangPageProps): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return {
     title: dictionary.winesPage.seo.title,
     description: dictionary.winesPage.seo.description,
   };
 }
 
-export default function ViniLangPage({ params }: VinosLangPageProps) {
-    return <VinosPage params={params} />;
+export default async function ViniLangPage({ params }: VinosLangPageProps) {
+    const { lang } = await params;
+    return <VinosPage params={{ lang }} />;
 }

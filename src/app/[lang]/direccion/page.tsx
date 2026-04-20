@@ -5,17 +5,19 @@ import { getDictionary } from '@/dictionaries';
 import { Metadata } from 'next';
 
 type DireccionLangPageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: Locale }>
 }
 
 export async function generateMetadata({ params }: DireccionLangPageProps): Promise<Metadata> {
-  const dictionary = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dictionary = await getDictionary(lang);
   return {
     title: dictionary.directionPage.seo.title,
     description: dictionary.directionPage.seo.description,
   };
 }
 
-export default function DireccionLangPage({ params }: DireccionLangPageProps) {
-    return <DireccionPage params={params} />;
+export default async function DireccionLangPage({ params }: DireccionLangPageProps) {
+    const { lang } = await params;
+    return <DireccionPage params={{ lang }} />;
 }
