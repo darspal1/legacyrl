@@ -1,109 +1,144 @@
+// src/app/sitemap.ts
 import { MetadataRoute } from 'next'
-import { i18n } from '../../i18n-config'
 
-/**
- * Genera el sitemap dinámico para Next.js 15.
- * Incluye todas las rutas principales y sus variantes localizadas con sus respectivos slugs.
- */
+const baseUrl = 'https://www.legacyrl.com' // con www, siempre consistente
+
+// Slugs verificados desde la estructura real de src/app/[lang]/
+// 'en' es el locale default → sus URLs van SIN prefijo de locale
+const routes: {
+  slug: { en: string; es: string; it: string; fr: string }
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']
+  priority: number
+}[] = [
+  {
+    slug: { en: '', es: '', it: '', fr: '' }, // home
+    changeFrequency: 'weekly',
+    priority: 1.0,
+  },
+  {
+    slug: {
+      en: '/inmuebles',        // carpeta real en [lang]/inmuebles
+      es: '/inmuebles',
+      it: '/immobili',
+      fr: '/immobilier',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    slug: {
+      en: '/automoviles',      // carpeta real en [lang]/automoviles
+      es: '/automoviles',
+      it: '/automobili',
+      fr: '/automobiles',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    slug: {
+      en: '/vinos',
+      es: '/vinos',
+      it: '/vini',
+      fr: '/vins',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    slug: {
+      en: '/fundadores',
+      es: '/fundadores',
+      it: '/fondatori',
+      fr: '/fondateurs',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    slug: {
+      en: '/direccion',
+      es: '/direccion',
+      it: '/direzione',
+      fr: '/direction',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  },
+  {
+    slug: {
+      en: '/contacto',
+      es: '/contacto',
+      it: '/contatto',
+      fr: '/contact',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    slug: {
+      en: '/gobernanza',
+      es: '/gobernanza',
+      it: '/governance',       // ✅ carpeta real en [lang]/governance
+      fr: '/gouvernance',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    slug: {
+      en: '/faq',
+      es: '/faq',
+      it: '/faq',
+      fr: '/faq',
+    },
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  },
+  {
+    slug: {
+      en: '/politica-de-privacidad',
+      es: '/politica-de-privacidad',
+      it: '/politica-sulla-privacy',
+      fr: '/politique-de-confidentialite',
+    },
+    changeFrequency: 'yearly',
+    priority: 0.3,
+  },
+  {
+    slug: {
+      en: '/terminos-y-condiciones',
+      es: '/terminos-y-condiciones',
+      it: '/termini-e-condizioni',
+      fr: '/terminos-y-condiciones', // ⚠️ cambiar si creás slug fr real
+    },
+    changeFrequency: 'yearly',
+    priority: 0.3,
+  },
+]
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://legacyrl.com'
-  const locales = i18n.locales
-  const lastModified = new Date()
-  
   const entries: MetadataRoute.Sitemap = []
 
-  // 1. Páginas de Inicio (Raíz y Localizadas)
-  entries.push({
-    url: baseUrl,
-    lastModified,
-    changeFrequency: 'monthly',
-    priority: 1,
-  })
-  
-  locales.forEach(lang => {
+  for (const route of routes) {
+    // 'en' = locale default → sin prefijo
     entries.push({
-      url: `${baseUrl}/${lang}`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    })
-  })
-
-  // 2. Mapeo de Páginas Internas con Slugs Específicos por Idioma
-  // Basado en la estructura de carpetas de src/app/[lang]/ y proxies creados.
-  const pageMappings = [
-    {
-      default: '/inmuebles',
-      locales: { es: '/inmuebles', en: '/inmuebles', fr: '/immobilier', it: '/immobili' }
-    },
-    {
-      default: '/automoviles',
-      locales: { es: '/automoviles', en: '/automobiles', fr: '/automoviles', it: '/automobili' }
-    },
-    {
-      default: '/vinos',
-      locales: { es: '/vinos', en: '/vinos', fr: '/vins', it: '/vini' }
-    },
-    {
-      default: '/fundadores',
-      locales: { es: '/fundadores', en: '/fundadores', fr: '/fondateurs', it: '/fondatori' }
-    },
-    {
-      default: '/direccion',
-      locales: { es: '/direccion', en: '/direction', fr: '/direction', it: '/direzione' }
-    },
-    {
-      default: '/contacto',
-      locales: { es: '/contacto', en: '/contact', fr: '/contact', it: '/contatto' }
-    },
-    {
-      default: '/gobernanza',
-      locales: { es: '/gobernanza', en: '/governance', fr: '/gouvernance', it: '/gobernanza' }
-    },
-    {
-      default: '/faq',
-      locales: { es: '/faq', en: '/faq', fr: '/faq', it: '/faq' }
-    },
-    {
-      default: '/politica-de-privacidad',
-      locales: { 
-        es: '/politica-de-privacidad', 
-        en: '/politica-de-privacidad', 
-        fr: '/politique-de-confidentialite', 
-        it: '/politica-sulla-privacy' 
-      }
-    },
-    {
-      default: '/terminos-y-condiciones',
-      locales: { 
-        es: '/terminos-y-condiciones', 
-        en: '/terminos-y-condiciones', 
-        fr: '/terminos-y-condiciones', 
-        it: '/termini-e-condizioni' 
-      }
-    }
-  ]
-
-  pageMappings.forEach(page => {
-    // Entradas a nivel de raíz (Default/Español)
-    entries.push({
-      url: `${baseUrl}${page.default}`,
-      lastModified,
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      url: `${baseUrl}${route.slug.en}`,
+      lastModified: new Date(),
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
     })
 
-    // Entradas localizadas con slugs traducidos
-    locales.forEach(lang => {
-      const slug = (page.locales as any)[lang] || page.default
+    // es, it, fr → con prefijo /locale/
+    for (const locale of ['es', 'it', 'fr'] as const) {
       entries.push({
-        url: `${baseUrl}/${lang}${slug}`,
-        lastModified,
-        changeFrequency: 'monthly',
-        priority: 0.7,
+        url: `${baseUrl}/${locale}${route.slug[locale]}`,
+        lastModified: new Date(),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
       })
-    })
-  })
+    }
+  }
 
   return entries
 }
