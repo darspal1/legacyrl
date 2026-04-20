@@ -1,3 +1,4 @@
+
 import PageHeader from '@/components/page-header';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -5,28 +6,32 @@ import { Separator } from '@/components/ui/separator';
 import { Card, CardContent } from '@/components/ui/card';
 import { getDictionary } from '@/dictionaries';
 import { Locale, i18n } from '../../../i18n-config';
-import { Building, MapPin, Landmark } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 type InmueblesPageProps = {
   params: { lang?: Locale }
 }
 
 const serviceImageMap: { [key: string]: string } = {
+  // Español
   'Adquisición de Propiedades con Carácter': 'inmuebles-adquisicion',
-  'Acquisition of Properties with Character': 'inmuebles-adquisicion',
-  'Acquisition de Propriétés de Caractère': 'inmuebles-adquisicion',
-  'Acquisizione di Immobili di Carattere': 'inmuebles-adquisicion',
   'Auditoría Arquitectónica y Patrimonial': 'inmuebles-auditoria',
-  'Architectural and Heritage Audit': 'inmuebles-auditoria',
-  'Audit Architectural et Patrimonial': 'inmuebles-auditoria',
-  'Audit Architettonico e Patrimoniale': 'inmuebles-auditoria',
   'Restauración con Artesanos': 'inmuebles-restauracion',
-  'Restoration with Artisans': 'inmuebles-restauracion',
-  'Restauration avec des Artisans': 'inmuebles-restauracion',
-  'Restauro con Artigiani': 'inmuebles-restauracion',
   'Gestión y Revalorización a Largo Plazo': 'inmuebles-gestion',
+  // Inglés
+  'Acquisition of Properties with Character': 'inmuebles-adquisicion',
+  'Architectural and Heritage Audit': 'inmuebles-auditoria',
+  'Restoration with Artisans': 'inmuebles-restauracion',
   'Long-Term Management and Revaluation': 'inmuebles-gestion',
+  // Francés
+  'Acquisition de Propriétés de Caractère': 'inmuebles-adquisicion',
+  'Audit Architectural et Patrimonial': 'inmuebles-auditoria',
+  'Restauration avec des Artisans': 'inmuebles-restauracion',
   'Gestion et Revalorisation à Long Terme': 'inmuebles-gestion',
+  // Italiano
+  'Acquisizione di Immobili di Carattere': 'inmuebles-adquisicion',
+  'Audit Architettonico e Patrimoniale': 'inmuebles-auditoria',
+  'Restauro con Artigiani': 'inmuebles-restauracion',
   'Gestione e Rivalutazione a Lungo Termine': 'inmuebles-gestion'
 };
 
@@ -85,8 +90,8 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
                 className="animate-in fade-in slide-in-from-bottom-5"
                 style={{animationDelay: `${index * 150}ms`, animationDuration: '700ms'}}
               >
-                <Card className="h-full overflow-hidden border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-accent/10 hover:-translate-y-2">
-                  <div className="relative h-48 w-full overflow-hidden">
+                <Card className="h-full overflow-hidden border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-300 hover:shadow-accent/10 hover:-translate-y-2 group">
+                  <div className="relative h-48 w-full overflow-hidden bg-muted">
                     {serviceImage && (
                        <Image
                           src={serviceImage.imageUrl}
@@ -129,7 +134,7 @@ export default async function InmueblesPage({ params }: InmueblesPageProps) {
                 style={{animationDelay: `${index * 150}ms`, animationDuration: '700ms'}}
               >
                 <Card className="h-full overflow-hidden border-accent/[.1] bg-card text-card-foreground shadow-2xl shadow-black/10 transition-all duration-500 hover:shadow-accent/20 hover:-translate-y-2 group">
-                  <div className="relative h-64 w-full overflow-hidden">
+                  <div className="relative h-64 w-full overflow-hidden bg-muted">
                     {propertyImage && (
                       <Image
                         src={propertyImage.imageUrl}

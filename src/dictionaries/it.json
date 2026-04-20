@@ -80,12 +80,12 @@
   "automobilesPage": {
     "seo": {
       "title": "Automobili d'Epoca | R.L. Legacy S.A.",
-      "description": "Selezione e restauro de veicoli iconici che sono opere d'arte in movimento e attivi di investimento."
+      "description": "Selezione e restauro de veicoli iconici che sono opere d'arte in movimiento e attivi di investimento."
     },
     "title": "Automobili",
     "hero": "Ingegneria trasformata in arte.",
     "intro1": "Le automobili che selezioniamo trascendono la mera funzione. Sono sculture in movimento, testimonianze di epoche di artigianato ineguagliabile e design audace. La nostra curatela abbraccia i decenni d'oro dell'automobilismo, dall'eleganza senza tempo degli anni '60 con icone come la Mercedes-Benz 280SL 'Pagoda', alla furia analogica delle leggende degli anni '70 como la Ferrari 365 GTB/4 'Daytona'.",
-    "intro2": "Celebriamo l'ingegneria dirompente degli anni '80 con capolavori come la Porsche 959, e la nascita di miti moderni negli anni '90 con la McLaren F1. Ogni pezzo è meticolosamente esaminato da ingegneri specializzati e curatori di storia automobilistica per garantirne non solo le impeccabili condizioni e il lignaggio, ma anche il suo posto imperituro nel pantheon dell'arte automobilistica.",
+    "intro2": "Celebriamo l'ingegneria dirompente degli anni '80 con capolavori como la Porsche 959, e la nascita di miti moderni negli anni '90 con la McLaren F1. Ogni pezzo è meticolosamente esaminato da ingegneri specializzati e curatori di storia automobilistica per garantirne non solo le impeccabili condizioni e il lignaggio, ma anche il suo posto imperituro nel pantheon dell'arte automobilistica.",
     "servicesTitle": "Servizi Esclusivi",
     "services": [
       {
@@ -148,7 +148,7 @@
         "description": "Selezione di palazzi, tenute e residenze uniche, non disponibili sul mercato tradizionale."
       },
       {
-        "title": "Audit Architettonico e Patrimonial",
+        "title": "Audit Architettonico e Patrimoniale",
         "description": "Verifica strutturale, autenticità storica e potenziale di restauro per assicurare il valore a lungo termine."
       },
       {
@@ -264,7 +264,7 @@
       "description": "Richiedi una consulenza privata e confidenziale con i nostri direttori per la gestione della tua eredità patrimoniale."
     },
     "title": "Contatto Privato",
-    "hero": "Attenzione personalizzata for coloro che apprezzano la discrezione.",
+    "hero": "Attenzione personalizzata per coloro che apprezzano la discrezione.",
     "intro": "In R.L. Legacy S.A., offriamo un servizio di attenzione privata e personalizzata. Compila il seguente modulo e uno dei nostri direttori si metterà in contatto per coordinare una videoconferenza tramite Skype o un'altra piattaforma sicura.",
     "form": {
       "fullName": "Nome completo",
@@ -285,7 +285,7 @@
       "messagePlaceholder": "Scrivi qui la tua domanda o il motivo del tuo contatto.",
       "submitButton": "Invia Richiesta",
       "toastTitle": "Richiesta preparata.",
-      "toastDescription": "Il tuo client di posta elettronica si aprirà per inviare la richiesta.",
+      "toastDescription": "Il tuo client de posta elettronica si aprirà per inviare la richiesta.",
       "validation": {
         "fullName": "Il nome completo è obbligatorio.",
         "email": "Inserisci un'email valida.",
@@ -365,7 +365,7 @@
     "sections": [
       {
         "title": "Informazioni che Raccogliamo",
-        "content": "Raccogliamo solo le informazioni necessarie per stabilire un contatto e comprendere i tuoi interessi di investimento, come richiesto nel nostro modulo di contatto privato. Ciò può includere il tuo nome, email, paese e interessi. Non raccogliamo automaticamente dati sensibili."
+        "content": "Raccogliamo solo le informazioni necessarie per stabilire un contatto e comprendere i tuoi interessi di investimento, como richiesto nel nostro modulo di contatto privato. Ciò può includere il tuo nome, email, paese e interessi. Non raccogliamo automaticamente dati sensibili."
       },
       {
         "title": "Uso delle Informazioni",
@@ -373,19 +373,19 @@
       },
       {
         "title": "Sicurezza e Riservatezza",
-        "content": "Implementiamo misure di sicurezza tecniche e organizzative ragionevoli per proteggere le tue informazioni da accessi, alterazioni o divulgazioni non autorizzate. La comunicazione viene gestita tramite canali sicuri e l'accesso ai tuoi dati è limitato al personale direttivo autorizzato."
+        "content": "Implementiamo misure de sicurezza tecniche e organizzative ragionevoli per proteggere le tue informazioni da accessi, alterazioni o divulgazioni non autorizzate. La comunicazione viene gestita tramite canali sicuri e l'accesso ai tuoi dati è limitato al personale direttivo autorizzato."
       },
       {
         "title": "Cookie e Tecnologie di Tracciamento",
-        "content": "Il nostro sito web utilizza cookie essenziali per migliorare la tua esperienza di navigazione, come il mantenimento delle tue preferenze di tema (chiaro/scuro). Non utilizziamo cookie di tracciamento per scopi pubblicitari né condividiamo dati di navigazione con terze parti per tali scopi."
+        "content": "Il nostro sito web utilizza cookie essenziali per migliorare la tua esperienza de navigazione, come il mantenimento delle tue preferenze de tema (chiaro/scuro). Non utilizziamo cookie de tracciamento per scopi pubblicitari né condividiamo dati de navigazione con terze parti per tali scopi."
       },
       {
         "title": "I Tuoi Diritti",
-        "content": "Hai il diritto di richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati personali in nostro possesso. Per esercitare questi diritti, ti preghiamo di contattarci tramite i canali di comunicazione stabiliti."
+        "content": "Hai il diritto de richiedere l'accesso, la rettifica o la cancellazione dei tuoi dati personali in nostro possesso. Per esercitare questi diritti, ti preghiamo de contattarci tramite i canali de comunicazione stabiliti."
       },
       {
         "title": "Modifiche alla Politica",
-        "content": "Ci riserviamo il diritto di modificare questa politica sulla privacy in qualsiasi momento. Eventuali modifiche saranno pubblicate su questa pagina ed entreranno in vigore immediatamente."
+        "content": "Ci riserviamo il diritto de modificare questa politica sulla privacy in qualsiasi momento. Eventuali modifiche saranno pubblicate su questa pagina ed entreranno in vigore immediatamente."
       }
     ]
   },
