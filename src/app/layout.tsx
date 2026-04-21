@@ -1,5 +1,5 @@
-
-import type {Metadata} from 'next';
+// src/app/layout.tsx
+import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import Link from 'next/link';
@@ -9,12 +9,101 @@ import LanguageSwitcher from '@/components/language-switcher';
 import { ShieldCheck, Lock, Handshake, Gem, Library, Scale, KeyRound, DatabaseZap } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
-
 const siteConfig = {
   name: "R.L. Legacy S.A.",
-  description: "Custodios del buen vivir y arquitectos de legados familiares. Inversiones patrimoniales en vinos, automóviles clásicos e inmuebles con historia.",
-  url: "https://legacyrl.com",
-  ogImage: "https://legacyrl.com/og-image.jpg",
+  description: "Private investment firm specializing in tangible assets: historic real estate, collectible automobiles and fine wines. Preserving generational wealth with discretion and excellence.",
+  url: "https://www.legacyrl.com", // corregido: con www, consistente con sitemap
+  ogImage: "https://www.legacyrl.com/og-image.jpg",
+};
+
+// Schema JSON-LD para AIs y Google
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FinancialService",
+      "@id": `${siteConfig.url}/#organization`,
+      "name": "R.L. Legacy S.A.",
+      "alternateName": "Legacy RL",
+      "url": siteConfig.url,
+      "logo": `${siteConfig.url}/logo.png`,
+      "image": siteConfig.ogImage,
+      "description": siteConfig.description,
+      "slogan": "Preserving generational wealth through tangible assets",
+      "foundingLocation": {
+        "@type": "Country",
+        "name": "Italy"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "Italy" },
+        { "@type": "Country", "name": "Spain" },
+        { "@type": "Country", "name": "France" },
+        { "@type": "Continent", "name": "Europe" }
+      ],
+      "serviceType": [
+        "Private Investment Management",
+        "Wealth Preservation",
+        "Tangible Asset Investment",
+        "Real Estate Investment",
+        "Collectible Automobiles Investment",
+        "Fine Wine Investment"
+      ],
+      "knowsAbout": [
+        "Private equity",
+        "Tangible asset investment",
+        "Historic real estate",
+        "Collectible automobiles",
+        "Investment-grade fine wines",
+        "Generational wealth management",
+        "Family office services"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Investment Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Historic Real Estate Investment",
+              "url": `${siteConfig.url}/inmuebles`
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Collectible Automobiles Investment",
+              "url": `${siteConfig.url}/automoviles`
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fine Wine Investment",
+              "url": `${siteConfig.url}/vinos`
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/legacyrl", // actualizar con URL real
+        "https://twitter.com/LegacyRLsa"             // actualizar con URL real
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#website`,
+      "url": siteConfig.url,
+      "name": "R.L. Legacy S.A.",
+      "description": siteConfig.description,
+      "publisher": {
+        "@id": `${siteConfig.url}/#organization`
+      },
+      "inLanguage": ["en", "es", "fr", "it"]
+    }
+  ]
 };
 
 export const metadata: Metadata = {
@@ -24,10 +113,26 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: [
+    "private investment firm",
+    "tangible assets",
+    "wealth preservation",
+    "historic real estate",
+    "collectible automobiles",
+    "fine wine investment",
+    "generational wealth",
+    "family office Italy",
+    "private equity Europe",
+    "patrimonio generacional"
+  ],
+  authors: [{ name: "R.L. Legacy S.A.", url: siteConfig.url }],
+  creator: "R.L. Legacy S.A.",
+  publisher: "R.L. Legacy S.A.",
   alternates: {
     canonical: "/",
     languages: {
-      'en': '/en',
+      'x-default': '/',       // indica el default para Google
+      'en': '/',              // en es el default, sin prefijo
       'es': '/es',
       'fr': '/fr',
       'it': '/it',
@@ -35,8 +140,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_ES",
+    locale: "en_US",          //  corregido: inglés como principal
+    alternateLocale: ["es_ES", "fr_FR", "it_IT"], //  los 4 idiomas
     url: siteConfig.url,
+    siteName: siteConfig.name,
     title: siteConfig.name,
     description: siteConfig.description,
     images: [
@@ -44,19 +151,32 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: "R.L. Legacy S.A. — Private Investment Firm",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@LegacyRLsa",      // agregar cuando tengas la cuenta
+    creator: "@LegacyRLsa",
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // google: "TU_CODIGO_DE_VERIFICACION", // agregar desde Search Console
+  },
 };
-
 
 export default async function RootLayout({
   children,
@@ -67,7 +187,7 @@ export default async function RootLayout({
 }>) {
   const lang = params?.lang || i18n.defaultLocale;
   const dictionary = await getDictionary(lang);
-  
+
   const getLink = (path: string) => {
     if (lang === i18n.defaultLocale) {
       return path;
@@ -82,6 +202,7 @@ export default async function RootLayout({
     { href: getLink('/faq'), label: dictionary.footer.faq },
     { href: getLink(dictionary.footer.contactLink), label: dictionary.footer.contact },
   ];
+
   const seals = [
     { icon: ShieldCheck, text: "Chamber of Commerce Seal" },
     { icon: Lock, text: "SSL Encrypted Website" },
@@ -100,6 +221,11 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet" />
+        {/* Schema JSON-LD para Google y AIs */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="font-body antialiased" suppressHydrationWarning>
         <main>{children}</main>
