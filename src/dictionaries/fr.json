@@ -229,11 +229,13 @@
       {
         "id": "south-america",
         "title": "Amérique du Sud",
-        "director": "Daniel Rozúa Jr.",
+        "director": "Daniel Rozúa",
         "directorLabel": "Directeur Régional :",
+        "directorDescription": "En tant que Directeur Régional et fils du fondateur de la firme, Daniel Beniamino Rozúa, il est responsable de l'expansion patrimoniale sur les marchés émergents à haute valeur. Il dirige les opérations automobiles, immobilières et viticoles en Amérique du Sud avec une approche combinant précision technique, vision stratégique et une connaissance approfondie du patrimoine régional.",
         "subDirector": "Facundo Stirling Ruaulth",
         "subDirectorLabel": "Sous-Directeur :",
-        "description": "Responsables de l'expansion patrimoniale sur les marchés émergents à haute valeur, ils dirigent les opérations automobiles, immobilières et viticoles en Amérique du Sud. Leur approche combine précision technique, vision stratégique et une connaissance approfondie du patrimoine régional."
+        "subDirectorDescription": "En tant que Sous-Directeur, il collabore à la gestion opérationnelle et à l'expansion patrimoniale en Amérique du Sud, coordonnant les secteurs automobile, immobilier et viticole avec rigueur technique et vision stratégique.",
+        "description": "En tant que Directeur Régional et fils du fondateur de la firme, Daniel Beniamino Rozúa, il est responsable de l'expansion patrimoniale sur les marchés émergents à haute valeur. Il dirige les opérations automobiles, immobilières et viticoles en Amérique du Sud avec une approche combinant précision technique, vision stratégique et une connaissance approfondie du patrimoine régional."
       },
       {
         "id": "north-america",
