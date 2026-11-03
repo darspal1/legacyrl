@@ -29,7 +29,9 @@ export default function SplashScreen({ onEnter, dictionary }: SplashScreenProps)
     <div className={`transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
       <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-[#EFE6D8] text-foreground overflow-hidden py-10 px-4">
         <div className="absolute top-4 right-4 md:top-6 md:right-6 z-30">
-          <LanguageSwitcher />
+          <div className="p-1 rounded-full bg-[#EFE6D8]/90 backdrop-blur-sm border border-white/40 shadow-luxury-subtle">
+            <LanguageSwitcher className="h-10 w-10 rounded-full text-primary-strong hover:bg-accent/80 hover:text-primary-strong transition-colors duration-200" />
+          </div>
         </div>
         
         {/* Foto de fondo */}

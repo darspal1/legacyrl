@@ -13,7 +13,11 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-export default function LanguageSwitcher() {
+type LanguageSwitcherProps = {
+  className?: string;
+};
+
+export default function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const pathName = usePathname();
   const [currentLocale, setCurrentLocale] = useState<Locale>(i18n.defaultLocale);
   const [isClient, setIsClient] = useState(false);
@@ -62,7 +66,11 @@ export default function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          className={className || "text-foreground hover:bg-accent"}
+        >
           <Globe className="h-[1.2rem] w-[1.2rem]" />
           <span className="sr-only">Toggle language</span>
         </Button>
