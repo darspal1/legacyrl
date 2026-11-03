@@ -76,7 +76,7 @@ export default function MainMenu() {
               className="group block animate-in fade-in zoom-in-95" 
               style={{ animationDelay: `${index * 150}ms`, animationDuration: '500ms' }}
             >
-              <Card className="relative h-[60vh] max-h-[700px] min-h-[500px] overflow-hidden border border-accent/[.2] bg-card text-card-foreground shadow-lg shadow-black/5 transition-all duration-500 ease-in-out hover:border-accent hover:shadow-2xl hover:shadow-accent/20">
+              <Card className="relative h-[60vh] max-h-[700px] min-h-[500px] overflow-hidden border border-border/80 bg-card text-card-foreground shadow-luxury-subtle transition-all duration-500 ease-in-out hover:border-primary/40 hover:shadow-luxury hover:-translate-y-1">
                 {image && (
                     <Image
                       src={image.imageUrl}
@@ -87,10 +87,10 @@ export default function MainMenu() {
                       data-ai-hint={image.imageHint}
                     />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
-                <CardContent className="relative flex h-full flex-col justify-end p-8 text-white">
-                  <h3 className="font-headline text-4xl font-bold transition-transform duration-500 group-hover:-translate-y-2">{item.title}</h3>
-                  <p className="font-body text-lg text-white/80 opacity-0 max-w-[90%] transition-opacity duration-500 delay-100 group-hover:opacity-100">{item.subtitle}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-transparent transition-opacity duration-500 group-hover:from-foreground/85" />
+                <CardContent className="relative flex h-full flex-col justify-end p-8 text-background">
+                  <h3 className="font-headline text-3xl md:text-4xl font-bold tracking-wide transition-transform duration-500 group-hover:-translate-y-2 text-[#FAF7F2]">{item.title}</h3>
+                  <p className="font-body text-base md:text-lg text-[#FAF7F2]/90 opacity-0 max-w-[90%] transition-opacity duration-500 delay-100 group-hover:opacity-100 leading-snug">{item.subtitle}</p>
                 </CardContent>
               </Card>
             </Link>

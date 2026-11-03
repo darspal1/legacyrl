@@ -73,6 +73,7 @@ export default {
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))',
+          strong: 'hsl(var(--primary-strong))',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -110,6 +111,11 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
+      },
+      boxShadow: {
+        luxury: 'var(--shadow-luxury)',
+        'luxury-subtle': 'var(--shadow-luxury-subtle)',
+        'card-elevated': 'var(--shadow-card-elevated)',
       },
       borderRadius: {
         lg: 'var(--radius)',

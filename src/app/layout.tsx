@@ -215,7 +215,7 @@ export default async function RootLayout({
   ];
 
   return (
-    <html lang={lang} className="dark" suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -229,27 +229,27 @@ export default async function RootLayout({
       </head>
       <body className="font-body antialiased" suppressHydrationWarning>
         <main>{children}</main>
-        <footer className="w-full bg-background text-foreground border-t border-accent/[.1] mt-auto">
-          <div className="container mx-auto py-8 px-4">
+        <footer className="w-full bg-background text-foreground border-t border-border mt-auto">
+          <div className="container mx-auto py-12 px-4">
             <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-              <div className="mb-4 md:mb-0">
-                <h3 className="font-headline text-xl text-primary">R.L. Legacy S.A.</h3>
-                <p className="text-sm text-muted-foreground">{dictionary.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
+              <div className="mb-6 md:mb-0">
+                <h3 className="font-headline text-2xl font-bold text-primary-strong tracking-wide">R.L. Legacy S.A.</h3>
+                <p className="text-sm text-muted-foreground mt-1">{dictionary.footer.copyright.replace('{year}', new Date().getFullYear().toString())}</p>
               </div>
-              <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <nav className="flex flex-wrap justify-center gap-x-8 gap-y-2">
                 {footerLinks.map(link => (
-                  <Link key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <Link key={link.href} href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
                     {link.label}
                   </Link>
                 ))}
               </nav>
             </div>
-            <Separator className="my-8 bg-accent/10" />
+            <Separator className="my-8 bg-border" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6">
               {seals.map((seal) => (
                 <div key={seal.text} className="flex items-center gap-3">
-                  <seal.icon className="h-5 w-5 text-primary flex-shrink-0" />
-                  <p className="text-xs text-muted-foreground">{seal.text}</p>
+                  <seal.icon className="h-4 w-4 text-primary-strong flex-shrink-0" />
+                  <p className="text-xs text-muted-foreground leading-snug">{seal.text}</p>
                 </div>
               ))}
             </div>
